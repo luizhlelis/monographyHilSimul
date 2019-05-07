@@ -1,0 +1,9 @@
+\select@language {brazil}
+\select@language {brazil}
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de blocos do sistema em malha fechada\relax }}{4}{figure.caption.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de blocos do sistema em malha fechada - \emph {Hardware in the Loop}\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Planta utilizada - manipulador de tr\IeC {\^e}s juntas revolutas\relax }}{11}{figure.caption.4}
+\contentsline {figure}{\numberline {4}{\ignorespaces T\IeC {\'e}cnica \textit {Hardware-in-the-loop} para o modelo simulado e para a planta f\IeC {\'\i }sica\relax }}{17}{figure.caption.5}
+\contentsline {subfigure}{\numberline {4a}{\ignorespaces Planta e controlador simulados\relax }}{17}{figure.caption.5}
+\contentsline {subfigure}{\numberline {4b}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para o modelo simulado da planta\relax }}{17}{figure.caption.5}
+\contentsline {subfigure}{\numberline {4c}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para a planta f\IeC {\'\i }sica\relax }}{17}{figure.caption.5}

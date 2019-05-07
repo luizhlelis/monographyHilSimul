@@ -1,0 +1,30 @@
+\changetocdepth {4}
+\select@language {brazil}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o e Justificativa}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos do Projeto}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Local de Realiza\IeC {\c c}\IeC {\~a}o}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}Estrutura da Monografia}{6}{section.1.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Manipuladores Rob\IeC {\'o}ticos}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Sistemas de Controle}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}T\IeC {\'e}cnica \textit {Hardware in the Loop (HIL)}}{8}{section.2.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Desenvolvimento da solu\IeC {\c c}\IeC {\~a}o para o modelo da planta}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg}}{11}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Cinem\IeC {\'a}tica Diferencial e o Jacobiano}{12}{subsubsection.3.1.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}{14}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Energia cin\IeC {\'e}tica para um manipulador de $n$-elos}{15}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Energia potencial para um manipulador de $n$-elos}{16}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Equa\IeC {\c c}\IeC {\~o}es de movimento}{16}{subsubsection.3.1.2.3}
+\contentsline {section}{\numberline {3.2}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}Resumo do Cap\IeC {\'\i }tulo}{17}{section.3.3}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{18}{section.3.3}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{18}{section*.7}

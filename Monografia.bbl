@@ -1,0 +1,131 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Abourida, Dufour e Belanger 2005]{Abourida}
+\abntrefinfo{Abourida, Dufour e Belanger}{ABOURIDA; DUFOUR; BELANGER}{2005}
+{ABOURIDA, S.; DUFOUR, C.; BELANGER, J. Real-time and hardware-in-the-loop
+  simulation of electric drives and power electronics: Process, problems and
+  solutions.
+\emph{The 2005 International Power Eletronics Conference}, 2005.}
+
+\bibitem[Bacic 2005]{Bacic}
+\abntrefinfo{Bacic}{BACIC}{2005}
+{BACIC, M. On hardware-in-the-loop simulation.
+\emph{Proceedings of the 44th IEEE Conference on Decision and Control}, p.
+  3194--3198, Dec 2005.
+ISSN 0191-2216.}
+
+\bibitem[Bouscayrol 2008]{Bouscayrol}
+\abntrefinfo{Bouscayrol}{BOUSCAYROL}{2008}
+{BOUSCAYROL, A. Different types of hardware-in-the-loop simulation for electric
+  drives.
+\emph{IEEE International Symposium on Industrial Electronics}, p. 2146 -- 2151,
+  08 2008.}
+
+\bibitem[Bullock et al. 2004]{Bullock}
+\abntrefinfo{Bullock et al.}{BULLOCK et al.}{2004}
+{BULLOCK, D. et al. Hardware-in-the-loop simulation.
+\emph{Transportation Research Part C Emerging Technologies}, v.~12, p. 73--89,
+  02 2004.}
+
+\bibitem[Castrucci, Bittar e Sales 2011]{Castrucci}
+\abntrefinfo{Castrucci, Bittar e Sales}{CASTRUCCI; BITTAR; SALES}{2011}
+{CASTRUCCI, P.; BITTAR, A.; SALES, R. \emph{Controle Automatico}. Rio de
+  Janeiro, RJ: Editora GEN/LTC, 2011.}
+
+\bibitem[Evans e Schilling 1984]{Evans}
+\abntrefinfo{Evans e Schilling}{EVANS; SCHILLING}{1984}
+{EVANS, M. B.; SCHILLING, L. J. The role of simulation in the development and
+  flight test of the himat vehicle.
+05 1984.}
+
+\bibitem[Isermann, Schaffnit e Sinsel 1999]{Isermann}
+\abntrefinfo{Isermann, Schaffnit e Sinsel}{ISERMANN; SCHAFFNIT; SINSEL}{1999}
+{ISERMANN, R.; SCHAFFNIT, J.; SINSEL, S. Hardware-in-the-loop simulation for
+  the design and testing of engine-control systems.
+\emph{Control Engineering Practice}, v.~7, p. 643--653, 1999.}
+
+\bibitem[Jain e Kamali 2016]{Kamali}
+\abntrefinfo{Jain e Kamali}{JAIN; KAMALI}{2016}
+{JAIN, S.; KAMALI, C. Hardware in the loop simulation for a mini uav.
+\emph{IFAC-PapersOnLine}, v.~49, n.~1, p. 700 -- 705, 2016.
+ISSN 2405-8963.
+4th IFAC Conference on Advances in Control and Optimization of Dynamical
+  Systems ACODS 2016.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S2405896316301380}.}
+
+\bibitem[Lacaz 2000]{Lacaz}
+\abntrefinfo{Lacaz}{LACAZ}{2000}
+{LACAZ, F. A. d.~C. Qualidade de vida no trabalho e saude/doenca.
+\emph{Cienc. saude coletiva}, scielo, v.~5, p. 151 -- 161, 00 2000.
+ISSN 1413-8123.
+Dispon{\'\i}vel em:
+  \url{http://www.scielo.br/scielo.php?script=sci\_arttext&pid=S1413-81232000000100013&nrm=iso}.}
+
+\bibitem[Lynch e Park 2017]{Park}
+\abntrefinfo{Lynch e Park}{LYNCH; PARK}{2017}
+{LYNCH, K.~M.; PARK, F.~C. \emph{Modern Robotics: Mechanics, Planning, and
+  Control}. 1st. ed. New York, NY, USA: Cambridge University Press, 2017.
+ISBN 1107156300, 9781107156302.}
+
+\bibitem[Murphy 2000]{Murphy:2000:IAR:517685}
+\abntrefinfo{Murphy}{MURPHY}{2000}
+{MURPHY, R.~R. \emph{Introduction to AI Robotics}. 1st. ed. Cambridge, MA, USA:
+  MIT Press, 2000.
+ISBN 0262133830.}
+
+\bibitem[Ogata 2010]{Ogata}
+\abntrefinfo{Ogata}{OGATA}{2010}
+{OGATA, K. \emph{Modern Control Engineering}. 5th. ed. Prentice Hall, 2010.
+  (Instrumentation and controls series).
+ISBN 9780136156734. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=Wu5GpNAelzkC}.}
+
+\bibitem[Oppenhein e Willsky 1997]{Oppenhein}
+\abntrefinfo{Oppenhein e Willsky}{OPPENHEIN; WILLSKY}{1997}
+{OPPENHEIN, A.; WILLSKY, A. \emph{Signals \& systems}. Englewood Cliffs, N.J:
+  Prentice-Hall.: Pearson Education, 1997.}
+
+\bibitem[Paul 1981]{paul1981robot}
+\abntrefinfo{Paul}{PAUL}{1981}
+{PAUL, R. \emph{Robot Manipulators: Mathematics, Programming, and Control : the
+  Computer Control of Robot Manipulators}. [S.l.]: MIT Press, 1981.  (MIT Press
+  series in artificial intelligence).
+ISBN 9780262160827.}
+
+\bibitem[Phillips e Nagle 2007]{Phillips}
+\abntrefinfo{Phillips e Nagle}{PHILLIPS; NAGLE}{2007}
+{PHILLIPS, C.~L.; NAGLE, H.~T. \emph{Digital Control System Analysis and
+  Design}. 4th. ed. Upper Saddle River, NJ, USA: Prentice Hall Press, 2007.
+ISBN 0130812226, 9780130812223.}
+
+\bibitem[Rothstein, Siekmann e Staudt 2017]{Rothstein}
+\abntrefinfo{Rothstein, Siekmann e Staudt}{ROTHSTEIN; SIEKMANN; STAUDT}{2017}
+{ROTHSTEIN, A.; SIEKMANN, L.; STAUDT, V. Combined-hardware-in-the-loop system
+  and its test-bench verification.
+\emph{2017 International Conference on Optimization of Electrical and
+  Electronic Equipment (OPTIM) 2017 Intl Aegean Conference on Electrical
+  Machines and Power Electronics (ACEMP)}, p. 581--586, May 2017.}
+
+\bibitem[Siciliano et al. 2008]{siciliano}
+\abntrefinfo{Siciliano et al.}{SICILIANO et al.}{2008}
+{SICILIANO, B. et al. \emph{Robotics: Modelling, Planning and Control}.
+  Springer London, 2008.  (Advanced Textbooks in Control and Signal
+  Processing).
+ISBN 9781846286421. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=VsTOQOnQjCAC}.}
+
+\bibitem[Spong, Hutchinson e Vidyasagar 2005]{Spong}
+\abntrefinfo{Spong, Hutchinson e Vidyasagar}{SPONG; HUTCHINSON;
+  VIDYASAGAR}{2005}
+{SPONG, M.; HUTCHINSON, S.; VIDYASAGAR, M. \emph{Robot Modeling and Control}.
+  Wiley, 2005.
+ISBN 9780471649908. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=wGapQAAACAAJ}.}
+
+\end{thebibliography}

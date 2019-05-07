@@ -1,0 +1,306 @@
+@string{pla = "Phys Lett A"}
+@string{pl = "Phys Lett"}
+@string{pra = "Phys Rev A"}
+@string{pd = "Physica D"}
+@string{jsv = "J Sound Vibr"}
+@string{jcsc = "J Circuits, Systems and Computers"}
+@string{ijbc = "Int J Bifurcation Chaos"}
+@string{ieeetcas = "IEEE Trans Circuits and Syst"}
+@string{jrssb = "J R Stat Soc {\rm B}"}
+@string{cs = "Complex Systems"}
+@string{pre = "Phys Rev E"}
+@string{prl = "Phys Rev Lett"}
+@string{n = "Nature"}
+@string{zn = "Z Naturforsch"}
+@string{jfi = "J Franklin Inst"}
+@string{jp = "J Physiol (London)"}
+@string{aism = "Ann Inst Stat Math"}
+@string{ieeetac = "IEEE Trans Autom Control"}
+@string{ajp = "Amer J Physiol"}
+@string{s = "Science"}
+@string{neph = "Nephron"}
+@string{geo = "Geophysics"}
+@string{pieee = "Proc IEEE"}
+@string{arp = "Annu Rev Physiol"}
+@string{jacc = "J Am Coll Cardiol"}
+@string{mi = "Med Inform"}
+@string{ijbmc = "Int J Bio-Med Comput"}
+@string{ieeetbe = "IEEE Trans Biomed Eng"}
+@string{ahj = "Am Heart J"}
+@string{diab = "Diabetes"}
+@string{jap = "J Appl Physiol"}
+@string{psyc = "Psychol Rev"}
+@string{psycho = "Psychophysiology"}
+@string{pha = "Pharmacol Rev"}
+@string{mbec = "Med Biol Eng Comput"}
+@string{circ = "Circulation"}
+@string{ieeetae = "IEEE Trans Audio Electroacoust."}
+@string{pbr = "Prog Brain Res"}
+@string{sa = "Sci Am"}
+@string{neuro = "Neuroscience"}
+@string{jans = "J Autonom Nerv Syst"}
+@string{ieeetassp = "IEEE Trans Acoust Speech Signal Process"}
+@string{ajc = "Amer J Cardiol"}
+@string{cbr = "Comput Biomed Res"}
+@string{jh = "J Hypertens"}
+@string{br = "Brain Res"}
+@string{brr = "Brain Res Rev"}
+@string{mc = "Math Comput"}
+@string{ieeetit = "IEEE Trans Inform Theory"}
+@string{ehj = "Eur Heart J"}
+@string{riis = "Rev Inst Int Statist"}
+@string{ieeespm = "IEEE Signal Proc Mag"}
+@string{jcva = "J Cardiothorac Vasc Anesth"}
+@string{jcp = "J Cardiovasc Pharmacol"}
+@string{ehd = "Early Hum Dev"}
+@string{aim = "Artif Intell Med"}
+@string{cdt = "Cardiovasc Drug Therapy"}
+@string{cr = "Cardiovasc Res"}
+@string{car = "Clin Auton Res"}
+@string{jicm = "J Intensive Care Med"}
+@string{coc = "Curr Opin Cardiol"}
+@string{mim = "Methods Inform Med"}
+@string{ppce = "Pace-Pac Clin Electrophys"}
+@string{natma = "Nonlinear Anal - Theor Meth App"}
+@string{csc = "Clin Sci"}
+@string{ijc = "Int J Cardiol"}
+@string{ipbs = "Integrat Physiol Behav Sci"}
+@string{pnasu = "Proc Nat Acad Sci USA"}
+@string{je = "J Electrocardiol"}
+@string{aa = "Anesth Analg"}
+@string{csf = "Chaos Soliton Fractal"}
+@string{ijao = "Int J Artif Organs"}
+@string{nhspam = "New Horiz -- Sci Pract Acute Med"}
+@string{bc = "Biol Cybern"}
+@string{el = "Europhys Lett"}
+@string{jmm = "J Molecular Med"}
+@string{jhlt = "J Heart Lung Transplant"}
+@string{mcm = "Math Comput Modelling"}
+@string{jama = "JAMA - J Am Med Assn"}
+@string{ajog = "Amer J Obstet Gynecol"}
+@string{bj = "Biophys J"}
+@string{ao = "Artif Organs"}
+@string{jpm = "J Perinat Med"}
+@string{ijao = "Int J Artif Organs"}
+@string{jcn = "J Clin Neurophysiol"}
+@string{jim = "J Intern Med"}
+@string{hb = "Hum Biol"}
+@string{bp = "Biol Psychiatry"}
+@string{anyas = "Ann N Y Acad Sci"}
+@string{cadGrad = "Caderno de Graduacao - Ciencias Exatas e Tecnologicas (CGCET)"}
+@string{ieeeIE = "IEEE International Symposium on Industrial Electronics"}
+
+@Book{Oppenhein,
+  author = 	 {Oppenhein, A.V. and Willsky, A.S.},
+  title = 	 {Signals \& systems},
+  OPTchapter = 	 {},
+  publisher = 	 {Pearson Education},
+  year = 	 {1997},
+  OPTkey = 	 {},
+  OPTeditor = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address =	 {Englewood Cliffs, N.J: Prentice-Hall.},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTpages = 	 {},
+  OPTtype = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@Book{Castrucci,
+  author = 	 {Castrucci, P.L.; Bittar, A. e Sales},
+  title = 	 {Controle Automatico},
+  OPTchapter = 	 {},
+  publisher = 	 {Editora GEN/LTC},
+  year = 	 {2011},
+  OPTkey = 	 {},
+  OPTeditor = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address =	 {Rio de Janeiro, RJ},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTpages = 	 {476 páginas},
+  OPTtype = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@Article{Simplicio,
+  author = 	 {Junkes J.A.; Lima B.G. e Simplicio P.V.G},
+  title = 	 {Manipuladores Roboticos Industriais},
+  journal = 	 cadGrad,
+  year = 	 {2016},
+  OPTkey = 	 {},
+  volume = 	 {3},
+  OPTnumber = 	 {3},
+  OPTmonth = 	 {},
+  pages = 	 {85--94},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@article{Bullock,
+  title = 	{Hardware-in-the-loop simulation},
+  author =	{Bullock, Darcy and Johnson, B.K. and B. Wells, Richard and Kyte, Michael and Li, Zhen},
+  year = 	{2004},
+  month = 	{02},
+  pages = 	{73-89},
+  journal = 	{Transportation Research Part C Emerging Technologies},
+  volume = 	{12}
+}
+
+@article{Lacaz,
+  title = 	{Qualidade de vida no trabalho e saude/doenca},
+  journal = 	{Cienc. saude coletiva},
+  author=	{Lacaz, F. A. de C.},
+  ISSN = 	{1413-8123},
+  language = 	{pt},
+  URL = 	{http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-81232000000100013&nrm=iso},
+  volume = 	{5},
+  year = 	{2000},
+  month = 	{00},
+  pages =	{151 - 161},
+  publisher = 	{scielo}
+}
+
+@article{Rothstein, 
+  author=	{Rothstein, A.; Siekmann, L. and Staudt, V.}, 
+  journal=	{2017 International Conference on Optimization of Electrical and Electronic Equipment (OPTIM) 2017 Intl Aegean Conference on Electrical Machines and Power Electronics (ACEMP)}, 
+  title=	{Combined-Hardware-in-the-Loop system and its test-bench verification}, 
+  year=		{2017}, 
+  volume=	{}, 
+  number=	{},
+  pages=	{581-586}, 
+  doi=		{10.1109/OPTIM.2017.7975031}, 
+  ISSN=		{}, 
+  month=	{May},
+}
+
+@article{Kamali,
+  title = 	{Hardware In the Loop Simulation for a Mini UAV},
+  journal = 	{IFAC-PapersOnLine},
+  volume =	{49},
+  number = 	{1},
+  pages = 	{700 - 705},
+  year = 	{2016},
+  note = 	{4th IFAC Conference on Advances in Control and Optimization of Dynamical Systems ACODS 2016},
+  issn = 	{2405-8963},
+  doi = 	{https://doi.org/10.1016/j.ifacol.2016.03.138},
+  url = 	{http://www.sciencedirect.com/science/article/pii/S2405896316301380},
+  author = 	{Jain, S. and Kamali, C.},
+  keywords = 	{Modeling & Simulation, Model based design, Autopliot board}
+}
+
+@article{Bouscayrol,
+  author = 	{Bouscayrol, A.},
+  year = 	{2008},
+  month = 	{08},
+  pages = 	{2146 - 2151},
+  title = 	{Different types of Hardware-In-the-Loop simulation for electric drives},
+  journal = 	{IEEE International Symposium on Industrial Electronics}
+}
+
+@article{Bacic, 
+  author=	{Bacic, M.}, 
+  journal=	{Proceedings of the 44th IEEE Conference on Decision and Control}, 
+  title=	{On hardware-in-the-loop simulation}, 
+  year=		{2005}, 
+  volume=	{}, 
+  number=	{}, 
+  pages=	{3194-3198}, 
+  keywords=	{Control system synthesis;Uncertainty;System testing;Stability;Context modeling;Predictive models;Hardware;Control systems;Aerospace simulation;Missiles}, 
+  doi=		{10.1109/CDC.2005.1582653}, 
+  ISSN=		{0191-2216}, 
+  month=	{Dec},
+}
+
+@book{Phillips,
+ author = {Phillips, Charles L. and Nagle, H. Troy},
+ title = {Digital Control System Analysis and Design},
+ year = {2007},
+ isbn = {0130812226, 9780130812223},
+ edition = {4th},
+ publisher = {Prentice Hall Press},
+ address = {Upper Saddle River, NJ, USA},
+}
+
+@book{Ogata,
+  title={Modern Control Engineering},
+  author={Ogata, K.},
+  isbn={9780136156734},
+  lccn={2010483801},
+  edition = {5th},
+  series={Instrumentation and controls series},
+  url={https://books.google.com.br/books?id=Wu5GpNAelzkC},
+  year={2010},
+  publisher={Prentice Hall}
+}
+
+@book{Spong,
+  title={Robot Modeling and Control},
+  author={Spong, M.W. and Hutchinson, S. and Vidyasagar, M.},
+  isbn={9780471649908},
+  lccn={2005054227},
+  url={https://books.google.com.br/books?id=wGapQAAACAAJ},
+  year={2005},
+  publisher={Wiley}
+}
+
+@book{Murphy:2000:IAR:517685,
+ author = {Murphy, Robin R.},
+ title = {Introduction to AI Robotics},
+ year = {2000},
+ isbn = {0262133830},
+ edition = {1st},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+}
+
+@book{paul1981robot,
+  title={Robot Manipulators: Mathematics, Programming, and Control : the Computer Control of Robot Manipulators},
+  author={Paul, R.P.},
+  isbn={9780262160827},
+  lccn={lc81013689},
+  series={MIT Press series in artificial intelligence},
+  year={1981},
+  publisher={MIT Press}
+}
+
+@article{Abourida,
+  title = {Real-Time and Hardware-In-The-Loop Simulation of Electric Drives and Power Electronics: Process, problems and solutions},
+  author = {Abourida, Simon and Dufour, Christian and Belanger, Jean},
+  year = {2005},
+  journal={The 2005 International Power Eletronics Conference}
+}
+
+@article{Isermann,
+  title = {Hardware-in-the-loop simulation for the design and testing of engine-control systems},
+  author = {Isermann, R and Schaffnit, J and Sinsel, S.},
+  year = {1999},
+  journal={Control Engineering Practice},
+  volume= {7},
+  pages= {643-653}, 
+}
+
+@article{Evans,
+  author = {B. Evans, M and J. Schilling, L},
+  year = {1984},
+  month = {05},
+  pages = {},
+  title = {The role of simulation in the development and flight test of the HiMAT vehicle}
+}
+
+@book{Park,
+ author = {Lynch, Kevin M. and Park, Frank C.},
+ title = {Modern Robotics: Mechanics, Planning, and Control},
+ year = {2017},
+ isbn = {1107156300, 9781107156302},
+ edition = {1st},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+} 
