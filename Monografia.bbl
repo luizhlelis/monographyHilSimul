@@ -12,6 +12,12 @@
   solutions.
 \emph{The 2005 International Power Eletronics Conference}, 2005.}
 
+\bibitem[Aguirre 2015]{Aguirre}
+\abntrefinfo{Aguirre}{AGUIRRE}{2015}
+{AGUIRRE, L. \emph{Introdução à Identificação de Sistemas}. [S.l.: s.n.],
+  2015.
+ISBN 978-85-423-0079-6.}
+
 \bibitem[Bacic 2005]{Bacic}
 \abntrefinfo{Bacic}{BACIC}{2005}
 {BACIC, M. On hardware-in-the-loop simulation.
@@ -59,13 +65,12 @@ ISSN 2405-8963.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S2405896316301380}.}
 
-\bibitem[Lacaz 2000]{Lacaz}
-\abntrefinfo{Lacaz}{LACAZ}{2000}
-{LACAZ, F. A. d.~C. Qualidade de vida no trabalho e saude/doenca.
-\emph{Cienc. saude coletiva}, scielo, v.~5, p. 151 -- 161, 00 2000.
-ISSN 1413-8123.
-Dispon{\'\i}vel em:
-  \url{http://www.scielo.br/scielo.php?script=sci\_arttext&pid=S1413-81232000000100013&nrm=iso}.}
+\bibitem[{Karpenko} e {Sepehri} 2006]{Karpenko}
+\abntrefinfo{{Karpenko} e {Sepehri}}{{Karpenko}; {Sepehri}}{2006}
+{{Karpenko}, M.; {Sepehri}, N. Hardware-in-the-loop simulator for research on
+  fault tolerant control of electrohydraulic flight control systems.
+p. 7 pp.--, June 2006.
+ISSN 0743-1619.}
 
 \bibitem[Lynch e Park 2017]{Park}
 \abntrefinfo{Lynch e Park}{LYNCH; PARK}{2017}

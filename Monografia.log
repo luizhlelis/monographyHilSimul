@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  7 MAY 2019 03:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  20 MAY 2019 03:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,103 +1179,103 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout2 = `Introducao/Introducao.aux'.
 
 
-(./Introducao/Introducao.tex
-<Imagens/blocosMF.png, id=99, 790.955pt x 223.83624pt>
+(./Introducao/Introducao.tex [4
+
+
+
+]
+<Imagens/blocosMF.png, id=104, 790.955pt x 223.83624pt>
 File: Imagens/blocosMF.png Graphic file (type png)
 
 <use Imagens/blocosMF.png>
-Package pdftex.def Info: Imagens/blocosMF.png used on input line 41.
+Package pdftex.def Info: Imagens/blocosMF.png used on input line 57.
 (pdftex.def)             Requested size: 273.00278pt x 77.25774pt.
 
-<Imagens/blocoHard.png, id=101, 790.955pt x 374.39874pt>
+<Imagens/blocoHard.png, id=106, 790.955pt x 374.39874pt>
 File: Imagens/blocoHard.png Graphic file (type png)
 
 <use Imagens/blocoHard.png>
-Package pdftex.def Info: Imagens/blocoHard.png used on input line 48.
+Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
 (pdftex.def)             Requested size: 318.49861pt x 150.7623pt.
- [4
-
-
-
- <./Imagens/blocosMF.png>] [5 <./Imagens/blocoHard.png>] [6])
+ [5 <./Imagens/blocosMF.png> <./Imagens/blocoHard.png>] [6] [7])
 \openout2 = `RevisaoBib/Revisao.aux'.
 
- (./RevisaoBib/Revisao.tex [7
+ (./RevisaoBib/Revisao.tex [8
 
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 81.
+<Imagens/manipulador.png, id=171, 522.95375pt x 396.48125pt>
+File: Imagens/manipulador.png Graphic file (type png)
+
+<use Imagens/manipulador.png>
+Package pdftex.def Info: Imagens/manipulador.png used on input line 56.
+(pdftex.def)             Requested size: 227.5pt x 172.48004pt.
+ [9 <./Imagens/manipulador.png>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 99.
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 81.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 99.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 86.
- [8] [9])
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 108.
+ [10] [11])
 \openout2 = `Metodologia/Metodologia.aux'.
 
 
-(./Metodologia/Metodologia.tex
-<Imagens/manipulador.png, id=206, 447.6725pt x 362.35374pt>
-File: Imagens/manipulador.png Graphic file (type png)
-
-<use Imagens/manipulador.png>
-Package pdftex.def Info: Imagens/manipulador.png used on input line 40.
-(pdftex.def)             Requested size: 181.99722pt x 147.31642pt.
- [10
+(./Metodologia/Metodologia.tex [12
 
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 68.
- [11 <./Imagens/manipulador.png>] [12]
-[13]
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 55.
+ [13] [14] [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
-
-[14]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 294.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 376.
+(hyperref)                removing `math shift' on input line 294.
 
-[15] [16] <Imagens/plantaSimulada.png, id=347, 1668.2325pt x 1397.22pt>
+[16]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 362.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 362.
+
+[17] [18]
+Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
+put line 442.
+ <Imagens/plantaSimulada.png, id=357, 1668.2325pt x 1397.22pt>
 File: Imagens/plantaSimulada.png Graphic file (type png)
 
 <use Imagens/plantaSimulada.png>
-Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 455.
+Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 443.
 (pdftex.def)             Requested size: 136.50139pt x 114.31694pt.
 
-<Imagens/solucaoModelo.png, id=348, 231.86626pt x 247.92625pt>
+<Imagens/solucaoModelo.png, id=358, 231.86626pt x 247.92625pt>
 File: Imagens/solucaoModelo.png Graphic file (type png)
 
 <use Imagens/solucaoModelo.png>
-Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 461.
+Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 450.
 (pdftex.def)             Requested size: 113.75pt x 121.62868pt.
 
-<Imagens/solucaoPlanta.png, id=349, 673.51625pt x 677.53125pt>
+<Imagens/solucaoPlanta.png, id=359, 673.51625pt x 677.53125pt>
 File: Imagens/solucaoPlanta.png Graphic file (type png)
 
 <use Imagens/solucaoPlanta.png>
-Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 468.
+Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 458.
 (pdftex.def)             Requested size: 181.99722pt x 183.08061pt.
-Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 473.
- [17 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagens/so
+ [19 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagens/so
 lucaoPlanta.png>]) (./Monografia.bbl
 (./Monografia.brf)
 \tf@brf=\write5
@@ -1283,11 +1283,11 @@ lucaoPlanta.png>]) (./Monografia.bbl
 
 
 bibitemlist
-[18
+[20
 
 
 
-]) [19]
+]) [21]
 \tf@lof=\write6
 \openout6 = `Monografia.lof'.
 
@@ -1301,7 +1301,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
 Package rerunfilecheck Info: File `Monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 8A61DEE3D544F5B7B497B41D20CFB424;2266.
+(rerunfilecheck)             Checksum: 887609118AC13C5CBBCFB1B076E9ECAA;2368.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1309,13 +1309,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
  ) 
 Here is how much of TeX's memory you used:
- 14933 strings out of 493304
- 223739 string characters out of 6139871
- 389708 words of memory out of 5000000
- 17862 multiletter control sequences out of 15000+600000
- 108671 words of font info for 150 fonts, out of 8000000 for 9000
+ 14949 strings out of 493304
+ 223965 string characters out of 6139871
+ 389505 words of memory out of 5000000
+ 17872 multiletter control sequences out of 15000+600000
+ 108929 words of font info for 152 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,17n,41p,371b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,41p,315b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -1333,10 +1333,10 @@ ss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf
 so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb>
-Output written on Monografia.pdf (20 pages, 519507 bytes).
+Output written on Monografia.pdf (22 pages, 524867 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 515 compressed objects within 6 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
  35551 words of extra memory for PDF output out of 35830 (max. 10000000)
 

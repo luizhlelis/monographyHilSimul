@@ -1,57 +1,44 @@
 \chapter{Metodologia}
 
 Neste capítulo, serão apresentadas as técnicas utilizadas para solução do problema. O projeto 
-foi realizado em um ano e sua concepção foi dividida em três frentes. São elas: desenvolvimento 
-da solução para o modelo da planta, controle da planta simulada, e a implementação no dispositivo real. 
-As etapas do projeto seguem abaixo:
+foi realizado em um ano e sua concepção foi dividida em três frentes, nomeadamente: desenvolvimento 
+da solução para o modelo da planta com controlador simulado, controle da planta simulada com o 
+controlador implementado em dispositivo físico (microcontrolador) e a implementação final em dispositivo real. 
+As etapas pormenorizadas do projeto seguem abaixo:
 
 \begin{enumerate}
- \item Desenvolvimento da solução para o modelo da planta
+ \item Desenvolvimento da solução para o modelo da planta com controlador simulado
   \begin{enumerate}
     \item Definição e modelagem da planta de estudo.
     \item Construção do ambiente de simulação.
     \item Validação do modelo.
-    \item Implementação de diferentes estratégias de controle.
+    \item Implementação e validação da estratégia de controle.
   \end{enumerate}
- \item Controle da planta simulada
+ \item Controle da planta simulada com o controlador em dispositivo físico
   \begin{enumerate}
-    \item Discretização seguido da equação de diferenças da planta de estudo.
-    \item Discretização seguido da equação de diferenças do controlador.
+    \item Discretização da planta de estudo seguido da obtenção da sua equação de diferenças.
+    \item Discretização do controlador seguido da obtenção da sua equação de diferenças.
     \item Configuração do ambiente de testes com a planta rodando no computador, e o 
     controlador rodando no microcontrolador (comunicação \textit{UART}).
   \end{enumerate}
-  \item Implementação no dispositivo real
+  \item Implementação em dispositivo real
   \begin{enumerate}
     \item Configuração do ambiente com a planta real e o microcontrolador (comunicação \textit{UART}).
-    \item Implementação das estratégias de controle no microcontrolador e validação por meio de HIL.
-    \item Implementação das estratégias de controle na planta física.
-    \item Testes de validação.
+    \item Implementação da estratégia de controle no microcontrolador.
+    \item Testes de validação da estratégia de controle na planta física..
   \end{enumerate}
 \end{enumerate}
-
-É importante ressaltar que a planta utilizada neste trabalho trata-se de um manipulador com três juntas
-revolutas. O manipulador real, possui outras duas juntas, uma para o punho e outra para a garra, mas estas 
-foram desconsideradas para a modelagem e para o controle. Este manipulador está representado na Figura \ref{fig:manipuladorRRR} e 
-também é conhecido na literatura como manipulador de cotovelos (\textit{elbow manipulator}), articulado, revoluto, 
-antropomórfico (\textit{anthropomorphic manipulator}), ou manipulador RRR.
-
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width = 0.4\columnwidth]{Imagens/manipulador.png}
-  \caption{Planta utilizada - manipulador de três juntas revolutas}
-  \label{fig:manipuladorRRR} 
-\end{figure}
-
 
 \section{Desenvolvimento da solução para o modelo da planta}
 \markright{\thesection ~~~ Metodologia}
 \label{metodo}
 
 A modelagem dos manipuladores robóticos visa descrever como os elos e juntas estão 
-configurados fisicamente para tornar possível a configuração da orientação e posição 
-deles \cite{paul1981robot}. Com isso, ao passar uma trajetória de referência para a 
-entrada da planta, essa trajetória será seguida pelo sistema caso tenha algum 
-controlador configurado para a planta.
+configurados fisicamente para tornar possível a configuração de sua orientação e sua posição 
+deles \cite{paul1981robot}. Com isso, ao passar uma trajetória de referência que a 
+ferramenta de trabalho deve descrever, as demais juntas se reajustam de modo a garantir 
+que a ferramenta sempre esteja corretamente posicionada. A estratégia de controle deve, 
+então, estar adequadamente sintonizada para garantir o seguimento acurado da trajetória.
 
 No presente trabalho são realizadas duas modelagens para o manipulador: a modelagem 
 cinemática e a modelagem dinâmica. A modelagem cinemática visa descrever a amplitude 
@@ -60,7 +47,7 @@ as forças e torques que produzem o movimento, descrevendo, explicitamente, a re
 entre força e movimento \cite{Spong}.
 
 A principal ferramenta utilizada para se obter o modelo cinemático direto de um 
-manipulador robótico é a convenção de \textit{Denavit-Hartenberg} \cite{paul1981robot}
+manipulador robótico é a convenção de \textit{Denavit-Hartenberg} (DH) \cite{paul1981robot}
 . A modelagem dinâmica, por sua vez, pode ser realizada por meio das equações de 
 Euler-Lagrange, que correspondem a um método baseado na energia do sistema 
 \cite{Park}.
@@ -73,8 +60,7 @@ Considera-se que o manipulador a ser modelado é de cadeia aberta, ou seja, um m
 que o número de graus de liberdade seja igual ao número de articulações ativas.
 Além disso, ele deve ser constituído por $n+1$ elos conectados por $n$ juntas, onde 
 o elo $0$ é convencionalmente fixado ao solo. Assim sendo, segundo \citeonline{siciliano}, 
-a equação cinemática direta para o manipulador pode ser calculada a partir da equação 
-\ref{eq:cinematicaDireta}:
+a equação cinemática direta para o manipulador pode ser calculada a partir de:
 
 \begin{equation}
   \begin{gathered}
@@ -83,11 +69,11 @@ a equação cinemática direta para o manipulador pode ser calculada a partir da
   \label{eq:cinematicaDireta}
 \end{equation}
 
-A equação \ref{eq:cinematicaDireta} se refere à transformação de coordenadas descrevendo 
+A relação \eqref{eq:cinematicaDireta} se refere à transformação de coordenadas descrevendo 
 a posição e a orientação do eixo $n$ em relação à base (eixo $0$) \cite{siciliano}. Segundo
-\citeonline{Spong}, na convenção DH, cada transformação homogênea $A_i$ representada na equação
-\ref{eq:cinematicaDireta} equivale a um produto de quartro transformações básicas, conforme 
-a equação \ref{eq:matTransHomog}:
+\citeonline{Spong}, na convenção DH, cada transformação homogênea $A_i$ representada em
+\eqref{eq:cinematicaDireta} equivale ao produto de quatro transformações básicas, conforme 
+\eqref{eq:matTransHomog}:
 
 \begin{equation}
   \begin{gathered}
@@ -450,27 +436,30 @@ por meio de simulação.
 \begin{figure}[h!]
   
   \centering
+  \caption{Diagramas das etapas da técnica \textit{Hardware-in-the-loop}}
   \begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[width = 0.6\columnwidth]{Imagens/plantaSimulada.png}
     \caption{Planta e controlador simulados}
+    \includegraphics[width = 0.6\columnwidth]{Imagens/plantaSimulada.png}
+    \fonte{Do autor}
     \label{fig:plantaSimulada}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[width = 0.5\columnwidth]{Imagens/solucaoModelo.png}
     \caption{Solução para o modelo simulado da planta}
+    \includegraphics[width = 0.5\columnwidth]{Imagens/solucaoModelo.png}
+    \fonte{Do autor}
     \label{fig:solucaoModelo}
   \end{subfigure}%
   \\[5ex]
   \begin{subfigure}{\textwidth}
     \centering
-    \includegraphics[width = 0.4\columnwidth]{Imagens/solucaoPlanta.png}
     \caption{Solução para a planta física}
+    \includegraphics[width = 0.4\columnwidth]{Imagens/solucaoPlanta.png}
+    \fonte{Do autor}
     \label{fig:solucaoPlanta}
   \end{subfigure}%
   
-  \caption{Técnica \textit{Hardware-in-the-loop} para o modelo simulado e para a planta física}
   \label{fig:simulacoes} 
 
 \end{figure}

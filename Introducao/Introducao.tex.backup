@@ -5,8 +5,11 @@
 Um sistema pode ser visto como um processo com sinais de entrada que são 
 transformados ou induzidos a responder de alguma forma resultando em outros 
 sinais de saída \cite{Oppenhein}. O intuito do controlador é manipular o sistema com a 
-finalidade de obter um sinal de saída que siga uma referência pré estabelecida. Para isso, 
-é necessário, primeiramente, obter um modelo que descreva 
+finalidade de obter um sinal de saída que siga uma referência pré estabelecida. A implementação
+de controladores em malhas é fundamental para processos de diferentes áreas como 
+sistemas eletrônicos de potência \cite{Rothstein}, acionamentos elétricos 
+\cite{Bouscayrol}, engenharia de tráfego \cite{Bullock} e robótica móvel 
+\cite{Kamali}. Para isso, é necessário, primeiramente, obter um modelo que descreva 
 o comportamento do sistema e, em seguida, projetar uma estratégia de controle a 
 partir desse modelo. Dentre as técnicas utilizadas para modelagem cabe destacar a 
 descrição do sistema por meio de equações diferenciais lineares \cite{Ogata}
@@ -84,15 +87,12 @@ de controle, surge um problema computacional complexo. Cumprir a restrição de 
 de resposta exige um uso maior de simulações em tempo real \cite{Isermann}. Nos sistemas de 
 tempo real, as tarefas consideradas críticas devem executar dentro um período de tempo 
 estabelecido. A implementação de um \textit{Hardware} em uma malha de controle, conforme o 
-método HIL propõe, possui um ganho em relação às simulações com 
-sistemas operacionais comuns pelo motivo exposto acima.
+método HIL propõe, possui um ganho em relação ao controle através de simulações com 
+sistemas operacionais comuns pelos motivos expostos acima.
 
 Atualmente, as simulações HIL são utilizadas mais recorrentemente
 para o desenvolvimento de novos componentes e atuadores em vários campos
-diferentes \cite{Bouscayrol}. As aplicações ao longo da história têm demonstrado a 
-variabilidade do uso da metologia, aplicações estas como, sistemas eletrônicos de 
-potência \cite{Rothstein}, sistemas de controle de vôo \cite{Karpenko}, engenharia 
-de tráfego \cite{Bullock} e robótica móvel \cite{Kamali}.
+diferentes \cite{Bouscayrol}.
 
 % A ação de controle agora não depende 
 % apenas da computação numérica, mas também da forma como o modelo interage com um 
@@ -138,16 +138,18 @@ participação no curso de graduação em Engenharia de Controle e Automação.
 %\label{organizacao}
 
 A monografia está dividida em cinco capítulos. Este capítulo apresentou uma introdução 
-ao projeto e o local onde o trabalho foi realizado. O Capítulo 2 faz uma revisão 
-bibliográfica sobre os principais temas trabalhados no decorrer do projeto, como a modelagem e
-controle de sistemas dinâmicos lineares, os conceitos da técnica \emph{Hardware in the Loop} (HIL)
-e os princípios básicos do manipulador robótico. O Capítulo 3 aborda a metodologia de desenvolvimento
-do trabalho, ele descreve como o projeto foi desenvolvido explicitando o passo a passo
-das tarefas executadas para que o mesmo fosse concluído. Os resultados experimentais são 
-apresentados no Capítulo 4: primeiramente, o modelo da planta é obtido, depois um controlador é modelado
-em ambiente de simulação, o controlador é aplicado em um dispositivo físico para controlar a planta 
-simulada, e por fim, a planta simulada é substituída pela planta real.
-Finalmente, no capítulo 5, tem-se a conclusão da monografia com algumas sugestões 
+ao projeto e o local onde o trabalho foi realizado. O Capítulo 2 descreve 
+os princípios básicos de um manipulador robótico e a técnica \emph{Hardware in the 
+Loop} (HIL). Ele também abrange todos os conceitos necessários para um melhor 
+entendimento do trabalho. O Capítulo 3 aborda a metodologia de desenvolvimento do trabalho. 
+Nesse capítulo são feitas a modelagem da planta de estudo e validação do modelo, a 
+concepção do ambiente de simulação, as especificações das estratégias de controle no 
+microcontrolador e, por fim, as validações das estratégias por meio de simulações. 
+Os resultados experimentais são apresentados no Capítulo 4. Primeiramente, a 
+metodologia HIL é validada, para diferentes estratégias de controle, no ambiente 
+de simulação concebido no Capítulo 3 e, posteriormente, os controladores 
+implementados são aplicados à planta física em estudo. 
+Finalmente, no capítulo 5, tem-se a conclusão da  monografia com algumas sugestões 
 para trabalhos futuros e dificuldades encontradas na realização do projeto.
 
 
