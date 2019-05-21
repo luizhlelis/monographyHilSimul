@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  20 MAY 2019 03:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  21 MAY 2019 09:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,26 +1008,26 @@ Writing index file Monografia.idx
 (./Metodologia/Metodologia.aux))
 \openout1 = `Monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 129.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 128.
+Package hyperref Info: Link coloring ON on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1039,10 +1039,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 128.
-LaTeX Info: Redefining \ref on input line 128.
-LaTeX Info: Redefining \pageref on input line 128.
-LaTeX Info: Redefining \nameref on input line 128.
+LaTeX Info: Redefining \nameref on input line 129.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
 \myptabbox=\box33
 \myptabboxwidth=\skip209
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1073,7 +1073,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 128.
+LaTeX Info: Redefining \microtypecontext on input line 129.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1090,7 +1090,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 145.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 146.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
@@ -1101,44 +1101,44 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <20.74> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 145.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 146.
 
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 149.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 150.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 149.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 150.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 149.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 150.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 149
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 150
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 149
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 150
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 149.
+(Font)              <12> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 149.
+(Font)              <8> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 149.
-LaTeX Font Info:    Try loading font information for U+msa on input line 149.
+(Font)              <6> on input line 150.
+LaTeX Font Info:    Try loading font information for U+msa on input line 150.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1146,7 +1146,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 149.
+LaTeX Font Info:    Try loading font information for U+msb on input line 150.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1157,7 +1157,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 
+l.150 
        [1
 
 
@@ -1184,14 +1184,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<Imagens/blocosMF.png, id=104, 790.955pt x 223.83624pt>
+<Imagens/blocosMF.png, id=106, 790.955pt x 223.83624pt>
 File: Imagens/blocosMF.png Graphic file (type png)
 
 <use Imagens/blocosMF.png>
 Package pdftex.def Info: Imagens/blocosMF.png used on input line 57.
 (pdftex.def)             Requested size: 273.00278pt x 77.25774pt.
 
-<Imagens/blocoHard.png, id=106, 790.955pt x 374.39874pt>
+<Imagens/blocoHard.png, id=108, 790.955pt x 374.39874pt>
 File: Imagens/blocoHard.png Graphic file (type png)
 
 <use Imagens/blocoHard.png>
@@ -1206,12 +1206,12 @@ Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
 
 
 ]
-<Imagens/manipulador.png, id=171, 522.95375pt x 396.48125pt>
+<Imagens/manipulador.png, id=173, 597.23125pt x 396.48125pt>
 File: Imagens/manipulador.png Graphic file (type png)
 
 <use Imagens/manipulador.png>
 Package pdftex.def Info: Imagens/manipulador.png used on input line 56.
-(pdftex.def)             Requested size: 227.5pt x 172.48004pt.
+(pdftex.def)             Requested size: 227.5pt x 151.02742pt.
  [9 <./Imagens/manipulador.png>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 99.
 
@@ -1237,83 +1237,86 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
  [13] [14] [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `math shift' on input line 295.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `math shift' on input line 295.
 
 [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 362.
+(hyperref)                removing `math shift' on input line 364.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 362.
+(hyperref)                removing `math shift' on input line 364.
 
 [17] [18]
 Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 442.
- <Imagens/plantaSimulada.png, id=357, 1668.2325pt x 1397.22pt>
+put line 455.
+ <Imagens/plantaSimulada.png, id=361, 1668.2325pt x 1397.22pt>
 File: Imagens/plantaSimulada.png Graphic file (type png)
 
 <use Imagens/plantaSimulada.png>
-Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 443.
+Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 456.
 (pdftex.def)             Requested size: 136.50139pt x 114.31694pt.
 
-<Imagens/solucaoModelo.png, id=358, 231.86626pt x 247.92625pt>
+<Imagens/solucaoModelo.png, id=362, 231.86626pt x 247.92625pt>
 File: Imagens/solucaoModelo.png Graphic file (type png)
 
 <use Imagens/solucaoModelo.png>
-Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 450.
+Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 463.
 (pdftex.def)             Requested size: 113.75pt x 121.62868pt.
 
-<Imagens/solucaoPlanta.png, id=359, 673.51625pt x 677.53125pt>
+<Imagens/solucaoPlanta.png, id=363, 673.51625pt x 677.53125pt>
 File: Imagens/solucaoPlanta.png Graphic file (type png)
 
 <use Imagens/solucaoPlanta.png>
-Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 458.
+Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 471.
 (pdftex.def)             Requested size: 181.99722pt x 183.08061pt.
- [19 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagens/so
-lucaoPlanta.png>]) (./Monografia.bbl
-(./Monografia.brf)
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19] [20 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagen
+s/solucaoPlanta.png>]) (./Monografia.bbl (./Monografia.brf)
 \tf@brf=\write5
 \openout5 = `Monografia.brf'.
 
 
 bibitemlist
-[20
+[21
 
 
 
-]) [21]
+]) [22]
 \tf@lof=\write6
 \openout6 = `Monografia.lof'.
 
 \tf@toc=\write7
 \openout7 = `Monografia.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./Monografia.aux (./Introducao/Introducao.aux)
 (./RevisaoBib/Revisao.aux) (./Metodologia/Metodologia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `Monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 887609118AC13C5CBBCFB1B076E9ECAA;2368.
+(rerunfilecheck)             Checksum: 163ACDE920B129B02197017CB7DDAD14;2456.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 14949 strings out of 493304
- 223965 string characters out of 6139871
- 389505 words of memory out of 5000000
- 17872 multiletter control sequences out of 15000+600000
- 108929 words of font info for 152 fonts, out of 8000000 for 9000
+ 14954 strings out of 493304
+ 224009 string characters out of 6139871
+ 389491 words of memory out of 5000000
+ 17873 multiletter control sequences out of 15000+600000
+ 109012 words of font info for 153 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  45i,17n,41p,315b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1333,10 +1336,10 @@ ss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf
 so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb>
-Output written on Monografia.pdf (22 pages, 524867 bytes).
+Output written on Monografia.pdf (23 pages, 528656 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 526 compressed objects within 6 object streams
- 108 named destinations out of 1000 (max. 500000)
- 35551 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 603 PDF objects out of 1000 (max. 8388607)
+ 540 compressed objects within 6 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 35559 words of extra memory for PDF output out of 35830 (max. 10000000)
 

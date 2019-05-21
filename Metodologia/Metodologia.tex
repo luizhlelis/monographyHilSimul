@@ -72,15 +72,15 @@ a equação cinemática direta para o manipulador pode ser calculada a partir de
 A relação \eqref{eq:cinematicaDireta} se refere à transformação de coordenadas descrevendo 
 a posição e a orientação do eixo $n$ em relação à base (eixo $0$) \cite{siciliano}. Segundo
 \citeonline{Spong}, na convenção DH, cada transformação homogênea $A_i$ representada em
-\eqref{eq:cinematicaDireta} equivale ao produto de quatro transformações básicas, conforme 
+\eqref{eq:cinematicaDireta} equivale ao produto de quatro transformações básicas, apresentado em 
 \eqref{eq:matTransHomog}:
 
 \begin{equation}
   \begin{gathered}
     A_i = Rot_{z,\theta_i}Trans_{z,\theta_i}Trans_{x,\alpha_i}Rot_{x,\alpha_i} \\[0.5cm]
     =\begin{bmatrix}
-     cos(\theta_i) & -sen(\theta_i) & 0 & 0 \\
-     sen(\theta_i) & -cos(\theta_i) & 0 & 0 \\
+     \cos(\theta_i) & -\sin(\theta_i) & 0 & 0 \\
+     \sin(\theta_i) & \cos(\theta_i) & 0 & 0 \\
      0 & 0 & 1 & 0 \\
      0 & 0 & 0 & 1 \\
     \end{bmatrix}
@@ -98,26 +98,26 @@ a posição e a orientação do eixo $n$ em relação à base (eixo $0$) \cite{s
     \end{bmatrix}
     \begin{bmatrix}
      1 & 0 & 0 & 0 \\
-     0 & cos(\alpha_i) & -sen(\alpha_i) & 0 \\
-     0 & sen(\alpha_i) & cos(\alpha_i) & d_i \\
+     0 & \cos(\alpha_i) & -\sin(\alpha_i) & 0 \\
+     0 & \sin(\alpha_i) & \cos(\alpha_i) & d_i \\
      0 & 0 & 0 & 1 \\
     \end{bmatrix} \\[0.5cm]
     =
     \begin{bmatrix}
-     cos(\theta_i) & -sen(\theta_i)cos(\alpha_i) & sen(\theta_i)sen(\alpha_i) & a_icos(\theta_i) \\
-     sen(\theta_i) & cos(\theta_i)cos(\alpha_i) & -cos(\theta_i)sen(\alpha_i) & a_isen(\theta_i) \\
-     0 & sen(\alpha_i) & cos(\alpha_i) & d_i \\
+     \cos(\theta_i) & -\sin(\theta_i)\cos(\alpha_i) & \sin(\theta_i)\sin(\alpha_i) & a_i\cos(\theta_i) \\
+     \sin(\theta_i) & \cos(\theta_i)\cos(\alpha_i) & -\cos(\theta_i)\sin(\alpha_i) & a_i\sin(\theta_i) \\
+     0 & \sin(\alpha_i) & \cos(\alpha_i) & d_i \\
      0 & 0 & 0 & 1 \\
     \end{bmatrix}
   \end{gathered}
   \label{eq:matTransHomog}
 \end{equation}
 
-A matriz final encontrada na equação \ref{eq:matTransHomog} é chamada de Matriz de
-Trasformação Homogênea. Os quatro parâmetros da equação \ref{eq:matTransHomog} 
-representam: $a_i$ = tamanho do elo, $d_i$ = deslocamento do elo, 
-$\alpha_i$ = giro do elo, $\theta_i$ = ângulo da junta. De acordo com 
-\citeonline{paul1981robot}, os parâmetros são obtidos através dos itens a seguir:
+A matriz final encontrada em \eqref{eq:matTransHomog} é chamada de Matriz de
+Trasformação Homogênea. Os quatro parâmetros da relação \eqref{eq:matTransHomog} 
+representam: tamanho do elo ($a_i$), deslocamento do elo ($d_i$), 
+giro do elo ($\alpha_i$), ângulo da junta ($\theta_i$). De acordo com 
+\citeonline{paul1981robot}, os parâmetros são obtidos através do procedimento a seguir:
 
 \begin{itemize}
   \item Rotacionar $x_i$ em torno do eixo $z_{i}$ um ângulo $\theta_i$;
@@ -127,18 +127,19 @@ $\alpha_i$ = giro do elo, $\theta_i$ = ângulo da junta. De acordo com
 \end{itemize}
 
 Assim sendo, a modelagem cinemática é obtida através da multiplicação de diversas
-matrizes de transformação homogêneas individuais, conforme a equação 
-\ref{eq:cinematicaDireta}. Com isso, para um manipulador com três graus de 
+matrizes de transformação homogêneas individuais, conforme
+\eqref{eq:cinematicaDireta}. Com isso, para um manipulador com três graus de 
 liberdade, a transformação de coordenadas do elemento terminal em relação a base é
 dada por $T^0_3=A_1A_2A_3$ .
 
 \subsubsection{Cinemática Diferencial e o Jacobiano}
 
 A cinemática diferencial é responsável por fornecer a relação entre as velocidades das juntas
-e a correspondente velocidade final linear e angular \cite{siciliano}. Essa relação é descrita por uma matriz, 
-denominada jacobiana geométrica, que depende da configuração do manipulador. O Jacobiano Analítico, 
-por outro lado, é expresso por meio da diferenciação da função cinemática direta com relação às variáveis conjuntas.
-A obtenção da matriz Jacobiana é fundamental para determinar as equações de movimento do manipulador robótico.
+e a correspondente velocidade final linear e angular da ferramenta de trabalho \cite{siciliano}. Essa 
+relação é descrita por uma matriz denominada jacobiana geométrica, que depende da configuração do manipulador. 
+O Jacobiano Analítico, por outro lado, é expresso por meio da diferenciação da função cinemática direta com 
+relação às variáveis das juntas. A obtenção da matriz Jacobiana é fundamental para determinar as equações 
+de movimento do manipulador robótico.
 
 Segundo \citeonline{Spong}, considerando um manipulador com \textit{n} graus de liberdade, a equação da cinemática direta 
 pode ser escrita na forma:
@@ -153,10 +154,10 @@ pode ser escrita na forma:
   \label{eq:cinematicaDireta_2}
 \end{equation}
 
-A equação \ref{eq:cinematicaDireta_2} é a mesma que \ref{eq:cinematicaDireta}, onde $q = [q_1,...,q_n]^T$ é o vetor das 
-variáveis das juntas, $R^{0}_n(q)$ a matriz de rotação, $o^{0}_n(q)$ o vetor de translação, $0$ a perspectiva, e $1$ o 
-fator de escala. A relação da velocidade linear $v^0_n$ e a velocidade angular $\omega^0_n$ em função das velocidades 
-das juntas é linear \cite{siciliano}, e pode ser expressa por:
+A equação \eqref{eq:cinematicaDireta_2} é a mesma que \eqref{eq:cinematicaDireta}, onde $q = [q_1,...,q_n]^T$ é o vetor das 
+variáveis das juntas, $R^{0}_n(q)$ a matriz de rotação, $o^{0}_n(q)$ o vetor de translação, $0$ a perspectiva e $1$ o 
+fator de escala. As relações da velocidade linear $v^0_n$ e a velocidade angular $\omega^0_n$ em função das velocidades 
+das juntas é linear \cite{siciliano} e pode ser expressa por:
 
 \begin{equation}
   \begin{gathered}
@@ -171,8 +172,8 @@ das juntas é linear \cite{siciliano}, e pode ser expressa por:
   \end{gathered}
   \label{eq:jacob_velAngular}
 \end{equation}
-onde $J_v$ e $J_\omega$ são matrizes $3 \times n$. É possível ainda, reescrever as equações \ref{eq:jacob_velLinar} e
-\ref{eq:jacob_velAngular} da seguinte forma:
+onde $J_v$ e $J_\omega$ são matrizes $3 \times n$. É possível ainda, reescrever \eqref{eq:jacob_velLinar} e
+\eqref{eq:jacob_velAngular} da seguinte forma:
 \begin{equation}
   \begin{gathered}
     \xi = J\dot{q}
@@ -194,11 +195,11 @@ onde $J_v$ e $J_\omega$ são matrizes $3 \times n$. É possível ainda, reescrev
   \end{gathered}
 \end{equation}
 
-O vetor $\xi$ também pode ser chamado de velocidade do corpo \cite{Spong}, e é importante notar que
-o ele não é a derivada de uma variável de posição. A matriz $J$ é chamado de \textbf{Jacobiano} e trata-se
+O vetor $\xi$ também pode ser chamado de velocidade do corpo \cite{Spong} e é importante notar que
+ele não é a derivada de uma variável de posição. A matriz $J$ é chamado de \textbf{Jacobiano} e trata-se
 de uma matriz $6 \times n$ .
 
-Combinando a parte angular e linear, segundo \citeonline{siciliano}, a metade de cima da matriz do Jacobino é
+Combinando as partes angular e linear, segundo \citeonline{siciliano}, a metade de cima da matriz do Jacobiano é
 dada por:
 
 \begin{equation}
@@ -213,7 +214,7 @@ dada por:
   \end{gathered}
 \end{equation}
 
-A segunda metade, ou a metade baixo da matriz do Jacobino é dada por:
+A segunda metade, ou a metade baixo da matriz do Jacobiano é dada por:
 
 \begin{equation}
   \begin{gathered}
@@ -227,8 +228,8 @@ A segunda metade, ou a metade baixo da matriz do Jacobino é dada por:
   \end{gathered}
 \end{equation}
 
-Juntando ambas as metades da matriz do Jacobiano obtém-se para a junta revoluta a equação \ref{eq:revolJacobiano},
-e para a junta prismática a equação \ref{eq:prismaticJacobiano}:
+Juntando ambas as metades da matriz do Jacobiano obtém-se para a junta revoluta a equação \eqref{eq:revolJacobiano}
+e para a junta prismática \eqref{eq:prismaticJacobiano}:
 
 \begin{equation}
   \begin{gathered}
@@ -254,28 +255,28 @@ Assim sendo, as únicas ferramentas necessárias para calcular o Jacobiano são 
 vetores unitários $z_i$ e as coordenadas das origens $o_1, ..., o_n$. As coordenadas
 para $z_i$ são dadas pelos três primeiros elementos da terceira coluna de $T^0_i$, 
 enquanto as coordenadas de $o_n$ são dadas pelos três primeiros elementos da quarta
-coluna de $T^0_i$ . Dessa forma, apenas a terceira e quarta coluna da matriz de 
+coluna de $T^0_i$ . Dessa forma, apenas a terceira e a quarta colunas da matriz de 
 homogeneidade $T$ são necessárias para obter o Jacobiano. \cite{Spong}
 
 \subsection{Equações de \textit{Euler-Lagrange}}
 \markright{\thesubsection ~~~ Equações de \textit{Euler-Lagrange}}
 \label{EL}
 
-Com o conjunto de coordenadas generalizadas independentes $q_j$, onde $n$ 
+Com o conjunto de coordenadas generalizadas independentes $q_j$, $j = 1, \dotsc, n$, onde $n$ 
 representa os graus de liberdade do manipulador, o Lagrangiano do sistema 
-é definido pela equação \ref{eq:lagrangiano} \cite{Spong}, onde $K$ representa 
+é definido pela relação \eqref{eq:lagrangiano} \cite{Spong}, onde $K$ representa 
 a energia cinética e $P$ a energia potencial do sistema:
 
 \begin{equation}
   \begin{gathered}
-    L = K - V
+    L = K - P
   \end{gathered}
   \label{eq:lagrangiano}
 \end{equation}
 
 Segundo \citeonline{Spong}, em geral, as equações de \textit{Euler-Lagrange}
-aplicadas a um sistema de $n$ coordenadas, podem ser representadas na forma da
-equação \ref{eq:EL}, onde a força generalizada $\tau_i$ representa as forças 
+aplicadas a um sistema de $n$ coordenadas podem ser representadas na forma da
+Equação \eqref{eq:EL}, onde a força generalizada $\tau_i$ representa as forças 
 externas e torques não deriváveis de uma função potencial:
 
 \begin{equation}
@@ -285,18 +286,18 @@ externas e torques não deriváveis de uma função potencial:
   \label{eq:EL}
 \end{equation}
 
-Conforme mostrado acima, as equações de \textit{Euler-Lagrange} podem ser 
+Conforme apresentado acima, as equações de \textit{Euler-Lagrange} podem ser 
 usadas para derivar as equações dinâmicas de maneira direta. É possível computar 
-esses termos para um manipulador robótico de $n$ elos através das fórmulas da 
-energia cinética e energia potencial usando as variáveis da articulação 
+esses termos para um manipulador robótico de $n$ elos por meio das fórmulas da 
+energia cinética e da energia potencial usando as variáveis de articulação obtidas a partir da modelagem 
 de \textit{Denavit-Hartenberg} como coordenadas generalizadas \cite{Spong}.
 
-\subsubsection{Energia cinética para um manipulador de $n$-elos}
+\subsubsection{Energia cinética para um manipulador de $n$ elos}
 
 Segundo \citeonline{Spong} a energia cinética é dada pela soma de dois 
 termos: a energia de translação, obtida concentrando toda a massa do objeto no 
 centro de massa, e a energia cinética rotacional em torno do centro de massa. 
-Assim, ela pode ser dada pela equação \ref{eq:energiaCinetica}:
+Assim, a energia cinética do manipulador é dada por:
 
 \begin{equation}
   \begin{gathered}
@@ -317,8 +318,9 @@ transformação de similaridade:
   \end{gathered}
   \label{eq:ts}
 \end{equation}
-onde $I$ é uma matriz que não depende do movimento do 
-objeto. Cada elemento dela é calculado através de integrais sobre as
+onde $R$ é a matriz de rotação $R^{0}_n(q)$ obtida em \eqref{eq:jacob_velLinar}, e 
+$I$ é uma matriz que não depende do movimento do objeto. 
+Cada elemento dessa matriz é calculado através de integrais sobre as
 regiões do espaço ocupados por todas as partes do corpo rígido:
 
 \begin{equation}
@@ -359,17 +361,16 @@ sendo:
   \label{eq:dq}
 \end{equation}
 
-\subsubsection{Energia potencial para um manipulador de $n$-elos}
+\subsubsection{Energia potencial para um manipulador de $n$ elos}
 
-A energia potencial do manipulador de $n$-elos é dada pela soma da energia
+A energia potencial do manipulador de $n$ elos é dada pela soma da energia
 potencial individual de cada parte envolvida. A única fonte de energia potencial
-do manipulador é a gravidade, e assume-se que a massa total de cada elemento 
+do manipulador é a gravidade, assumindo que a massa total de cada elemento 
 do manipulador está concentrada no seu centro de massa.
 
 Segundo \citeonline{Spong}, a energia potencial é uma função apenas das 
 coordenadas generalizadas e não de suas derivadas, assim, a energia 
-potencial depende da configuração do robô, e independe da velocidade, vide 
-equação \ref{eq:enePotencial}:
+potencial depende da configuração do robô e independe da velocidade:
 
 \begin{equation}
   \begin{gathered}
@@ -377,7 +378,10 @@ equação \ref{eq:enePotencial}:
   \end{gathered}
   \label{eq:enePotencial}
 \end{equation}
-sendo assim, a matriz da energia potencial é dada por:
+onde $g$ é o vetor que dá a direção da gravidade no referencial inercial, e 
+$r_{ci}$ fornece as coordenadas do centro de massa do elo $i$. Sendo assim,
+a matriz da energia potencial é dada por:
+
 \begin{equation}
   \begin{gathered}
     g(q)=\phi_k=\frac{\partial P}{\partial q_k}
@@ -388,7 +392,7 @@ sendo assim, a matriz da energia potencial é dada por:
 \subsubsection{Equações de movimento}
 
 Aplicando o que foi exposto acima, as equações de \textit{Euler-Lagrange} 
-\ref{eq:EL} agora podem ser expressas conforme a equação \ref{eq:EL_Final}:
+\eqref{eq:EL} podem ser expressas segundo:
 
 \begin{equation}
   \begin{gathered}
@@ -396,16 +400,16 @@ Aplicando o que foi exposto acima, as equações de \textit{Euler-Lagrange}
   \end{gathered}
   \label{eq:EL_Final}
 \end{equation}
-ou, na forma matricial:
+ou na forma matricial:
 \begin{equation}
   \begin{gathered}
     D(q)\ddot q + C(q,\dot q)\dot q + g(q) = \tau
   \end{gathered}
   \label{eq:EL_FinalMat}
 \end{equation}
-onde $D(q)$ e $g(q)$ representam as matrizes da energia cinética e potencial 
+onde $D(q)$ e $g(q)$ representam as matrizes da energia cinética e potencial, 
 respectivamente, e $C(q,\dot q)$ representa uma matriz construída com os chamados
-Símbolos de Chistoffel, definidos matematicamente por \citeonline{Spong} através
+Símbolos de Christoffel, definidos matematicamente por \citeonline{Spong} através
 da equação:
 
 \begin{equation}
@@ -415,23 +419,37 @@ da equação:
   \label{eq:christoffel}
 \end{equation}
 
-Como o manipulador RRR possui três juntas revolutas, e cada junta revoluta precisa de uma matriz 
-$3 \times 3$, serão necessários 27 Símbolos de Chistoffel diferentes.
+Como o manipulador RRR possui três juntas revolutas, e cada junta revoluta é descrita por uma matriz 
+$3 \times 3$, serão necessários 27 Símbolos de Christoffel diferentes.
+
+\section{Ensaio em malha aberta para a obtenção do modelo da planta}
+
+``O modelo matemático de um sistema dinâmico é definido como um conjunto de equações que representa a dinâmica 
+do sistema com precisão ou, pelo menos, razoavelmente bem'' \cite{Ogata}. Assim sendo, é possível representar 
+um mesmo sistema através de vários modelos matemáticos. Esses modelos são sempre idealizações do comportamento
+real e são válidos para excitações dentro de certos limites de amplitude e frequência \cite{Castrucci}.
+
+Uma das formas de se obter o modelo de um determinado sistema, dentro de certos limites de amplitude e frequência,
+é através dos seus dados de entrada e saída. Ao aplicar na entrada uma referência conveniente (degrau, impulso, senoide),
+ignorando os fenômenos internos, obtém-se uma determinada saída que ao ser avaliada ao longo do tempo, ficam aparentes
+os parâmetros da equação diferencial procurada \cite{Castrucci}.
+
+\section{Projeto de sistemas de controle pelo método do lugar das raízes}
 
 \section{Configuração do ambiente de simulação}
 
 A partir dos modelos cinemáticos e dinâmicos obtidos, um ambiente de simulação é 
 concebido na plataforma \textit{Simulink/Matlab} (Figura \ref{fig:plantaSimulada}). Por meio desse 
-ambiente, diferentes técnicas de controle são sintetizadas e validadas para o manipulador estudado. 
-Posteriormente, é feita a implementação em dispositivo físico (microcontrolador) 
-dos controladores sintetizados, sendo que a validação é realizada no ambiente de simulação 
-desenvolvido por meio da técnica \textit{Hardware-in-the-loop} (HIL), vide Figura 
+ambiente, diferentes técnicas de controle podem ser sintetizadas e validadas para o manipulador estudado. 
+Posteriormente, é feita a implementação da estratégia de controle sintetizada em dispositivo físico (microcontrolador),
+sendo que a validação é realizada no ambiente de simulação 
+desenvolvido por meio da técnica (HIL), vide Figura 
 \ref{fig:solucaoModelo}. Finalmente, a última etapa corresponde à implementação das 
 estratégias de controle no manipulador robótico estudado (planta física). Como ilustrado 
 na Figura \ref{fig:solucaoPlanta}, nessa etapa o microntrolador é conectado ao manipulador de 
 forma a controlá-lo, fazendo-o seguir uma trajetória pré-especificada. Assim, verifica-se 
 se, de fato, a resposta do sistema físico em malha fechada corresponde à resposta obtida 
-por meio de simulação.
+por meio de simulação utilizando a técnica HIL..
 
 \begin{figure}[h!]
   

@@ -20,11 +20,12 @@
 \contentsline {subsection}{\numberline {3.1.1}Conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg}}{13}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Cinem\IeC {\'a}tica Diferencial e o Jacobiano}{14}{subsubsection.3.1.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}{16}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Energia cin\IeC {\'e}tica para um manipulador de $n$-elos}{17}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Energia potencial para um manipulador de $n$-elos}{18}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Energia cin\IeC {\'e}tica para um manipulador de $n$ elos}{17}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Energia potencial para um manipulador de $n$ elos}{18}{subsubsection.3.1.2.2}
 \contentsline {subsubsection}{\numberline {3.1.2.3}Equa\IeC {\c c}\IeC {\~o}es de movimento}{18}{subsubsection.3.1.2.3}
-\contentsline {section}{\numberline {3.2}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Resumo do Cap\IeC {\'\i }tulo}{19}{section.3.3}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{20}{section.3.3}
+\contentsline {section}{\numberline {3.2}Ensaio em malha aberta para a obten\IeC {\c c}\IeC {\~a}o do modelo da planta}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{19}{section.3.3}
+\contentsline {section}{\numberline {3.4}Resumo do Cap\IeC {\'\i }tulo}{19}{section.3.4}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{21}{section.3.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{20}{section*.7}
+\contentsline {chapter}{Refer\^encias}{21}{section*.7}
