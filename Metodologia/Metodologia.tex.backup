@@ -424,17 +424,74 @@ $3 \times 3$, serão necessários 27 Símbolos de Christoffel diferentes.
 
 \section{Ensaio em malha aberta para a obtenção do modelo da planta}
 
-``O modelo matemático de um sistema dinâmico é definido como um conjunto de equações que representa a dinâmica 
-do sistema com precisão ou, pelo menos, razoavelmente bem'' \cite{Ogata}. Assim sendo, é possível representar 
-um mesmo sistema através de vários modelos matemáticos. Esses modelos são sempre idealizações do comportamento
+O modelo matemático de um sistema é definido como um conjunto de equações que representa a sua dinâmica \cite{Ogata}. 
+Esses modelos são sempre idealizações do comportamento
 real e são válidos para excitações dentro de certos limites de amplitude e frequência \cite{Castrucci}.
 
-Uma das formas de se obter o modelo de um determinado sistema, dentro de certos limites de amplitude e frequência,
-é através dos seus dados de entrada e saída. Ao aplicar na entrada uma referência conveniente (degrau, impulso, senoide),
-ignorando os fenômenos internos, obtém-se uma determinada saída que ao ser avaliada ao longo do tempo, ficam aparentes
-os parâmetros da equação diferencial procurada \cite{Castrucci}.
+Uma das formas de se obter o modelo de um determinado sistema $G(s)$, dentro de certos limites de amplitude e frequência,
+é através dos seus dados de entrada $U(s)$ e saída $Y(s)$, vide Figura \ref{fig:diagEnsaioMA}. Ao aplicar na entrada uma 
+referência conveniente (degrau, impulso, senoide), ignorando os fenômenos internos, obtém-se uma determinada saída que ao 
+ser avaliada ao longo do tempo, ficam aparentes os parâmetros da equação diferencial procurada \cite{Castrucci}.
 
+\begin{figure}[ht]
+  \centering
+  \caption{Diagrama do ensaio em malha aberta}
+  \includegraphics[width = 0.4\columnwidth]{Imagens/diagEnsaioMA.png}
+  \fonte{Do autor}
+  \label{fig:diagEnsaioMA} 
+\end{figure}
 
+A resposta temporal de um sistema de controle é composto da resposta transitória, aquela que compreende o tempo entre o 
+estado inicial e o final, e a resposta estacionária que corresponde ao comportamento do sinal de saída quando $t$
+tende ao infinito \cite{Ogata}. Dependendo do comportamento das respostas do sistema, ele pode ser classificado
+como de primeira ordem \eqref{eq:sistemaPrimeiraOrdem}, de segunda ordem \eqref{eq:sistemaSegundaOrdem} ou como sistema 
+de ordem superior.
+
+\begin{equation}
+  \begin{gathered}
+    \frac{Y(s)}{U(s)} = \frac{1}{\tau s + 1}
+  \end{gathered}
+  \label{eq:sistemaPrimeiraOrdem}
+\end{equation}
+
+\begin{equation}
+  \begin{gathered}
+    \frac{Y(s)}{U(s)} = \frac{\omega_n^2}{s^2 + 2\xi \omega_n s + \omega_n^2}
+  \end{gathered}
+  \label{eq:sistemaSegundaOrdem}
+\end{equation}
+onde:
+
+\begin{itemize}
+ \item $\tau$: constante de tempo do sistema ($\tau > 0$);
+ \item $\omega_n$: frequência natural não amortecida ($\omega_n > 0$);
+ \item $\xi$: coeficiente de amortecimento.
+\end{itemize}
+
+A constante de tempo do sistema de primeira ordem é definida como o instante em que a resposta 
+do sistema atingiu 63,2\% de sua variação final \cite{Castrucci}. Por outro lado, para os sistemas de
+segunda ordem, o que define o $\xi$ é o sobressinal máximo do sistema, e o $\omega_n$ pode ser definido
+através das constantes de tempo do sistema de segunda ordem, como por exemplo o tempo de 
+acomodação. O tempo de acomodação para uma faixa de $\pm$ 2\% em torno do valor final é dado 
+por \eqref{eq:tempoAcomodacao}:
+
+\begin{equation}
+  \begin{gathered}
+    t_s \cong \frac{4}{\xi \omega_n}
+  \end{gathered}
+  \label{eq:tempoAcomodacao}
+\end{equation}
+
+\section{Projeto de sistemas de controle pelo método do lugar das raízes}
+
+O lugar das raízes é um método simples que possibilita a representação gráfica das raízes da equação
+característica para todos os valores do ganho, ou qualquer outro parâmetro da função de transferência
+de malha aberta \cite{Ogata}. O projeto de controle pelo método do lugar das raízes é realizado através 
+da adição de zeros e polos à função de transferência de malha aberta do sistema, forçando o lugar das raízes a passar 
+pelos polos de malha fechada desejados.
+
+No presente projeto, foram levantados três modelos para planta, um para cada uma das juntas (base, ombro, cotovelo).
+Para cada uma delas foi projetado um controlador independente, 
 
 \section{Configuração do ambiente de simulação}
 
@@ -449,7 +506,7 @@ estratégias de controle no manipulador robótico estudado (planta física). Com
 na Figura \ref{fig:solucaoPlanta}, nessa etapa o microntrolador é conectado ao manipulador de 
 forma a controlá-lo, fazendo-o seguir uma trajetória pré-especificada. Assim, verifica-se 
 se, de fato, a resposta do sistema físico em malha fechada corresponde à resposta obtida 
-por meio de simulação utilizando a técnica HIL..
+por meio de simulação utilizando a técnica HIL.
 
 \begin{figure}[h!]
   

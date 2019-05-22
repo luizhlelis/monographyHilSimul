@@ -3,7 +3,8 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de blocos do sistema em malha fechada\relax }}{5}{figure.caption.2}
 \contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de blocos do sistema em malha fechada - \emph {Hardware in the Loop}\relax }}{5}{figure.caption.3}
 \contentsline {figure}{\numberline {3}{\ignorespaces Planta utilizada - manipulador de tr\IeC {\^e}s juntas revolutas\relax }}{9}{figure.caption.4}
-\contentsline {figure}{\numberline {4}{\ignorespaces Diagramas das etapas da t\IeC {\'e}cnica \textit {Hardware-in-the-loop}\relax }}{20}{figure.caption.5}
-\contentsline {subfigure}{\numberline {4a}{\ignorespaces Planta e controlador simulados\relax }}{20}{figure.caption.5}
-\contentsline {subfigure}{\numberline {4b}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para o modelo simulado da planta\relax }}{20}{figure.caption.5}
-\contentsline {subfigure}{\numberline {4c}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para a planta f\IeC {\'\i }sica\relax }}{20}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama do ensaio em malha aberta\relax }}{19}{figure.caption.5}
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagramas das etapas da t\IeC {\'e}cnica \textit {Hardware-in-the-loop}\relax }}{21}{figure.caption.6}
+\contentsline {subfigure}{\numberline {5a}{\ignorespaces Planta e controlador simulados\relax }}{21}{figure.caption.6}
+\contentsline {subfigure}{\numberline {5b}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para o modelo simulado da planta\relax }}{21}{figure.caption.6}
+\contentsline {subfigure}{\numberline {5c}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para a planta f\IeC {\'\i }sica\relax }}{21}{figure.caption.6}

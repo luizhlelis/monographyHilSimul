@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  21 MAY 2019 09:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  22 MAY 2019 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,14 +1184,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<Imagens/blocosMF.png, id=106, 790.955pt x 223.83624pt>
+<Imagens/blocosMF.png, id=110, 790.955pt x 223.83624pt>
 File: Imagens/blocosMF.png Graphic file (type png)
 
 <use Imagens/blocosMF.png>
 Package pdftex.def Info: Imagens/blocosMF.png used on input line 57.
 (pdftex.def)             Requested size: 273.00278pt x 77.25774pt.
 
-<Imagens/blocoHard.png, id=108, 790.955pt x 374.39874pt>
+<Imagens/blocoHard.png, id=112, 790.955pt x 374.39874pt>
 File: Imagens/blocoHard.png Graphic file (type png)
 
 <use Imagens/blocoHard.png>
@@ -1206,7 +1206,7 @@ Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
 
 
 ]
-<Imagens/manipulador.png, id=173, 597.23125pt x 396.48125pt>
+<Imagens/manipulador.png, id=177, 597.23125pt x 396.48125pt>
 File: Imagens/manipulador.png Graphic file (type png)
 
 <use Imagens/manipulador.png>
@@ -1252,45 +1252,52 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 364.
 
-[17] [18]
+[17] [18] <Imagens/diagEnsaioMA.png, id=365, 251.94125pt x 72.27pt>
+File: Imagens/diagEnsaioMA.png Graphic file (type png)
+
+<use Imagens/diagEnsaioMA.png>
+Package pdftex.def Info: Imagens/diagEnsaioMA.png used on input line 439.
+(pdftex.def)             Requested size: 181.99722pt x 52.20638pt.
+ [19 <./Imagens/diagEnsaioMA.png>]
 Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 455.
- <Imagens/plantaSimulada.png, id=361, 1668.2325pt x 1397.22pt>
+put line 518.
+
+<Imagens/plantaSimulada.png, id=386, 1668.2325pt x 1397.22pt>
 File: Imagens/plantaSimulada.png Graphic file (type png)
 
 <use Imagens/plantaSimulada.png>
-Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 456.
+Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 519.
 (pdftex.def)             Requested size: 136.50139pt x 114.31694pt.
 
-<Imagens/solucaoModelo.png, id=362, 231.86626pt x 247.92625pt>
+<Imagens/solucaoModelo.png, id=387, 231.86626pt x 247.92625pt>
 File: Imagens/solucaoModelo.png Graphic file (type png)
 
 <use Imagens/solucaoModelo.png>
-Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 463.
+Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 526.
 (pdftex.def)             Requested size: 113.75pt x 121.62868pt.
 
-<Imagens/solucaoPlanta.png, id=363, 673.51625pt x 677.53125pt>
+<Imagens/solucaoPlanta.png, id=388, 673.51625pt x 677.53125pt>
 File: Imagens/solucaoPlanta.png Graphic file (type png)
 
 <use Imagens/solucaoPlanta.png>
-Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 471.
+Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 534.
 (pdftex.def)             Requested size: 181.99722pt x 183.08061pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagen
+[20] [21 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagen
 s/solucaoPlanta.png>]) (./Monografia.bbl (./Monografia.brf)
 \tf@brf=\write5
 \openout5 = `Monografia.brf'.
 
 
 bibitemlist
-[21
+[22
 
 
 
-]) [22]
+]) [23]
 \tf@lof=\write6
 \openout6 = `Monografia.lof'.
 
@@ -1304,7 +1311,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `Monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 163ACDE920B129B02197017CB7DDAD14;2456.
+(rerunfilecheck)             Checksum: CCD6C6E53498CC2BB0111FC11BA4B6C1;2641.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1312,11 +1319,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 14954 strings out of 493304
- 224009 string characters out of 6139871
- 389491 words of memory out of 5000000
- 17873 multiletter control sequences out of 15000+600000
- 109012 words of font info for 153 fonts, out of 8000000 for 9000
+ 14974 strings out of 493304
+ 224354 string characters out of 6139871
+ 390849 words of memory out of 5000000
+ 17882 multiletter control sequences out of 15000+600000
+ 109232 words of font info for 155 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  45i,17n,41p,315b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1336,10 +1343,10 @@ ss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf
 so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb>
-Output written on Monografia.pdf (23 pages, 528656 bytes).
+Output written on Monografia.pdf (24 pages, 537111 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 540 compressed objects within 6 object streams
- 110 named destinations out of 1000 (max. 500000)
- 35559 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 35572 words of extra memory for PDF output out of 35830 (max. 10000000)
 

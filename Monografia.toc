@@ -24,8 +24,9 @@
 \contentsline {subsubsection}{\numberline {3.1.2.2}Energia potencial para um manipulador de $n$ elos}{18}{subsubsection.3.1.2.2}
 \contentsline {subsubsection}{\numberline {3.1.2.3}Equa\IeC {\c c}\IeC {\~o}es de movimento}{18}{subsubsection.3.1.2.3}
 \contentsline {section}{\numberline {3.2}Ensaio em malha aberta para a obten\IeC {\c c}\IeC {\~a}o do modelo da planta}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{19}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resumo do Cap\IeC {\'\i }tulo}{19}{section.3.4}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{21}{section.3.4}
+\contentsline {section}{\numberline {3.3}Projeto de sistemas de controle pelo m\IeC {\'e}todo do lugar das ra\IeC {\'\i }zes}{20}{section.3.3}
+\contentsline {section}{\numberline {3.4}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{20}{section.3.4}
+\contentsline {section}{\numberline {3.5}Resumo do Cap\IeC {\'\i }tulo}{20}{section.3.5}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{22}{section.3.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{21}{section*.7}
+\contentsline {chapter}{Refer\^encias}{22}{section*.8}
