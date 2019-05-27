@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  22 MAY 2019 01:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  27 MAY 2019 01:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,10 +992,55 @@ LaTeX Info: Redefining \newblock on input line 675.
 LaTeX Info: Redefining \cite on input line 702.
 \ABCItoken=\toks38
 )
-Package color Info: Redefining color blue on input line 73.
-Package hyperref Info: Option `colorlinks' set `true' on input line 90.
-\c@quadro=\count184
-\c@loqdepth=\count185
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count184
+\lst@gtempboxa=\box32
+\lst@token=\toks39
+\lst@length=\count185
+\lst@currlwidth=\dimen174
+\lst@column=\count186
+\lst@pos=\count187
+\lst@lostspace=\dimen175
+\lst@width=\dimen176
+\lst@newlines=\count188
+\lst@lineno=\count189
+\lst@maxwidth=\dimen177
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count190
+\lst@skipnumbers=\count191
+\lst@framebox=\box33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
+\c@quadro=\count192
+\c@loqdepth=\count193
 \cftbeforequadroskip=\skip206
 \cftquadroindent=\skip207
 \cftquadronumwidth=\skip208
@@ -1005,29 +1050,33 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 90.
 
 Writing index file Monografia.idx 
 (./Monografia.aux (./Introducao/Introducao.aux) (./RevisaoBib/Revisao.aux)
-(./Metodologia/Metodologia.aux))
+(./Metodologia/Metodologia.aux) (./Resultados/Resultados.aux
+
+LaTeX Warning: Label `fig:ensaioMalhaAberta' multiply defined.
+
+) (./Anexos/Anexo.aux))
 \openout1 = `Monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 129.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 154.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 129.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring ON on input line 154.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1035,29 +1084,29 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count186
+\c@section@level=\count194
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 129.
-LaTeX Info: Redefining \ref on input line 129.
-LaTeX Info: Redefining \pageref on input line 129.
-LaTeX Info: Redefining \nameref on input line 129.
-\myptabbox=\box33
+LaTeX Info: Redefining \nameref on input line 154.
+LaTeX Info: Redefining \ref on input line 154.
+LaTeX Info: Redefining \pageref on input line 154.
+LaTeX Info: Redefining \nameref on input line 154.
+\myptabbox=\box35
 \myptabboxwidth=\skip209
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count187
-\scratchdimen=\dimen174
-\scratchbox=\box34
-\nofMPsegments=\count188
-\nofMParguments=\count189
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count190
-\MPscratchDim=\dimen175
-\MPnumerator=\count191
-\makeMPintoPDFobject=\count192
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count195
+\scratchdimen=\dimen178
+\scratchbox=\box36
+\nofMPsegments=\count196
+\nofMParguments=\count197
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count198
+\MPscratchDim=\dimen179
+\MPnumerator=\count199
+\makeMPintoPDFobject=\count200
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1073,7 +1122,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 129.
+LaTeX Info: Redefining \microtypecontext on input line 154.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1089,8 +1138,10 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 146.
+\c@lstlisting=\count201
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 171.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
@@ -1101,44 +1152,44 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <20.74> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 146.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 171.
 
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 150.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 175.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 150.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 175.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 150.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 175.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 150
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 175
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 150
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 175
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 150.
+(Font)              <12> on input line 175.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 150.
+(Font)              <8> on input line 175.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 150.
-LaTeX Font Info:    Try loading font information for U+msa on input line 150.
+(Font)              <6> on input line 175.
+LaTeX Font Info:    Try loading font information for U+msa on input line 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1146,7 +1197,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 150.
+LaTeX Font Info:    Try loading font information for U+msb on input line 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1157,7 +1208,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 
+l.175 
        [1
 
 
@@ -1173,46 +1224,52 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 42.
+
+Overfull \hbox (0.4737pt too wide) in paragraph at lines 46--46
+ [][] [][][]\T1/lmss/bx/n/12 OBTENÇÃO DO MO-DELO ATRA-VÉS DA CON-VEN- 
+ []
+
 ) [3
 
-]
+] [4]
 \openout2 = `Introducao/Introducao.aux'.
 
-
-(./Introducao/Introducao.tex [4
+ (./Introducao/Introducao.tex [5
 
 
 
 ]
-<Imagens/blocosMF.png, id=110, 790.955pt x 223.83624pt>
+<Imagens/blocosMF.png, id=134, 790.955pt x 223.83624pt>
 File: Imagens/blocosMF.png Graphic file (type png)
 
 <use Imagens/blocosMF.png>
 Package pdftex.def Info: Imagens/blocosMF.png used on input line 57.
 (pdftex.def)             Requested size: 273.00278pt x 77.25774pt.
 
-<Imagens/blocoHard.png, id=112, 790.955pt x 374.39874pt>
+<Imagens/blocoHard.png, id=136, 790.955pt x 374.39874pt>
 File: Imagens/blocoHard.png Graphic file (type png)
 
 <use Imagens/blocoHard.png>
 Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
 (pdftex.def)             Requested size: 318.49861pt x 150.7623pt.
- [5 <./Imagens/blocosMF.png> <./Imagens/blocoHard.png>] [6] [7])
+ [6 <./Imagens/blocosMF.png> <./Imagens/blocoHard.png>] [7] [8])
 \openout2 = `RevisaoBib/Revisao.aux'.
 
- (./RevisaoBib/Revisao.tex [8
+ (./RevisaoBib/Revisao.tex [9
 
 
 
 
 ]
-<Imagens/manipulador.png, id=177, 597.23125pt x 396.48125pt>
+<Imagens/manipulador.png, id=201, 597.23125pt x 396.48125pt>
 File: Imagens/manipulador.png Graphic file (type png)
 
 <use Imagens/manipulador.png>
 Package pdftex.def Info: Imagens/manipulador.png used on input line 56.
 (pdftex.def)             Requested size: 227.5pt x 151.02742pt.
- [9 <./Imagens/manipulador.png>]
+ [10 <./Imagens/manipulador.png>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 99.
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
@@ -1222,11 +1279,11 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 99.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 108.
- [10] [11])
+ [11] [12])
 \openout2 = `Metodologia/Metodologia.aux'.
 
 
-(./Metodologia/Metodologia.tex [12
+(./Metodologia/Metodologia.tex [13
 
 
 
@@ -1234,98 +1291,519 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 55.
- [13] [14] [15]
+ [14] [15] [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 295.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 295.
-
-[16]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 298.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 298.
 
-[17] [18] <Imagens/diagEnsaioMA.png, id=365, 251.94125pt x 72.27pt>
+[17]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 367.
+
+[18] <Imagens/diagEnsaioMA.png, id=379, 251.94125pt x 72.27pt>
 File: Imagens/diagEnsaioMA.png Graphic file (type png)
 
 <use Imagens/diagEnsaioMA.png>
-Package pdftex.def Info: Imagens/diagEnsaioMA.png used on input line 439.
+Package pdftex.def Info: Imagens/diagEnsaioMA.png used on input line 442.
 (pdftex.def)             Requested size: 181.99722pt x 52.20638pt.
- [19 <./Imagens/diagEnsaioMA.png>]
+ [19] [20 <./Imagens/diagEnsaioMA.png>]
 Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 518.
+put line 521.
 
-<Imagens/plantaSimulada.png, id=386, 1668.2325pt x 1397.22pt>
+<Imagens/plantaSimulada.png, id=411, 1668.2325pt x 1397.22pt>
 File: Imagens/plantaSimulada.png Graphic file (type png)
 
 <use Imagens/plantaSimulada.png>
-Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 519.
+Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 522.
 (pdftex.def)             Requested size: 136.50139pt x 114.31694pt.
 
-<Imagens/solucaoModelo.png, id=387, 231.86626pt x 247.92625pt>
+<Imagens/solucaoModelo.png, id=412, 231.86626pt x 247.92625pt>
 File: Imagens/solucaoModelo.png Graphic file (type png)
 
 <use Imagens/solucaoModelo.png>
-Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 526.
+Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 529.
 (pdftex.def)             Requested size: 113.75pt x 121.62868pt.
 
-<Imagens/solucaoPlanta.png, id=388, 673.51625pt x 677.53125pt>
+<Imagens/solucaoPlanta.png, id=413, 673.51625pt x 677.53125pt>
 File: Imagens/solucaoPlanta.png Graphic file (type png)
 
 <use Imagens/solucaoPlanta.png>
-Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 534.
+Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 537.
 (pdftex.def)             Requested size: 181.99722pt x 183.08061pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20] [21 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagen
-s/solucaoPlanta.png>]) (./Monografia.bbl (./Monografia.brf)
+[21] [22 <./Imagens/plantaSimulada.png> <./Imagens/solucaoModelo.png> <./Imagen
+s/solucaoPlanta.png>])
+\openout2 = `Resultados/Resultados.aux'.
+
+ (./Resultados/Resultados.tex
+Package epstopdf Info: Source file: <Imagens/base_ma.eps>
+(epstopdf)                    date: 2019-05-26 16:20:17
+(epstopdf)                    size: 19690 bytes
+(epstopdf)             Output file: <Imagens/base_ma-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-26 16:26:01
+(epstopdf)                    size: 9021 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/base_ma-eps-conver
+ted-to.pdf Imagens/base_ma.eps>
+(epstopdf)             \includegraphics on input line 44.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/base_ma-eps-converted-to.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Imagens/base_ma-eps-converted-to.pdf, id=431, 421.575pt x 316.18124pt>
+File: Imagens/base_ma-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Imagens/base_ma-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/base_ma-eps-converted-to.pdf used on input lin
+e 44.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/shoulder_ma.eps>
+(epstopdf)                    date: 2019-05-26 16:22:13
+(epstopdf)                    size: 20624 bytes
+(epstopdf)             Output file: <Imagens/shoulder_ma-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-26 16:26:14
+(epstopdf)                    size: 9092 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_ma-eps-co
+nverted-to.pdf Imagens/shoulder_ma.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/shoulder_ma-eps-converted-to.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Imagens/shoulder_ma-eps-converted-to.pdf, id=432, 421.575pt x 316.18124pt>
+File: Imagens/shoulder_ma-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Imagens/shoulder_ma-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/shoulder_ma-eps-converted-to.pdf used on input
+ line 51.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/forearm_ma.eps>
+(epstopdf)                    date: 2019-05-26 16:23:45
+(epstopdf)                    size: 20677 bytes
+(epstopdf)             Output file: <Imagens/forearm_ma-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-26 16:26:06
+(epstopdf)                    size: 9201 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_ma-eps-con
+verted-to.pdf Imagens/forearm_ma.eps>
+(epstopdf)             \includegraphics on input line 59.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/forearm_ma-eps-converted-to.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Imagens/forearm_ma-eps-converted-to.pdf, id=433, 421.575pt x 316.18124pt>
+File: Imagens/forearm_ma-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Imagens/forearm_ma-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/forearm_ma-eps-converted-to.pdf used on input 
+line 59.
+(pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23
+
+
+
+
+] [24 <./Imagens/base_ma-eps-converted-to.pdf> <./Imagens/shoulder_ma-eps-conve
+rted-to.pdf> <./Imagens/forearm_ma-eps-converted-to.pdf>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 86.
+See the caption package documentation for explanation.
+
+Package epstopdf Info: Source file: <Imagens/base_ma_simul.eps>
+(epstopdf)                    date: 2019-05-27 01:35:26
+(epstopdf)                    size: 21953 bytes
+(epstopdf)             Output file: <Imagens/base_ma_simul-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-05-27 01:39:35
+(epstopdf)                    size: 9543 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/base_ma_simul-eps-
+converted-to.pdf Imagens/base_ma_simul.eps>
+(epstopdf)             \includegraphics on input line 137.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/base_ma_simul-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Imagens/base_ma_simul-eps-converted-to.pdf, id=492, 421.575pt x 316.18124pt>
+File: Imagens/base_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Imagens/base_ma_simul-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/base_ma_simul-eps-converted-to.pdf used on inp
+ut line 137.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/shoulder_ma_simul.eps>
+(epstopdf)                    date: 2019-05-27 01:40:58
+(epstopdf)                    size: 22814 bytes
+(epstopdf)             Output file: <Imagens/shoulder_ma_simul-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2019-05-27 01:42:24
+(epstopdf)                    size: 9707 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_ma_simul-
+eps-converted-to.pdf Imagens/shoulder_ma_simul.eps>
+(epstopdf)             \includegraphics on input line 144.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/shoulder_ma_simul-eps-converted-to.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Imagens/shoulder_ma_simul-eps-converted-to.pdf, id=493, 421.575pt x 316.18124p
+t>
+File: Imagens/shoulder_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
+ <use Imagens/shoulder_ma_simul-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/shoulder_ma_simul-eps-converted-to.pdf used on
+ input line 144.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/forearm_ma_simul.eps>
+(epstopdf)                    date: 2019-05-27 01:41:54
+(epstopdf)                    size: 22939 bytes
+(epstopdf)             Output file: <Imagens/forearm_ma_simul-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-05-27 01:42:25
+(epstopdf)                    size: 9709 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_ma_simul-e
+ps-converted-to.pdf Imagens/forearm_ma_simul.eps>
+(epstopdf)             \includegraphics on input line 152.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/forearm_ma_simul-eps-converted-to.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Imagens/forearm_ma_simul-eps-converted-to.pdf, id=494, 421.575pt x 316.18124pt
+>
+File: Imagens/forearm_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
+ <use Imagens/forearm_ma_simul-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/forearm_ma_simul-eps-converted-to.pdf used on 
+input line 152.
+(pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25] [26 <./Imagens/base_ma_simul-eps-converted-to.pdf> <./Imagens/shoulder_ma_
+simul-eps-converted-to.pdf> <./Imagens/forearm_ma_simul-eps-converted-to.pdf>])
+(./Monografia.bbl (./Monografia.brf)
 \tf@brf=\write5
 \openout5 = `Monografia.brf'.
 
 
 bibitemlist
-[22
+[27
 
 
 
-]) [23]
+]) [28]
+\openout2 = `Anexos/Anexo.aux'.
+
+ (./Anexos/Anexo.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 3.
+
+[29
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 8.
+
+Overfull \hbox (41.69629pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][] 
+ []
+
+[30
+
+]
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Class memoir Warning: The material used in the headers is too large
+(28.99998pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 84.
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[31]
+Overfull \hbox (41.69629pt too wide) in paragraph at lines 86--88
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][] 
+ []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[32]
+Overfull \hbox (34.79773pt too wide) in paragraph at lines 132--134
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 134--136
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 145--146
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.20349pt too wide) in paragraph at lines 148--149
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ 
+ []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[33]
+Overfull \hbox (27.89917pt too wide) in paragraph at lines 185--187
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 192--193
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 198--199
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 204--205
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[34]
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 210--211
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 216--217
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.89917pt too wide) in paragraph at lines 222--223
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[35]
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[36]
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 301--302
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 305--306
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 306--307
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.69629pt too wide) in paragraph at lines 307--308
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.79773pt too wide) in paragraph at lines 308--310
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 316--317
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.20349pt too wide) in paragraph at lines 318--319
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 320--321
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.89917pt too wide) in paragraph at lines 325--326
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 328--330
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[37]
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 342--343
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 344--345
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 345--346
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.89917pt too wide) in paragraph at lines 358--359
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 361--363
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 371--372
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 373--374
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.10205pt too wide) in paragraph at lines 375--376
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.20349pt too wide) in paragraph at lines 377--378
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[38]
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[39]
+Overfull \hbox (21.00061pt too wide) in paragraph at lines 452--454
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[40]
+
+Class memoir Warning: The material used in the headers is too large
+(28.99998pt) for the given head height (14.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 251.
+
 \tf@lof=\write6
 \openout6 = `Monografia.lof'.
 
 \tf@toc=\write7
 \openout7 = `Monografia.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
- (./Monografia.aux (./Introducao/Introducao.aux)
-(./RevisaoBib/Revisao.aux) (./Metodologia/Metodologia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+(./Monografia.aux (./Introducao/Introducao.aux) (./RevisaoBib/Revisao.aux)
+(./Metodologia/Metodologia.aux) (./Resultados/Resultados.aux)
+(./Anexos/Anexo.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
 Package rerunfilecheck Info: File `Monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: CCD6C6E53498CC2BB0111FC11BA4B6C1;2641.
+(rerunfilecheck)             Checksum: D46D9541B86FE8611D153A026AD64FEE;2792.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
  ) 
 Here is how much of TeX's memory you used:
- 14974 strings out of 493304
- 224354 string characters out of 6139871
- 390849 words of memory out of 5000000
- 17882 multiletter control sequences out of 15000+600000
- 109232 words of font info for 155 fonts, out of 8000000 for 9000
+ 18438 strings out of 493304
+ 269645 string characters out of 6139871
+ 494681 words of memory out of 5000000
+ 20787 multiletter control sequences out of 15000+600000
+ 117356 words of font info for 170 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,17n,41p,315b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,41p,494b,2661s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -1342,11 +1820,12 @@ ss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
-pfb>
-Output written on Monografia.pdf (24 pages, 537111 bytes).
+pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmtt10.pfb>
+Output written on Monografia.pdf (41 pages, 677526 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 116 named destinations out of 1000 (max. 500000)
- 35572 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1402 PDF objects out of 1440 (max. 8388607)
+ 1292 compressed objects within 13 object streams
+ 599 named destinations out of 1000 (max. 500000)
+ 39234 words of extra memory for PDF output out of 42996 (max. 10000000)
 

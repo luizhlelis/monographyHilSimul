@@ -72,10 +72,9 @@ a equação cinemática direta para o manipulador pode ser calculada a partir de
 A relação \eqref{eq:cinematicaDireta} se refere à transformação de coordenadas descrevendo 
 a posição e a orientação do eixo $n$ em relação à base (eixo $0$) \cite{siciliano}. Segundo
 \citeonline{Spong}, na convenção DH, cada transformação homogênea $A_i$ representada em
-\eqref{eq:cinematicaDireta} equivale ao produto de quatro transformações básicas, apresentado em 
-\eqref{eq:matTransHomog}:
+\eqref{eq:cinematicaDireta} equivale ao produto de quatro transformações básicas, apresentado a seguir:
 
-\begin{equation}
+\begin{equation*}
   \begin{gathered}
     A_i = Rot_{z,\theta_i}Trans_{z,\theta_i}Trans_{x,\alpha_i}Rot_{x,\alpha_i} \\[0.5cm]
     =\begin{bmatrix}
@@ -101,7 +100,11 @@ a posição e a orientação do eixo $n$ em relação à base (eixo $0$) \cite{s
      0 & \cos(\alpha_i) & -\sin(\alpha_i) & 0 \\
      0 & \sin(\alpha_i) & \cos(\alpha_i) & d_i \\
      0 & 0 & 0 & 1 \\
-    \end{bmatrix} \\[0.5cm]
+    \end{bmatrix} \\
+  \end{gathered}
+\end{equation*}
+\begin{equation}
+  \begin{gathered}
     =
     \begin{bmatrix}
      \cos(\theta_i) & -\sin(\theta_i)\cos(\alpha_i) & \sin(\theta_i)\sin(\alpha_i) & a_i\cos(\theta_i) \\
@@ -429,7 +432,7 @@ Esses modelos são sempre idealizações do comportamento
 real e são válidos para excitações dentro de certos limites de amplitude e frequência \cite{Castrucci}.
 
 Uma das formas de se obter o modelo de um determinado sistema $G(s)$, dentro de certos limites de amplitude e frequência,
-é através dos seus dados de entrada $U(s)$ e saída $Y(s)$, vide Figura \ref{fig:diagEnsaioMA}. Ao aplicar na entrada uma 
+é através dos seus dados de entrada $U(s)$ e saída $Y(s)$, vide \autoref{fig:diagEnsaioMA}. Ao aplicar na entrada uma 
 referência conveniente (degrau, impulso, senoide), ignorando os fenômenos internos, obtém-se uma determinada saída que ao 
 ser avaliada ao longo do tempo, ficam aparentes os parâmetros da equação diferencial procurada \cite{Castrucci}.
 
@@ -497,14 +500,14 @@ foram realizado através do método do lugar das raízes, com o auxílio da ferr
 \section{Configuração do ambiente de simulação}
 
 A partir dos modelos cinemáticos e dinâmicos obtidos, um ambiente de simulação é 
-concebido na plataforma \textit{Simulink/Matlab} (Figura \ref{fig:plantaSimulada}). Por meio desse 
+concebido na plataforma \textit{Simulink/Matlab} (\autoref{fig:plantaSimulada}). Por meio desse 
 ambiente, diferentes técnicas de controle podem ser sintetizadas e validadas para o manipulador estudado. 
 Posteriormente, é feita a implementação da estratégia de controle sintetizada em dispositivo físico (microcontrolador),
 sendo que a validação é realizada no ambiente de simulação 
-desenvolvido por meio da técnica (HIL), vide Figura 
-\ref{fig:solucaoModelo}. Finalmente, a última etapa corresponde à implementação das 
+desenvolvido por meio da técnica (HIL), vide 
+\autoref{fig:solucaoModelo}. Finalmente, a última etapa corresponde à implementação das 
 estratégias de controle no manipulador robótico estudado (planta física). Como ilustrado 
-na Figura \ref{fig:solucaoPlanta}, nessa etapa o microntrolador é conectado ao manipulador de 
+na \autoref{fig:solucaoPlanta}, nessa etapa o microntrolador é conectado ao manipulador de 
 forma a controlá-lo, fazendo-o seguir uma trajetória pré-especificada. Assim, verifica-se 
 se, de fato, a resposta do sistema físico em malha fechada corresponde à resposta obtida 
 por meio de simulação utilizando a técnica HIL.

@@ -72,6 +72,12 @@ Dispon{\'\i}vel em:
 p. 7 pp.--, June 2006.
 ISSN 0743-1619.}
 
+\bibitem[Lelis 2019]{lelis_model}
+\abntrefinfo{Lelis}{LELIS}{2019}
+{LELIS, L. H.~S. \emph{Obtendo o modelo através do ensaio em malha aberta}.
+  [S.l.]: GitHub, 2019.
+  \url{https://github.com/luizhlelis/rrrManipulatorControl/tree/master/hil_simulation/collectingData}.}
+
 \bibitem[Lynch e Park 2017]{Park}
 \abntrefinfo{Lynch e Park}{LYNCH; PARK}{2017}
 {LYNCH, K.~M.; PARK, F.~C. \emph{Modern Robotics: Mechanics, Planning, and

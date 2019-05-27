@@ -24,7 +24,7 @@ Ao fechar a malha, o sinal de saída passa a influenciar diretamente a ação de
 controle. Assim, o sistema passa a contar com uma malha de realimentação e o sinal 
 observado na entrada do controlador é, agora, o erro entre a referência do sistema e 
 a saída mensurada. O controlador, então, tende a minimizar o erro de modo a garantir 
-que a saída do sistema seja igual a referência, como ilustrado na Figura \ref{fig:diagBloco}.
+que a saída do sistema seja igual a referência, como ilustrado na \autoref{fig:diagBloco}.
 ``Controlar a saída de uma planta ou de um processo por realimentação significa aplicar 
 na sua entrada, após conveniente amplificação, o sinal resultante da 
 diferença entre o valor desejado e o valor medido da saída \cite[p.~3]{Castrucci}.''
@@ -44,8 +44,8 @@ de controle. Essa é a idéia básica da simulação \emph{Hardware in the Loop}
 bem estabelecida usada em projeto e avaliação de sistemas de controle \cite{Bacic}.
 
 Essa técnica consiste em implementar um controlador previamente projetado e validado em um dispositivo físico e 
-substituir o bloco de controle $C(s)$ (vide Figura \ref{fig:diagBloco}) por esse dispositivo, como apresentado na 
-Figura \ref{fig:diagBlocoHIL}. Ou seja, o sinal de erro $E(s)$ é transmitido para um dispositivo físico externo, 
+substituir o bloco de controle $C(s)$ (vide \autoref{fig:diagBloco}) por esse dispositivo, como apresentado na 
+\autoref{fig:diagBlocoHIL}. Ou seja, o sinal de erro $E(s)$ é transmitido para um dispositivo físico externo, 
 o qual é responsável por determinar a ação de controle a ser aplicada ao modelo da planta em estudo $G(s)$. Em seguida, o 
 sinal de controle calculado é enviado de volta para o ambiente de simulação, no qual a saída $Y(s)$, teórica, 
 é determinada. O intuito é verificar se a estratégia de controle e o desempenho associado permanecem 

@@ -4,7 +4,9 @@ The top-level auxiliary file: Monografia.aux
 A level-1 auxiliary file: Introducao/Introducao.aux
 A level-1 auxiliary file: RevisaoBib/Revisao.aux
 A level-1 auxiliary file: Metodologia/Metodologia.aux
+A level-1 auxiliary file: Resultados/Resultados.aux
 The style file: abntex2-alf.bst
+A level-1 auxiliary file: Anexos/Anexo.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -25,44 +27,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 20 entries,
+You've used 21 entries,
             6711 wiz_defined-function locations,
-            1521 strings with 14538 characters,
-and the built_in function-call counts, 20594 in all, are:
-= -- 2012
-> -- 626
+            1530 strings with 14784 characters,
+and the built_in function-call counts, 21210 in all, are:
+= -- 2054
+> -- 641
 < -- 235
-+ -- 493
-- -- 189
-* -- 1397
-:= -- 2687
-add.period$ -- 80
-call.type$ -- 20
-change.case$ -- 209
-chr.to.int$ -- 41
-cite$ -- 19
-duplicate$ -- 1450
-empty$ -- 1174
-format.name$ -- 892
-if$ -- 4567
++ -- 498
+- -- 194
+* -- 1435
+:= -- 2772
+add.period$ -- 84
+call.type$ -- 21
+change.case$ -- 216
+chr.to.int$ -- 42
+cite$ -- 20
+duplicate$ -- 1481
+empty$ -- 1239
+format.name$ -- 915
+if$ -- 4717
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 377
-newline$ -- 106
-num.names$ -- 95
-pop$ -- 510
+missing$ -- 395
+newline$ -- 110
+num.names$ -- 100
+pop$ -- 532
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 83
 quote$ -- 0
-skip$ -- 1526
+skip$ -- 1563
 stack$ -- 1
-substring$ -- 751
-swap$ -- 607
+substring$ -- 770
+swap$ -- 621
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 128
+while$ -- 134
 width$ -- 0
-write$ -- 306
+write$ -- 321

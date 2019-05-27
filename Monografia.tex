@@ -19,7 +19,7 @@
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
-\usepackage{color}				% Controle das cores
+\usepackage{color}			% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 
@@ -29,8 +29,32 @@
 \usepackage[list=true,listformat=simple]{subcaption}
 
 % Pacotes de citações
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage[brazilian,hyperpageref]{backref}	% Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}			% Citações padrão ABNT
+\usepackage{listings}				% Ambiente de linguagens de desenvolvimento
+\usepackage{xcolor}
+\definecolor{commentgreen}{RGB}{2,112,10}
+\definecolor{weborange}{RGB}{255,165,0}
+\lstset {
+    language=Matlab,
+    frame=tb,
+    tabsize=4,
+    showstringspaces=false,
+    numbers=left,
+    %upquote=true,
+    commentstyle=\color{commentgreen},
+    basicstyle=\small\ttfamily, % basic font setting
+    emph={int,char,double,float,unsigned,void,bool},
+    emphstyle={\color{blue}},
+    escapechar=\&,
+    % keyword highlighting
+    classoffset=1, % starting new class
+    otherkeywords={>,<,.,;,-,!,=,~},
+    morekeywords={>,<,.,;,-,!,=,~},
+    keywordstyle=\color{weborange},
+    classoffset=0,
+}
+
 
 % CONFIGURAÇÕES DE PACOTES
 
@@ -101,6 +125,7 @@ pela Escola de Engenharia da Universidade Federal de Minas Gerais.}
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
 \renewcommand{\sin}{\mathrm{sen}}
+\newcommand{\refanexo}[1]{\hyperref[#1]{Anexo~\ref{#1}}}
 
 \newfloat[chapter]{quadro}{loq}{\quadroname}
 \newlistof{listofquadros}{loq}{\listofquadrosname}
@@ -214,11 +239,13 @@ pela Escola de Engenharia da Universidade Federal de Minas Gerais.}
 \include{RevisaoBib/Revisao}
 %\include{DescricaoProcesso/DescricaoProcesso}
 \include{Metodologia/Metodologia}
-%\include{Resultados/Resultados}
+\include{Resultados/Resultados}
 %\include{Conclusao/Conclusao}
 
 \addcontentsline{toc}{chapter}{Referências Bibliográficas}
 \bibliographystyle{abntex2-alf}
 \bibliography{Monografia}
+
+\include{Anexos/Anexo}
 
 \end{document}
