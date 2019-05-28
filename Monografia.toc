@@ -31,16 +31,17 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados}}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Ensaio em malha aberta}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}Fase 1 da t\IeC {\'e}cnica HIL}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Resumo do Cap\IeC {\'\i }tulo}{25}{section.4.3}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{27}{section.4.3}
+\contentsline {section}{\numberline {4.3}Fase 2 da t\IeC {\'e}cnica HIL}{28}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resumo do Cap\IeC {\'\i }tulo}{28}{section.4.4}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{section.4.4}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{27}{section*.10}
+\contentsline {chapter}{Refer\^encias}{29}{section*.11}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{29}{section*.11}
+\contentsline {part}{\uppercase {Anexos}}{31}{section*.12}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Obten\IeC {\c c}\IeC {\~a}o do modelo atrav\IeC {\'e}s da conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg} e equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}}{30}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Obten\IeC {\c c}\IeC {\~a}o do modelo atrav\IeC {\'e}s da conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg} e equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}}{32}{appendix.anexochapback.1}

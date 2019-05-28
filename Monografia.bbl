@@ -72,8 +72,14 @@ Dispon{\'\i}vel em:
 p. 7 pp.--, June 2006.
 ISSN 0743-1619.}
 
+\bibitem[Lelis 2019]{lelis_hil1}
+\abntrefinfo{Lelis}{LELIS}{2019a}
+{LELIS, L. H.~S. \emph{Etapa 1 do método Hardware in the Loop}. [S.l.]:
+  GitHub, 2019.
+  \url{https://github.com/luizhlelis/rrrManipulatorControl/tree/master/hil_simulation/phase1_simulated/model_2}.}
+
 \bibitem[Lelis 2019]{lelis_model}
-\abntrefinfo{Lelis}{LELIS}{2019}
+\abntrefinfo{Lelis}{LELIS}{2019b}
 {LELIS, L. H.~S. \emph{Obtendo o modelo através do ensaio em malha aberta}.
   [S.l.]: GitHub, 2019.
   \url{https://github.com/luizhlelis/rrrManipulatorControl/tree/master/hil_simulation/collectingData}.}

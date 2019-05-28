@@ -160,12 +160,113 @@ a validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_
 
 Obtidos os modelos, a próxima etapa da fase 1 da técnica HIL foi o projeto dos 
 controladores pelo método do lugar das raízes. Considerando que as especificações do projeto
-de controle seriam atendidas se não houvesse sobressinal na resposta, e com o erro em estado
-estacionário igual a zero, um controlador PI para cada junta resolveria. O controlador PI 
-corresponde a \autoref{eq:pid} sem a ação derivativa. Assim sendo, na análise do lugar das
+de controle seriam atendidas caso houvesse pouco sobressinal na resposta, e o erro em estado
+estacionário igual a zero, mesmo impactando negativamente no tempo de acomodação, um controlador 
+PI para cada junta seria suficiente. O controlador PI corresponde a \autoref{eq:pid} sem a ação 
+derivativa. Assim sendo, na análise do lugar das
 raízes (através da ferramenta \textit{sisotool} do \textit{Matlab}), foi colocado um polo de malha
 fechada na origem e um zero no eixo real para o controlador de cada uma das juntas. O ganho foi 
-ajustado de tal forma que os polos de malha fechada ficassem o mais próximo possível do eixo real.
+ajustado de tal forma que os polos de malha fechada ficassem o mais próximo possível do eixo real, 
+assim a resposta não apresentaria oscilação (ou quase não apresentaria) ao fechar a malha. Outra 
+consideração importante observada foi modelar o controlador de tal forma que mesmo depois da 
+discretização, ele não apresentasse zeros não mínimos. O resultado final obtido para os controladores 
+da base, ombro e cotovelo seguem respsectivamente em \eqref{eq:base_ctrl}, \ref{eq:shoulder_ctrl}
+e \ref{eq:forearm_ctrl}:
+
+\begin{equation}
+  \begin{gathered}
+    C(s) = \frac{0,152s + 0,8}{s} \quad ou \quad C(s) = 0,152 + \frac{0,8}{s}
+  \end{gathered}
+  \label{eq:base_ctrl}
+\end{equation}
+
+\begin{equation}
+  \begin{gathered}
+    C(s) = \frac{0,413 s + 0,9229}{s} \quad ou \quad C(s) = 0,413 + \frac{0,9229}{s}
+  \end{gathered}
+  \label{eq:shoulder_ctrl}
+\end{equation}
+
+\begin{equation}
+  \begin{gathered}
+   C(s) = \frac{0,152s + 0,8}{s} \quad ou \quad C(s) = 0,152 + \frac{0,8}{s}
+  \end{gathered}
+  \label{eq:forearm_ctrl}
+\end{equation}
+
+O código simulado completo com as funções de transferência e os controladores encontra-se em \cite{lelis_hil1}.
+Ao fechar as malhas, os resultados obtidos seguem na \autoref{fig:base_mf_simul}, na \autoref{fig:shoulder_mf_simul} e na
+\autoref{fig:forearm_mf_simul}.
+
+\begin{figure}[h!]
+  
+  \centering
+  \caption{Gráficos da resposta ao degrau dos modelos obtidos em malha fechada}
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \caption{Base}
+    \includegraphics[width = 1\columnwidth]{Imagens/base_mf_simul}
+    \fonte{Do autor}
+    \label{fig:base_mf_simul}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \caption{Ombro}
+    \includegraphics[width = 1\columnwidth]{Imagens/shoulder_mf_simul}
+    \fonte{Do autor}
+    \label{fig:shoulder_mf_simul}
+  \end{subfigure}%
+  \\[5ex]
+  \begin{subfigure}{\textwidth}
+    \centering
+    \caption{Cotovelo}
+    \includegraphics[width = 0.55\columnwidth]{Imagens/forearm_mf_simul}
+    \fonte{Do autor}
+    \label{fig:forearm_mf_simul}
+  \end{subfigure}%
+  
+  \label{fig:ensaioMalhaAberta} 
+
+\end{figure}
+
+Com o primeiro controlador projetado para a base e para o cotovelo, ao fechar a malha, a resposta não apresentava
+sobresinal como mostrado na \autoref{fig:base_mf_simul} e na \autoref{fig:forearm_mf_simul}. Apesar disso,
+ao passar para o domínio discreto, o controlador passava a ter um zero não mínimo. E como foi citado 
+anteriormente, o zero não mínimo é um comportamento indesejado para o sistema, por esse motivo, o controlador
+de ambas as juntas foi alterado.
+
+\section{Fase 2 da técnica HIL}
+\markright{\thesection ~~~ Fase 2 da técnica HIL}
+
+Como o sinal da resposta da planta sofre uma discretização ao comunicar com a placa de aquisição de dados do
+computador e da \textit{Raspberry}, torna-se necessária a discretização do controlador e da planta simulada. A 
+discretização foi feita através do comando \textit{c2d( )} do \textit{Matlab} através do método do segurador de 
+ordem zero e com um tempo de amostragem de $0,23s$. O resultado para cada uma das juntas
+segue abaixo respeitando a ordem de configuração do manipulador:
+
+\begin{equation}
+  \begin{gathered}
+    G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \quad e \quad C(z) = \frac{0,152z + 0,032}{z - 1}
+  \end{gathered}
+  \label{eq:base_discrete}
+\end{equation}
+
+\begin{equation}
+  \begin{gathered}
+    G(z) = \frac{0,3876z - 0,198}{z^2 - 0,5515z + 0,1393} \quad e \quad C(z) = \frac{0,1572z + 0,06513}{z - 1}
+  \end{gathered}
+  \label{eq:shoulder_discrete}
+\end{equation}
+
+\begin{equation}
+  \begin{gathered}
+   G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \quad e \quad C(z) = \frac{0,152z + 0,032}{z - 1}
+  \end{gathered}
+  \label{eq:forearm_discrete}
+\end{equation}
+
+O próximo passo foi a obtenção da equação de diferenças para cada uma das plantas e
+controladores.
 
 \section{Resumo do Capítulo}
 \markright{\thesection ~~~ Resultados}
