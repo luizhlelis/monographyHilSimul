@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  28 MAY 2019 01:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  29 MAY 2019 04:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1052,12 +1052,24 @@ Writing index file Monografia.idx
 (./Monografia.aux (./Introducao/Introducao.aux) (./RevisaoBib/Revisao.aux)
 (./Metodologia/Metodologia.aux) (./Resultados/Resultados.aux
 
-LaTeX Warning: Label `fig:ensaioMalhaAberta' multiply defined.
+LaTeX Warning: Label `fig:base_hilFase2' multiply defined.
 
 
-LaTeX Warning: Label `fig:ensaioMalhaAberta' multiply defined.
+LaTeX Warning: Label `sub@fig:base_hilFase2' multiply defined.
 
-) (./Anexos/Anexo.aux))
+
+LaTeX Warning: Label `fig:shoulder_hilFase2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:shoulder_hilFase2' multiply defined.
+
+
+LaTeX Warning: Label `fig:forearm_hilFase2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:forearm_hilFase2' multiply defined.
+
+) (./Conclusao/Conclusao.aux) (./Anexos/Anexo.aux))
 \openout1 = `Monografia.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
@@ -1075,7 +1087,8 @@ LaTeX Font Info:    ... okay on input line 154.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
 LaTeX Font Info:    ... okay on input line 154.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 154.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box34
@@ -1228,9 +1241,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 43.
+(Font)              <14.4> on input line 46.
 
-Overfull \hbox (0.4737pt too wide) in paragraph at lines 47--47
+Overfull \hbox (0.4737pt too wide) in paragraph at lines 50--50
  [][] [][][]\T1/lmss/bx/n/12 OBTENÇÃO DO MO-DELO ATRA-VÉS DA CON-VEN- 
  []
 
@@ -1244,14 +1257,14 @@ Overfull \hbox (0.4737pt too wide) in paragraph at lines 47--47
 
 
 ]
-<Imagens/blocosMF.png, id=138, 790.955pt x 223.83624pt>
+<Imagens/blocosMF.png, id=146, 790.955pt x 223.83624pt>
 File: Imagens/blocosMF.png Graphic file (type png)
 
 <use Imagens/blocosMF.png>
 Package pdftex.def Info: Imagens/blocosMF.png used on input line 57.
 (pdftex.def)             Requested size: 273.00278pt x 77.25774pt.
 
-<Imagens/blocoHard.png, id=140, 790.955pt x 374.39874pt>
+<Imagens/blocoHard.png, id=148, 790.955pt x 374.39874pt>
 File: Imagens/blocoHard.png Graphic file (type png)
 
 <use Imagens/blocoHard.png>
@@ -1266,7 +1279,7 @@ Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
 
 
 ]
-<Imagens/manipulador.png, id=205, 597.23125pt x 396.48125pt>
+<Imagens/manipulador.png, id=213, 597.23125pt x 396.48125pt>
 File: Imagens/manipulador.png Graphic file (type png)
 
 <use Imagens/manipulador.png>
@@ -1312,7 +1325,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 367.
 
-[18] <Imagens/diagEnsaioMA.png, id=383, 251.94125pt x 72.27pt>
+[18] <Imagens/diagEnsaioMA.png, id=391, 251.94125pt x 72.27pt>
 File: Imagens/diagEnsaioMA.png Graphic file (type png)
 
 <use Imagens/diagEnsaioMA.png>
@@ -1322,21 +1335,21 @@ Package pdftex.def Info: Imagens/diagEnsaioMA.png used on input line 442.
 Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
 put line 521.
 
-<Imagens/plantaSimulada.png, id=415, 1668.2325pt x 1397.22pt>
+<Imagens/plantaSimulada.png, id=423, 1668.2325pt x 1397.22pt>
 File: Imagens/plantaSimulada.png Graphic file (type png)
 
 <use Imagens/plantaSimulada.png>
 Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 522.
 (pdftex.def)             Requested size: 136.50139pt x 114.31694pt.
 
-<Imagens/solucaoModelo.png, id=416, 231.86626pt x 247.92625pt>
+<Imagens/solucaoModelo.png, id=424, 231.86626pt x 247.92625pt>
 File: Imagens/solucaoModelo.png Graphic file (type png)
 
 <use Imagens/solucaoModelo.png>
 Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 529.
 (pdftex.def)             Requested size: 113.75pt x 121.62868pt.
 
-<Imagens/solucaoPlanta.png, id=417, 673.51625pt x 677.53125pt>
+<Imagens/solucaoPlanta.png, id=425, 673.51625pt x 677.53125pt>
 File: Imagens/solucaoPlanta.png Graphic file (type png)
 
 <use Imagens/solucaoPlanta.png>
@@ -1365,7 +1378,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Imagens/base_ma-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Imagens/base_ma-eps-converted-to.pdf, id=435, 421.575pt x 316.18124pt>
+<Imagens/base_ma-eps-converted-to.pdf, id=443, 421.575pt x 316.18124pt>
 File: Imagens/base_ma-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_ma-eps-converted-to.pdf>
@@ -1386,7 +1399,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Imagens/shoulder_ma-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Imagens/shoulder_ma-eps-converted-to.pdf, id=436, 421.575pt x 316.18124pt>
+<Imagens/shoulder_ma-eps-converted-to.pdf, id=444, 421.575pt x 316.18124pt>
 File: Imagens/shoulder_ma-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/shoulder_ma-eps-converted-to.pdf>
@@ -1407,7 +1420,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Imagens/forearm_ma-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Imagens/forearm_ma-eps-converted-to.pdf, id=437, 421.575pt x 316.18124pt>
+<Imagens/forearm_ma-eps-converted-to.pdf, id=445, 421.575pt x 316.18124pt>
 File: Imagens/forearm_ma-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/forearm_ma-eps-converted-to.pdf>
@@ -1445,7 +1458,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Imagens/base_ma_simul-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Imagens/base_ma_simul-eps-converted-to.pdf, id=487, 421.575pt x 316.18124pt>
+<Imagens/base_ma_simul-eps-converted-to.pdf, id=495, 421.575pt x 316.18124pt>
 File: Imagens/base_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_ma_simul-eps-converted-to.pdf>
@@ -1468,7 +1481,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./Imagens/shoulder_ma_simul-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<Imagens/shoulder_ma_simul-eps-converted-to.pdf, id=488, 421.575pt x 316.18124p
+<Imagens/shoulder_ma_simul-eps-converted-to.pdf, id=496, 421.575pt x 316.18124p
 t>
 File: Imagens/shoulder_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/shoulder_ma_simul-eps-converted-to.pdf>
@@ -1491,7 +1504,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./Imagens/forearm_ma_simul-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<Imagens/forearm_ma_simul-eps-converted-to.pdf, id=489, 421.575pt x 316.18124pt
+<Imagens/forearm_ma_simul-eps-converted-to.pdf, id=497, 421.575pt x 316.18124pt
 >
 File: Imagens/forearm_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/forearm_ma_simul-eps-converted-to.pdf>
@@ -1519,7 +1532,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Imagens/base_mf_simul-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Imagens/base_mf_simul-eps-converted-to.pdf, id=530, 421.575pt x 316.18124pt>
+<Imagens/base_mf_simul-eps-converted-to.pdf, id=538, 421.575pt x 316.18124pt>
 File: Imagens/base_mf_simul-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_mf_simul-eps-converted-to.pdf>
@@ -1542,7 +1555,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./Imagens/shoulder_mf_simul-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<Imagens/shoulder_mf_simul-eps-converted-to.pdf, id=531, 421.575pt x 316.18124p
+<Imagens/shoulder_mf_simul-eps-converted-to.pdf, id=539, 421.575pt x 316.18124p
 t>
 File: Imagens/shoulder_mf_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/shoulder_mf_simul-eps-converted-to.pdf>
@@ -1565,7 +1578,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./Imagens/forearm_mf_simul-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<Imagens/forearm_mf_simul-eps-converted-to.pdf, id=532, 421.575pt x 316.18124pt
+<Imagens/forearm_mf_simul-eps-converted-to.pdf, id=540, 421.575pt x 316.18124pt
 >
 File: Imagens/forearm_mf_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/forearm_mf_simul-eps-converted-to.pdf>
@@ -1574,34 +1587,18 @@ input line 223.
 (pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
  [27 <./Imagens/base_mf_simul-eps-converted-to.pdf> <./Imagens/shoulder_mf_simu
 l-eps-converted-to.pdf> <./Imagens/forearm_mf_simul-eps-converted-to.pdf>] [28]
-) (./Monografia.bbl
-(./Monografia.brf)
-\tf@brf=\write5
-\openout5 = `Monografia.brf'.
+ [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
+
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 380.
 
 
-bibitemlist
-[29
-
-
-
-]) [30]
-\openout2 = `Anexos/Anexo.aux'.
-
- (./Anexos/Anexo.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 3.
-
-[31
-
-
-
-]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
@@ -1609,7 +1606,195 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 8.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 381.
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+[31]
+Package epstopdf Info: Source file: <Imagens/base_hilFase2.eps>
+(epstopdf)                    date: 2019-05-29 01:05:03
+(epstopdf)                    size: 19545 bytes
+(epstopdf)             Output file: <Imagens/base_hilFase2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-05-29 01:09:18
+(epstopdf)                    size: 6480 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/base_hilFase2-eps-
+converted-to.pdf Imagens/base_hilFase2.eps>
+(epstopdf)             \includegraphics on input line 420.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/base_hilFase2-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Imagens/base_hilFase2-eps-converted-to.pdf, id=619, 421.575pt x 316.18124pt>
+File: Imagens/base_hilFase2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Imagens/base_hilFase2-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/base_hilFase2-eps-converted-to.pdf used on inp
+ut line 420.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/shoulder_hilFase2.eps>
+(epstopdf)                    date: 2019-05-29 01:07:08
+(epstopdf)                    size: 20463 bytes
+(epstopdf)             Output file: <Imagens/shoulder_hilFase2-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2019-05-29 01:09:18
+(epstopdf)                    size: 6705 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_hilFase2-
+eps-converted-to.pdf Imagens/shoulder_hilFase2.eps>
+(epstopdf)             \includegraphics on input line 427.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/shoulder_hilFase2-eps-converted-to.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Imagens/shoulder_hilFase2-eps-converted-to.pdf, id=620, 421.575pt x 316.18124p
+t>
+File: Imagens/shoulder_hilFase2-eps-converted-to.pdf Graphic file (type pdf)
+ <use Imagens/shoulder_hilFase2-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/shoulder_hilFase2-eps-converted-to.pdf used on
+ input line 427.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/forearm_hilFase2.eps>
+(epstopdf)                    date: 2019-05-29 01:07:40
+(epstopdf)                    size: 20565 bytes
+(epstopdf)             Output file: <Imagens/forearm_hilFase2-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-05-29 01:09:19
+(epstopdf)                    size: 6792 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_hilFase2-e
+ps-converted-to.pdf Imagens/forearm_hilFase2.eps>
+(epstopdf)             \includegraphics on input line 435.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/forearm_hilFase2-eps-converted-to.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Imagens/forearm_hilFase2-eps-converted-to.pdf, id=621, 421.575pt x 316.18124pt
+>
+File: Imagens/forearm_hilFase2-eps-converted-to.pdf Graphic file (type pdf)
+ <use Imagens/forearm_hilFase2-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/forearm_hilFase2-eps-converted-to.pdf used on 
+input line 435.
+(pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--459
+
+ []
+
+[32 <./Imagens/base_hilFase2-eps-converted-to.pdf> <./Imagens/shoulder_hilFase2
+-eps-converted-to.pdf> <./Imagens/forearm_hilFase2-eps-converted-to.pdf>]
+Overfull \hbox (7.20349pt too wide) in paragraph at lines 468--470
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+Package epstopdf Info: Source file: <Imagens/base_hilFase3.eps>
+(epstopdf)                    date: 2019-05-29 02:58:37
+(epstopdf)                    size: 20255 bytes
+(epstopdf)             Output file: <Imagens/base_hilFase3-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-05-29 03:01:30
+(epstopdf)                    size: 6560 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/base_hilFase3-eps-
+converted-to.pdf Imagens/base_hilFase3.eps>
+(epstopdf)             \includegraphics on input line 480.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/base_hilFase3-eps-converted-to.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Imagens/base_hilFase3-eps-converted-to.pdf, id=649, 421.575pt x 316.18124pt>
+File: Imagens/base_hilFase3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Imagens/base_hilFase3-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/base_hilFase3-eps-converted-to.pdf used on inp
+ut line 480.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/shoulder_hilFase3.eps>
+(epstopdf)                    date: 2019-05-29 02:59:14
+(epstopdf)                    size: 19597 bytes
+(epstopdf)             Output file: <Imagens/shoulder_hilFase3-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2019-05-29 03:01:30
+(epstopdf)                    size: 6581 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_hilFase3-
+eps-converted-to.pdf Imagens/shoulder_hilFase3.eps>
+(epstopdf)             \includegraphics on input line 487.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/shoulder_hilFase3-eps-converted-to.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Imagens/shoulder_hilFase3-eps-converted-to.pdf, id=650, 421.575pt x 316.18124p
+t>
+File: Imagens/shoulder_hilFase3-eps-converted-to.pdf Graphic file (type pdf)
+ <use Imagens/shoulder_hilFase3-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/shoulder_hilFase3-eps-converted-to.pdf used on
+ input line 487.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+Package epstopdf Info: Source file: <Imagens/forearm_hilFase3.eps>
+(epstopdf)                    date: 2019-05-29 02:59:47
+(epstopdf)                    size: 20454 bytes
+(epstopdf)             Output file: <Imagens/forearm_hilFase3-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-05-29 03:01:30
+(epstopdf)                    size: 6791 bytes
+(epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_hilFase3-e
+ps-converted-to.pdf Imagens/forearm_hilFase3.eps>
+(epstopdf)             \includegraphics on input line 495.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Imagens/forearm_hilFase3-eps-converted-to.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Imagens/forearm_hilFase3-eps-converted-to.pdf, id=651, 421.575pt x 316.18124pt
+>
+File: Imagens/forearm_hilFase3-eps-converted-to.pdf Graphic file (type pdf)
+ <use Imagens/forearm_hilFase3-eps-converted-to.pdf>
+Package pdftex.def Info: Imagens/forearm_hilFase3-eps-converted-to.pdf used on 
+input line 495.
+(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+ [33 <./Imagens/base_hilFase3-eps-converted-to.pdf> <./Imagens/shoulder_hilFase
+3-eps-converted-to.pdf> <./Imagens/forearm_hilFase3-eps-converted-to.pdf>] [34]
+)
+\openout2 = `Conclusao/Conclusao.aux'.
+
+
+(./Conclusao/Conclusao.tex) [35
+
+
+
+
+] (./Monografia.bbl (./Monografia.brf)
+\tf@brf=\write5
+\openout5 = `Monografia.brf'.
+
+
+bibitemlist
+[36
+
+
+]) [37]
+\openout2 = `Anexos/Anexo.aux'.
+
+ (./Anexos/Anexo.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 3.
+
+[38
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <24.88> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
 
 Overfull \hbox (41.69629pt too wide) in paragraph at lines 11--12
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -1617,7 +1802,7 @@ Overfull \hbox (41.69629pt too wide) in paragraph at lines 11--12
 [][] 
  []
 
-[32
+[39
 
 ]
 Overfull \hbox (21.00061pt too wide) in paragraph at lines 50--51
@@ -1635,7 +1820,7 @@ either increase the head height or redesign the header
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[33]
+[40]
 Overfull \hbox (41.69629pt too wide) in paragraph at lines 86--88
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1646,7 +1831,7 @@ Overfull \hbox (41.69629pt too wide) in paragraph at lines 86--88
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[34]
+[41]
 Overfull \hbox (34.79773pt too wide) in paragraph at lines 132--134
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1677,7 +1862,7 @@ Overfull \hbox (7.20349pt too wide) in paragraph at lines 148--149
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[35]
+[42]
 Overfull \hbox (27.89917pt too wide) in paragraph at lines 185--187
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][] 
@@ -1702,7 +1887,7 @@ Overfull \hbox (21.00061pt too wide) in paragraph at lines 204--205
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[36]
+[43]
 Overfull \hbox (14.10205pt too wide) in paragraph at lines 210--211
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1721,11 +1906,11 @@ Overfull \hbox (27.89917pt too wide) in paragraph at lines 222--223
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[37]
+[44]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[38]
+[45]
 Overfull \hbox (21.00061pt too wide) in paragraph at lines 301--302
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1779,7 +1964,7 @@ Overfull \hbox (21.00061pt too wide) in paragraph at lines 328--330
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[39]
+[46]
 Overfull \hbox (21.00061pt too wide) in paragraph at lines 342--343
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1828,11 +2013,11 @@ Overfull \hbox (7.20349pt too wide) in paragraph at lines 377--378
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[40]
+[47]
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[41]
+[48]
 Overfull \hbox (21.00061pt too wide) in paragraph at lines 452--454
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][] 
@@ -1842,7 +2027,7 @@ Overfull \hbox (21.00061pt too wide) in paragraph at lines 452--454
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[42]
+[49]
 
 Class memoir Warning: The material used in the headers is too large
 (28.99998pt) for the given head height (14.5pt), it is recommended to
@@ -1859,11 +2044,11 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
 (./Monografia.aux (./Introducao/Introducao.aux) (./RevisaoBib/Revisao.aux)
 (./Metodologia/Metodologia.aux) (./Resultados/Resultados.aux)
-(./Anexos/Anexo.aux))
+(./Conclusao/Conclusao.aux) (./Anexos/Anexo.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
 Package rerunfilecheck Info: File `Monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 56E3FB901410617746EA4A3EF6E44D23;2842.
+(rerunfilecheck)             Checksum: 8D34F2A29952AF79B3864846DDCFF178;2940.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1871,13 +2056,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
  ) 
 Here is how much of TeX's memory you used:
- 18491 strings out of 493304
- 270891 string characters out of 6139871
- 496743 words of memory out of 5000000
- 20822 multiletter control sequences out of 15000+600000
- 117534 words of font info for 172 fonts, out of 8000000 for 9000
+ 18770 strings out of 493304
+ 275503 string characters out of 6139871
+ 502269 words of memory out of 5000000
+ 21032 multiletter control sequences out of 15000+600000
+ 117663 words of font info for 173 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,17n,41p,494b,2661s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,41p,494b,2622s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -1896,10 +2081,10 @@ so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb>
-Output written on Monografia.pdf (43 pages, 682831 bytes).
+Output written on Monografia.pdf (50 pages, 719731 bytes).
 PDF statistics:
- 1442 PDF objects out of 1728 (max. 8388607)
- 1329 compressed objects within 14 object streams
- 610 named destinations out of 1000 (max. 500000)
- 39257 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1596 PDF objects out of 1728 (max. 8388607)
+ 1463 compressed objects within 15 object streams
+ 661 named destinations out of 1000 (max. 500000)
+ 39303 words of extra memory for PDF output out of 42996 (max. 10000000)
 

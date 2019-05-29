@@ -32,16 +32,19 @@
 \contentsline {section}{\numberline {4.1}Ensaio em malha aberta}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}Fase 1 da t\IeC {\'e}cnica HIL}{25}{section.4.2}
 \contentsline {section}{\numberline {4.3}Fase 2 da t\IeC {\'e}cnica HIL}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Resumo do Cap\IeC {\'\i }tulo}{28}{section.4.4}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{section.4.4}
+\contentsline {section}{\numberline {4.4}Fase 3 da t\IeC {\'e}cnica HIL}{32}{section.4.4}
+\contentsline {section}{\numberline {4.5}Resumo do Cap\IeC {\'\i }tulo}{34}{section.4.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{35}{chapter.5}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{36}{chapter.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{29}{section*.11}
+\contentsline {chapter}{Refer\^encias}{36}{section*.13}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{31}{section*.12}
+\contentsline {part}{\uppercase {Anexos}}{38}{section*.14}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Obten\IeC {\c c}\IeC {\~a}o do modelo atrav\IeC {\'e}s da conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg} e equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}}{32}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Obten\IeC {\c c}\IeC {\~a}o do modelo atrav\IeC {\'e}s da conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg} e equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}}{39}{appendix.anexochapback.1}
