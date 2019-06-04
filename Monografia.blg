@@ -5,6 +5,7 @@ A level-1 auxiliary file: Introducao/Introducao.aux
 A level-1 auxiliary file: RevisaoBib/Revisao.aux
 A level-1 auxiliary file: Metodologia/Metodologia.aux
 A level-1 auxiliary file: Resultados/Resultados.aux
+A level-1 auxiliary file: Conclusao/Conclusao.aux
 The style file: abntex2-alf.bst
 A level-1 auxiliary file: Anexos/Anexo.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -29,42 +30,42 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 24 entries,
             6711 wiz_defined-function locations,
-            1539 strings with 15257 characters,
-and the built_in function-call counts, 23058 in all, are:
-= -- 2180
+            1526 strings with 14928 characters,
+and the built_in function-call counts, 18477 in all, are:
+= -- 1446
 > -- 686
-< -- 235
-+ -- 516
+< -- 17
++ -- 299
 - -- 209
-* -- 1549
-:= -- 3025
-add.period$ -- 96
+* -- 1304
+:= -- 2520
+add.period$ -- 82
 call.type$ -- 24
 change.case$ -- 237
 chr.to.int$ -- 42
 cite$ -- 23
-duplicate$ -- 1574
-empty$ -- 1434
+duplicate$ -- 904
+empty$ -- 1406
 format.name$ -- 984
-if$ -- 5167
+if$ -- 4383
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 449
-newline$ -- 122
+missing$ -- 448
+newline$ -- 111
 num.names$ -- 115
-pop$ -- 598
+pop$ -- 617
 preamble$ -- 1
 purify$ -- 92
 quote$ -- 0
-skip$ -- 1673
+skip$ -- 1025
 stack$ -- 1
-substring$ -- 827
-swap$ -- 663
-text.length$ -- 15
+substring$ -- 578
+swap$ -- 413
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 152
+while$ -- 146
 width$ -- 0
-write$ -- 366
+write$ -- 351

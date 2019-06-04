@@ -8,16 +8,11 @@
   technique is applied to a simplified robotic manipulator for three revolution joints. The method was
   applied in three distinct steps. The first one consists on surveying the plant model and tuning the
   controller in a simulation environment. The second is the replacement of the virtual controller by
-  its implementation in physical device followed by the validation with the simulation environment.
-  Finally, the last step corresponds to the use of the controller implemented in the physical device
-  communicating directly with the actual plant. The project makes use of the single board computer 
-  Raspberry as the hardware inserted into the loop of the manipulator's control. Finally, the 
-  projects aim is the tuning and validation of the manipulator independent joints control 
-  applying the HIL technique.
+  its implementation in physical device followed by the validation with the simulation environment. Finally, the last step corresponds to the use of the controller implemented in the physical device communicating directly with the actual plant. The design makes use of the Raspberry single board computer as the hardware inserted into the mesh of the manipulator's control. Finally, the aim of the project is the tuning and validation of the control of independent joints of the manipulator in question applying the HIL technique.
 
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Keywords}: Hardware in the Loop. robotic manipulator. control. independent joints.
+   \textbf{Keywords}: latex. abntex. text editoration.
  \end{otherlanguage*}
 \end{resumo}

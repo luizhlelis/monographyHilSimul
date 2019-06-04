@@ -3,23 +3,33 @@
 %\label{result}
 
 Neste capítulo, os resultados para o projeto descritos no capítulo anterior serão apresentados. A obtenção do modelo da 
-planta foi dada de duas formas diferentes: através da convenção de \textit{Denavit-Hartenberg} e equações de 
-\textit{Euler-Lagrange} e através do ensaio em malha aberta. Para o primeiro método, foram feitas algumas considerações,
+planta foi dada de duas formas diferentes: por meio da convenção de \textit{Denavit-Hartenberg} e equações de 
+\textit{Euler-Lagrange} e por meio do ensaio em malha aberta. Para o primeiro método, foram feitas algumas considerações,
 estas seguem abaixo:
 
 \begin{enumerate}
  \item O elo do cotovelo e o elo do ombro são barras de comprimento $L$ e massa $m$, e possuem o eixo de rotação no fim
  da barra;
  \item O elo da base é um cilindro sólido de raio $r$, altura $h$ e massa $m$;
- \item A distribuição de massa de cada elo com a sua junta respectiva é simétrica em relação à estrutura do corpo. Ou seja,
+ \item A distribuição de massa de cada elo com a sua junta respectiva é simétrica em relação à estrutura do corpo, ou seja,
  a massa está uniformemente distribuída ao longo do corpo.
 \end{enumerate}
 
-A modelagem através da convenção de \textit{Denavit-Hartenberg} e equações de \textit{Euler-Lagrange} foi feita de forma
-programática através do MATLAB e segue no \refanexo{anexo:denHatEulerLagr}. Os modelos da planta usados para projetar os
-constroladores foram obtidos através do ensaio em malha aberta e seguem na próxima seção. Três modelos foram levantados,
-um para a base, um para o ombro e outro para o cotovelo, e para cada um deles foi projetado um controlador, esse 
-processo é conhecido na literatura como controle de juntas independentes.
+O código em MATLAB referente ao modelo obtido por meio da convenção de \textit{Denavit-Hartenberg} e equações de
+\textit{Euler-Lagrange} é apresentado no \refanexo{anexo:denHatEulerLagr}. A \autoref{fig:dh_simulation} mostra 
+o resultado obtido para a simulação \textit{Denavit-Hartenberg}:
+
+\begin{figure}[ht]
+  \centering
+  \caption{Gráfico da representação \textit{Denavit-Hartenberg} obtida}
+  \includegraphics[width = 0.78\columnwidth]{Imagens/dh_simulation}
+  \fonte{Do autor}
+  \label{fig:dh_simulation} 
+\end{figure}
+
+Os modelos da planta usados para projetar os controladores foram obtidos através de ensaios em malha aberta (MA) e seguem 
+na próxima seção. Três modelos foram levantados: um para a base, um para o ombro e outro para o cotovelo, e para 
+cada um deles foi projetado um controlador. Esse processo é conhecido na literatura como controle de juntas independentes.
 
 \section{Ensaio em malha aberta}
 \markright{\thesection ~~~ Resultado ensaio em malha aberta}

@@ -1,30 +1,31 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de blocos do sistema em malha fechada\relax }}{6}{figure.caption.2}
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de blocos do sistema em malha fechada - \emph {Hardware in the Loop}\relax }}{6}{figure.caption.3}
-\contentsline {figure}{\numberline {3}{\ignorespaces Planta utilizada - manipulador de tr\IeC {\^e}s juntas revolutas\relax }}{10}{figure.caption.4}
-\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama do ensaio em malha aberta\relax }}{20}{figure.caption.5}
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagramas das etapas da t\IeC {\'e}cnica \textit {Hardware-in-the-loop}\relax }}{22}{figure.caption.6}
-\contentsline {subfigure}{\numberline {5a}{\ignorespaces Planta e controlador simulados\relax }}{22}{figure.caption.6}
-\contentsline {subfigure}{\numberline {5b}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para o modelo simulado da planta\relax }}{22}{figure.caption.6}
-\contentsline {subfigure}{\numberline {5c}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para a planta f\IeC {\'\i }sica\relax }}{22}{figure.caption.6}
-\contentsline {figure}{\numberline {6}{\ignorespaces Gr\IeC {\'a}ficos da entrada e resposta para o ensaio em MA de cada uma das juntas\relax }}{24}{figure.caption.7}
-\contentsline {subfigure}{\numberline {6a}{\ignorespaces Base\relax }}{24}{figure.caption.7}
-\contentsline {subfigure}{\numberline {6b}{\ignorespaces Ombro\relax }}{24}{figure.caption.7}
-\contentsline {subfigure}{\numberline {6c}{\ignorespaces Cotovelo\relax }}{24}{figure.caption.7}
-\contentsline {figure}{\numberline {7}{\ignorespaces Gr\IeC {\'a}ficos da entrada e resposta do modelo obtido para cada uma das juntas\relax }}{26}{figure.caption.8}
-\contentsline {subfigure}{\numberline {7a}{\ignorespaces Base\relax }}{26}{figure.caption.8}
-\contentsline {subfigure}{\numberline {7b}{\ignorespaces Ombro\relax }}{26}{figure.caption.8}
-\contentsline {subfigure}{\numberline {7c}{\ignorespaces Cotovelo\relax }}{26}{figure.caption.8}
-\contentsline {figure}{\numberline {8}{\ignorespaces Gr\IeC {\'a}ficos das respostas ao degrau em malha fechada - HIL Fase 1\relax }}{27}{figure.caption.9}
-\contentsline {subfigure}{\numberline {8a}{\ignorespaces Base\relax }}{27}{figure.caption.9}
-\contentsline {subfigure}{\numberline {8b}{\ignorespaces Ombro\relax }}{27}{figure.caption.9}
-\contentsline {subfigure}{\numberline {8c}{\ignorespaces Cotovelo\relax }}{27}{figure.caption.9}
-\contentsline {figure}{\numberline {9}{\ignorespaces Gr\IeC {\'a}ficos das respostas ao degrau em malha fechada - HIL Fase 2\relax }}{32}{figure.caption.10}
-\contentsline {subfigure}{\numberline {9a}{\ignorespaces Base\relax }}{32}{figure.caption.10}
-\contentsline {subfigure}{\numberline {9b}{\ignorespaces Ombro\relax }}{32}{figure.caption.10}
-\contentsline {subfigure}{\numberline {9c}{\ignorespaces Cotovelo\relax }}{32}{figure.caption.10}
-\contentsline {figure}{\numberline {10}{\ignorespaces Gr\IeC {\'a}ficos das respostas ao degrau em malha fechada - HIL Fase 3\relax }}{33}{figure.caption.11}
-\contentsline {subfigure}{\numberline {10a}{\ignorespaces Base\relax }}{33}{figure.caption.11}
-\contentsline {subfigure}{\numberline {10b}{\ignorespaces Ombro\relax }}{33}{figure.caption.11}
-\contentsline {subfigure}{\numberline {10c}{\ignorespaces Cotovelo\relax }}{33}{figure.caption.11}
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de blocos do sistema em malha fechada\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de blocos do sistema em malha fechada - \emph {Hardware in the Loop}\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Planta utilizada - manipulador de tr\IeC {\^e}s juntas revolutas\relax }}{13}{figure.caption.6}
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama do ensaio em malha aberta\relax }}{23}{figure.caption.7}
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagramas das etapas da t\IeC {\'e}cnica \textit {Hardware-in-the-loop}\relax }}{25}{figure.caption.8}
+\contentsline {subfigure}{\numberline {5a}{\ignorespaces Planta e controlador simulados\relax }}{25}{figure.caption.8}
+\contentsline {subfigure}{\numberline {5b}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para o modelo simulado da planta\relax }}{25}{figure.caption.8}
+\contentsline {subfigure}{\numberline {5c}{\ignorespaces Solu\IeC {\c c}\IeC {\~a}o para a planta f\IeC {\'\i }sica\relax }}{25}{figure.caption.8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Gr\IeC {\'a}fico da representa\IeC {\c c}\IeC {\~a}o \textit {Denavit-Hartenberg} obtida\relax }}{26}{figure.caption.9}
+\contentsline {figure}{\numberline {7}{\ignorespaces Gr\IeC {\'a}ficos da entrada e resposta para o ensaio em MA de cada uma das juntas\relax }}{28}{figure.caption.10}
+\contentsline {subfigure}{\numberline {7a}{\ignorespaces Base\relax }}{28}{figure.caption.10}
+\contentsline {subfigure}{\numberline {7b}{\ignorespaces Ombro\relax }}{28}{figure.caption.10}
+\contentsline {subfigure}{\numberline {7c}{\ignorespaces Cotovelo\relax }}{28}{figure.caption.10}
+\contentsline {figure}{\numberline {8}{\ignorespaces Gr\IeC {\'a}ficos da entrada e resposta do modelo obtido para cada uma das juntas\relax }}{30}{figure.caption.11}
+\contentsline {subfigure}{\numberline {8a}{\ignorespaces Base\relax }}{30}{figure.caption.11}
+\contentsline {subfigure}{\numberline {8b}{\ignorespaces Ombro\relax }}{30}{figure.caption.11}
+\contentsline {subfigure}{\numberline {8c}{\ignorespaces Cotovelo\relax }}{30}{figure.caption.11}
+\contentsline {figure}{\numberline {9}{\ignorespaces Gr\IeC {\'a}ficos das respostas ao degrau em malha fechada - HIL Fase 1\relax }}{31}{figure.caption.12}
+\contentsline {subfigure}{\numberline {9a}{\ignorespaces Base\relax }}{31}{figure.caption.12}
+\contentsline {subfigure}{\numberline {9b}{\ignorespaces Ombro\relax }}{31}{figure.caption.12}
+\contentsline {subfigure}{\numberline {9c}{\ignorespaces Cotovelo\relax }}{31}{figure.caption.12}
+\contentsline {figure}{\numberline {10}{\ignorespaces Gr\IeC {\'a}ficos das respostas ao degrau em malha fechada - HIL Fase 2\relax }}{36}{figure.caption.13}
+\contentsline {subfigure}{\numberline {10a}{\ignorespaces Base\relax }}{36}{figure.caption.13}
+\contentsline {subfigure}{\numberline {10b}{\ignorespaces Ombro\relax }}{36}{figure.caption.13}
+\contentsline {subfigure}{\numberline {10c}{\ignorespaces Cotovelo\relax }}{36}{figure.caption.13}
+\contentsline {figure}{\numberline {11}{\ignorespaces Gr\IeC {\'a}ficos das respostas ao degrau em malha fechada - HIL Fase 3\relax }}{37}{figure.caption.14}
+\contentsline {subfigure}{\numberline {11a}{\ignorespaces Base\relax }}{37}{figure.caption.14}
+\contentsline {subfigure}{\numberline {11b}{\ignorespaces Ombro\relax }}{37}{figure.caption.14}
+\contentsline {subfigure}{\numberline {11c}{\ignorespaces Cotovelo\relax }}{37}{figure.caption.14}
