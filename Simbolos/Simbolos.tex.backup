@@ -1,0 +1,50 @@
+\begin{simbolos}
+	\item[$ \ddot{q}_n $] 	aceleração generalizada da junta $n$
+	\item[$ \theta_i $] 	ângulo da junta $i$
+	\item[$ \zeta $]	coordenada do centro de massa do link i
+	\item[$ \zeta $]	constante de gravidade
+	\item[$ \zeta $]	densidade de massa
+	\item[$ \zeta $]	deslocamento do elo
+	\item[$ \zeta $]	elemento da matriz D(q)
+	\item[$ \zeta $]	elemento da matriz D(q)
+	\item[$ \zeta $]	elemento da matriz D(q)
+	\item[$ \zeta $]	elemento da matriz de Coriolis
+	\item[$ \zeta $]	elemento da matriz g(q) obtido da energia potencial, relativo à força generalizada aplicada k
+	\item[$ \zeta $]	energia cinética
+	\item[$ \zeta $]	energia potencial
+	\item[$ \zeta $]	energia potencial do link i
+	\item[$ \zeta $]	força generalizada aplicada na junta i
+	\item[$ \zeta $]	giro do elo
+	\item[$ \zeta $]	Jacobiano da junta i
+	\item[$ \zeta $]	Jacobiano relativo à velocidade angular
+	\item[$ \zeta $]	Jacobiano relativo à velocidade linear
+	\item[$ \zeta $]	Lagrangiana
+	\item[$ \zeta $]	massa do link i
+	\item[$ \zeta $]	matriz da equação dinâmica que incorpora a energia cinética do manipulador
+	\item[$ \zeta $]	matriz das velocidades linear e angular
+	\item[$ \zeta $]	matriz de inércia
+	\item[$ \zeta $]	matriz de rotação
+	\item[$ \zeta $]	matriz de rotação do link n em relação à base
+	\item[$ \zeta $]	matriz de transformação homogênea do link i
+	\item[$ \zeta $]	matriz de transformação homogênea do link n em relação à base
+	\item[$ \zeta $]	matriz de translação do órgão terminal em relação à base C(q, q)
+	\item[$ \zeta $]	matriz que incorpora os símbolos de Christoffel
+	\item[$ \zeta $]	matriz que incorpora a energia potencial do manipulador
+	\item[$ \zeta $]	momento principal de inércia sobre o eixo x
+	\item[$ \zeta $]	momento principal de inércia sobre o eixo y
+	\item[$ \zeta $]	momento principal de inércia sobre o eixo z
+	\item[$ \zeta $]	produto cruzado de inércia dos eixos x e y
+	\item[$ \zeta $]	produto cruzado de inércia dos eixos x e z
+	\item[$ \zeta $]	produto cruzado de inércia dos eixos y e x
+	\item[$ \zeta $]	produto cruzado de inércia dos eixos y e z
+	\item[$ \zeta $]	produto cruzado de inércia dos eixos z e x
+	\item[$ \zeta $]	produto cruzado de inércia dos eixos z e y
+	\item[$ \zeta $]	tamanho do elo
+	\item[$ \zeta $]	tensor de inércia
+	\item[$ \zeta $]	variável generalizada da junta n
+	\item[$ \zeta $]	velocidade angular
+	\item[$ \zeta $]	velocidade angular do link n em relação à base
+	\item[$ \zeta $]	velocidade generalizada da junta n
+	\item[$ \zeta $]	velocidade linear
+	\item[$ \zeta $]	velocidade linear do link n em relação à base
+\end{simbolos}

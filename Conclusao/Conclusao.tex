@@ -2,9 +2,16 @@
 %\markboth{\thechapter ~~~ Conclusão}{}
 %\label{revBib}
 
-A técnica HIL, que consiste em inserir um dispositivo físico na malha de controle, foi dividida
+O controle de trajetória de uma manipulador robótico visa configurar o comportamento das juntas de tal 
+forma que a ferramenta de trabalho siga uma trajeto de referência. Existem algumas formas de se modelar
+o comportamento dessas juntas como o modelo \textit{Denavit-Hartenberg} e as equações de \textit{Euler-Lagrange},
+além do ensaio em malha aberta para obtenção do modelo. No presente projeto, a modelagem foi tratada das duas formas
+e o projeto de controle foi realizado pelo método do lugar das raízes. A sintonia e validação da estratégia de controle
+foi realizada por meio do uso da técnica HIL.
+
+A técnica HIL, que consiste em inserir um dispositivo físico na malha de controle simulada, foi dividida
 em três etapas neste projeto. O resultado obtido em cada uma das etapas foi exposto através
-dos gráficos, e o objetivo é que o padrão se repita entre as etapas. Além disso, a sintonia
+dos gráficos com o objetivo de que o padrão se repetisse entre as etapas. Além disso, a sintonia
 e validação da estratégia de controle para a planta em questão é fundamental para o êxito da 
 conclusão do projeto.
 
@@ -13,20 +20,21 @@ a modelagem \textit{Denavit-Hartenberg} e as equações de \textit{Euler-Lagrang
 da solução para o modelo da planta fisicamente inviável. A solução mais coerente encontrada foi o ensaio 
 em malha aberta para a obtenção do modelo de cada junta do manipulador, seguido do controle de junta independente.
 
-A \autoref{fig:ensaioMalhaAbertaSimul} evidencia que a modelagem teve um resultado bastante coerente com a planta real, 
-as curvas se sobrepuseram e os parâmetros como o tempo de acomodação e o sobressinal coincidiram com o esperado. 
+Os experimentos demonstraram que a modelagem do manipulador teve um resultado coerente com a planta real, sendo que as curvas
+de resposta ao degrau se sobrepuseram e os parâmetros de tempo de acomodação e máximo sobressinal ficaram bastante similares como desejado. 
 O projeto de controle pelo método do lugar das raízes teve como resultado um controlador que tornou a dinâmica da 
 planta mais lenta. Por outro lado, o controlador PI fez o sistema ficar mais robusto, rejeitando distúrbios ao fechar
-a malha além de tornar a transição dos estados mais suave (é possível notar a diferença entre a 
-\autoref{fig:ensaioMalhaAberta} e a \autoref{fig:hilFase3}). Além disso, o padrão da resposta do sistema ao longo do 
-tempo se repetiu entre as etapas do método HIL. Sendo assim, o conjunto dos tópicos citados acima resultou na sintonia e
-validação da estratégia de controle.
+a malha além de tornar a transição dos estados mais suave (é possível notar a diferença entre as respostas apresentadas na 
+\autoref{fig:ensaioMalhaAberta} e na \autoref{fig:hilFase3}). Além disso, as respostas ao degrau dos modelos obtidos
+foram coerentes e apresentaram o mesmo comportamento em todas as etapas do método HIL. Assim, a sintonia e
+validação da estratégia de controle foi realizada com êxito.
 
 Por fim, o desafio futuro envolve tanto a planta do manipulador quanto a configuração \textit{Hardware in the loop}. Para o
 manipulador é necessário reduzir ou remover a trepidação observada principalmente na base. Essa trepidação foi reduzida ao
-validar a estratégia de controle (conforme a \autoref{fig:hilFase3} mostra), mas ela ainda ocorre. Em relação à técnica HIL,
-é de grande importância optar por um \textit{hardware} de tempo real, o que não foi atendido com a \textit{Raspberry}. A 
-solução atual mais coerente seria modificar o \textit{kernel} \textit{Linux} da \textit{Raspberry} para tornar o tempo 
+validar a estratégia de controle (conforme a \autoref{fig:hilFase3} mostra), mas ela ainda perdura.
+A implementação de outras estratégias de controle pode auxiliar na redução da trepidação das juntas e aumento da robustez do sistema.
+Em relação à técnica HIL, é de grande importância optar por um \textit{hardware} de tempo real, o que não foi atendido com a \textit{Raspberry Pi}.
+A solução mais coerente seria modificar o \textit{kernel} \textit{Linux} da \textit{Raspberry Pi} para tornar o tempo 
 de resposta aos eventos um tempo pré-definido.
 
 

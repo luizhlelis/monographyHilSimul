@@ -28,21 +28,21 @@ o resultado obtido para a simulação \textit{Denavit-Hartenberg}:
 \end{figure}
 
 Os modelos da planta usados para projetar os controladores foram obtidos através de ensaios em malha aberta (MA) e seguem 
-na próxima seção. Três modelos foram levantados, um para a base, um para o ombro e outro para o cotovelo, e para 
-cada um deles foi projetado um controlador, esse processo é conhecido na literatura como controle de juntas independentes.
+na próxima seção. Três modelos foram levantados: um para a base, um para o ombro e outro para o cotovelo, e para 
+cada um deles foi projetado um controlador. Esse processo é conhecido na literatura como controle de juntas independentes.
 
 \section{Ensaio em malha aberta}
 \markright{\thesection ~~~ Resultado ensaio em malha aberta}
 
 A comunicação com os servomotores foi feita inicialmente com um computador através da porta serial com o protocolo 
-\textit{UART}. A linguagem usada para a execução do ensaio em malha aberta foi o \textit{python}, e seu código completo
-encontra-se em \cite{lelis_model}.
+\textit{UART}. A linguagem usada para a execução do ensaio em malha aberta foi o \textit{Python}, e seu código completo
+encontra-se disponível em \cite{lelis_model}.
 
-Para cada uma das juntas, foi feita uma montagem semelhante à \autoref{fig:diagEnsaioMA}. Foi aplicada na entrada de
-cada um dos servos uma referência em degrau para o ângulo $\theta$ ($^\circ C$). Inicialmente, o sistema tinha sido
-configurado para uma amostragem de $0,01s$, de acordo com a resposta obtida, observou-se uma superamostragem dos dados,
-com isso, o tempo de amostragem foi alterado para $0,23s$. As saídas $\theta$ ($^\circ C$) obtidas
-ao longo do tempo seguem na \autoref{fig:ensaioMalhaAberta}.
+Para cada uma das juntas foi feita uma montagem semelhante a apresentada na \autoref{fig:diagEnsaioMA}. Foi aplicada na entrada de
+cada um dos servomotores uma referência em degrau para o ângulo $\theta$ (em graus). Inicialmente, o sistema tinha sido
+configurado para um tempo de amostragem de $0,01s$. De acordo com a resposta obtida, observou-se uma superamostragem dos dados,
+e, devido a isso, o tempo de amostragem foi reajustado empiricamente para $0,23s$. Os ângulos de resposta (em graus) obtidos
+ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ensaioMalhaAberta}.
 
 \begin{figure}[h!]
   
@@ -75,25 +75,27 @@ ao longo do tempo seguem na \autoref{fig:ensaioMalhaAberta}.
 
 \end{figure}
 
-O modelo de cada junta poderia ser aproximado para uma modelo de primeira ordem, mas os servomotores possuem
-um controlador interno de configuração eletrônica para o ângulo. Por esse motivo, o mais apropriado foi 
-aproximar cada junta para um modelo de segunda ordem, conforme \eqref{eq:sistemaSegundaOrdem}.
+A princípio, observando as respostas em malha aberta das juntas, a dinâmica de cada uma poderia ser aproximada por
+um modelo de primeira ordem. Entretanto, constatou-se experimentalmente que um modelo de segunda ordem, 
+conforme \eqref{eq:sistemaSegundaOrdem}, era mais apropriado para descrever a dinâmica de cada junta do sistema.
+Tal fato se deve, possivelmente, ao controlador interno presente nos servomotores.
 
 Observando as Figuras \ref{fig:base_ma} e \ref{fig:forearm_ma}, observa-se um comportamento próximo do 
-amortecimento crítico. Quando ocorre esse tipo de comportamento, pode-se fazer a 
-aproximação: $\xi = 1$ \cite{Ogata}, \cite{Castrucci}. Por outro lado, em \ref{fig:shoulder_ma}, observa-se
+amortecimento crítico. Quando ocorre esse tipo de comportamento, pode-se escolher $\xi=1$ na função de 
+transferência. Por outro lado, em \ref{fig:shoulder_ma}, observa-se
 um pequeno sobressinal, o que resulta em um $\xi$ menor, aproximando-se para este caso: $\xi = 0,8$.
 
-O tempo de acomodação, definido em \eqref{eq:tempoAcomodacao}, variou para todas as juntas uma quantidade
-semelhante $0,9s < t_s < 1,3s$. De acordo com testes visuais para a validação do modelo, e pelas Figuras 
+O tempo de acomodação, definido em \eqref{eq:tempoAcomodacao}, variou para todas as juntas na 
+faixa $0,9s < t_s < 1,3s$. De acordo com testes qualitativos para a validação do modelo, e pelas Figuras 
 \ref{fig:base_ma}, \ref{fig:shoulder_ma} e \ref{fig:forearm_ma}, foi considerado para a base, ombro e
 cotovelo respectivamente: $t_s = 1,0952s$, $t_s = 0,9333s$, $t_s = 1,0952s$. Dessa forma, substituindo em 
-\eqref{eq:tempoAcomodacao} as constantes encontradas por aproximação, obtém-se para o $\omega_n$ da base, ombro e
+\eqref{eq:tempoAcomodacao} as constantes encontradas por aproximação, obtém-se para as frequências naturais de
+oscilação ($\omega_n$) da base, ombro e
 cotovelo respectivamente: $\omega_n = 3.6522 rad/s$, $\omega_n = 5.3571 rad/s$, $\omega_n = 3.6522 rad/s$.
 O valor das variáveis encontradas para cada uma das juntas segue na \autoref{tab:ctesModeloMA}
 
 \begin{center}
-    \captionof{table}{Constantes encontradas para o modelo de segunda ordem}
+    \captionof{table}{Constantes determinadas para os modelos das juntas}
     \begin{tabular}{| c | c | c | c |}\hline
       \textbf{Junta}	& $\xi$ 	& $t_s$ (s)	& $\omega_n$ (rad/s)	\\ \hline
       Base		& 1 		& 1,0952	& 3,6522		\\ \hline
@@ -108,7 +110,7 @@ O valor das variáveis encontradas para cada uma das juntas segue na \autoref{ta
 
 Como foi exposto na seção anterior, as constantes foram encontradas por aproximações de acordo
 com o que foi observado no ensaio em malha aberta. A partir disso, as funções de transferência
-para a base, ombro e cotovelo foram obtidas através da \autoref{eq:sistemaSegundaOrdem} e 
+para a base, ombro e cotovelo foram obtidas através da Equação \eqref{eq:sistemaSegundaOrdem} e 
 seguem respectivamente em \eqref{eq:baseModel}, \eqref{eq:shoulderModel} e \eqref{eq:forearmModel}:
 
 \begin{equation}
@@ -132,10 +134,9 @@ seguem respectivamente em \eqref{eq:baseModel}, \eqref{eq:shoulderModel} e \eqre
   \label{eq:forearmModel}
 \end{equation}
 
-As funções de transferência obtidas representam uma simulação da planta do projeto.
-O mesmo degrau aplicado na planta real, foi aplicado nas funções de transferência para
-a validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_simul}, 
-\ref{fig:shoulder_ma_simul} e \ref{fig:forearm_ma_simul}.
+Os mesmos degraus aplicados na planta real, foram aplicados nas funções de transferência para
+validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_simul}, na
+\autoref{fig:shoulder_ma_simul} e na \autoref{fig:forearm_ma_simul}.
 
 \begin{figure}[h!]
   
@@ -144,14 +145,14 @@ a validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Base}
-    \includegraphics[width = 1\columnwidth]{Imagens/base_ma_simul}
+    \includegraphics[width = .9\columnwidth]{Imagens/base_ma_simul}
     \fonte{Do autor}
     \label{fig:base_ma_simul}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Ombro}
-    \includegraphics[width = 1\columnwidth]{Imagens/shoulder_ma_simul}
+    \includegraphics[width = .9\columnwidth]{Imagens/shoulder_ma_simul}
     \fonte{Do autor}
     \label{fig:shoulder_ma_simul}
   \end{subfigure}%
@@ -159,7 +160,7 @@ a validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
-    \includegraphics[width = 0.55\columnwidth]{Imagens/forearm_ma_simul}
+    \includegraphics[width = 0.5\columnwidth]{Imagens/forearm_ma_simul}
     \fonte{Do autor}
     \label{fig:forearm_ma_simul}
   \end{subfigure}%
@@ -168,45 +169,44 @@ a validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_
 
 \end{figure}
 
-Obtidos os modelos, a próxima etapa da fase 1 da técnica HIL foi o projeto dos 
-controladores pelo método do lugar das raízes. Considerando que as especificações do projeto
-de controle seriam atendidas caso houvesse pouco sobressinal na resposta, e o erro em estado
-estacionário igual a zero, mesmo impactando negativamente no tempo de acomodação, um controlador 
-PI para cada junta seria suficiente. O controlador PI corresponde a \autoref{eq:pid} sem a ação 
-derivativa. Assim sendo, na análise do lugar das
-raízes (através da ferramenta \textit{sisotool} do \textit{Matlab}), foi colocado um polo de malha
-fechada na origem e um zero no eixo real para o controlador de cada uma das juntas. O ganho foi 
-ajustado de tal forma que os polos de malha fechada ficassem o mais próximo possível do eixo real, 
-assim a resposta não apresentaria oscilação (ou quase não apresentaria) ao fechar a malha. Outra 
-consideração importante observada foi modelar o controlador de tal forma que mesmo depois da 
-discretização, ele não apresentasse zeros não mínimos. O resultado final obtido para os controladores 
-da base, ombro e cotovelo seguem respsectivamente em \eqref{eq:base_ctrl}, \eqref{eq:shoulder_ctrl}
-e \eqref{eq:forearm_ctrl}:
+Note que as curvas simuladas aproximam adequadamente as respostas de cada junta em malha aberta. Assim, 
+conclui-se que os modelos obtidos são satisfatórios para representar as dinâmicas das juntas do manipulador.
 
+Obtidos os modelos que descrevem as dinâmicas das juntas, a próxima etapa da fase 1 da técnica HIL foi o projeto dos 
+controladores pelo método do lugar das raízes. Considerando que as especificações do projeto
+de controle seriam atendidas caso houvesse um baixo sobressinal na resposta, e o erro em estado
+estacionário igual a
+zero. Dadas as características do modelo da planta, verificou-se experimentalmente que um controlador
+PI seria suficiente para atender as especificações de projeto. Esse controlador é obtido a partir
+de \eqref{eq:pid} escolhendo $T_d=0$.
+Assim sendo, na análise do lugar das raízes (através da ferramenta \textit{sisotool} do \textit{Matlab}), foi colocado um polo de malha
+fechada na origem e um zero no eixo real para o controlador de cada uma das juntas. O ganho foi 
+ajustado de tal forma que os polos de malha fechada ficassem o mais próximo possível do eixo real (parte complexa próxima de zero), 
+assim a resposta apresentaria pouca ou nenhuma oscilação ao fechar a malha. A partir dessas considerações de projeto, 
+obtiveram-se os controladores para a base, ombro e cotovelo dados respectivamente por \eqref{eq:base_ctrl}, \eqref{eq:shoulder_ctrl}
+e \eqref{eq:forearm_ctrl}:
 \begin{equation}
   \begin{gathered}
-    C(s) = \frac{0,152s + 0,8}{s} \quad ou \quad C(s) = 0,152 + \frac{0,8}{s}
+    C(s) = \frac{0,152s + 0,8}{s}
   \end{gathered}
   \label{eq:base_ctrl}
 \end{equation}
-
 \begin{equation}
   \begin{gathered}
-    C(s) = \frac{0,413 s + 0,9229}{s} \quad ou \quad C(s) = 0,413 + \frac{0,9229}{s}
+    C(s) = \frac{0,413 s + 0,9229}{s}
   \end{gathered}
   \label{eq:shoulder_ctrl}
 \end{equation}
-
 \begin{equation}
   \begin{gathered}
-   C(s) = \frac{0,152s + 0,8}{s} \quad ou \quad C(s) = 0,152 + \frac{0,8}{s}
+   C(s) = \frac{0,152s + 0,8}{s}
   \end{gathered}
   \label{eq:forearm_ctrl}
 \end{equation}
 
-O código simulado completo com as funções de transferência e os controladores encontra-se em \cite{lelis_hil1}.
-Ao fechar as malhas, os resultados obtidos seguem na \autoref{fig:base_mf_simul}, na \autoref{fig:shoulder_mf_simul} e na
-\autoref{fig:forearm_mf_simul}.
+O código de simulação completo com as funções de transferência e os controladores projetados encontra-se em \cite{lelis_hil1}.
+Ao fechar as malhas, os resultados obtidos para o modelo da planta e para a planta física seguem na 
+\autoref{fig:base_mf_simul}, na \autoref{fig:shoulder_mf_simul} e na \autoref{fig:forearm_mf_simul}.
 
 \begin{figure}[h!]
   
@@ -215,18 +215,23 @@ Ao fechar as malhas, os resultados obtidos seguem na \autoref{fig:base_mf_simul}
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Base}
-    \includegraphics[width = 1\columnwidth]{Imagens/base_mf_simul}
+    \includegraphics[width = .75\columnwidth]{Imagens/base_mf_simul}
     \fonte{Do autor}
     \label{fig:base_mf_simul}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Ombro}
-    \includegraphics[width = 1\columnwidth]{Imagens/shoulder_mf_simul}
+    \includegraphics[width = .75\columnwidth]{Imagens/shoulder_mf_simul}
     \fonte{Do autor}
     \label{fig:shoulder_mf_simul}
   \end{subfigure}%
-  \\[5ex]
+  
+  \label{fig:malhaFechadaHil1} 
+  
+\end{figure}
+
+\begin{figure}[h!]\ContinuedFloat
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
@@ -234,49 +239,53 @@ Ao fechar as malhas, os resultados obtidos seguem na \autoref{fig:base_mf_simul}
     \fonte{Do autor}
     \label{fig:forearm_mf_simul}
   \end{subfigure}%
-  
-  \label{fig:malhaFechadaHil1} 
 
 \end{figure}
 
-Com o primeiro controlador projetado para a base e para o cotovelo, ao fechar a malha, a resposta não apresentava
-sobresinal como mostrado na \autoref{fig:base_mf_simul} e na \autoref{fig:forearm_mf_simul}. Apesar disso,
-ao passar para o domínio discreto, o controlador passava a ter um zero não mínimo. E como foi citado 
-anteriormente, o zero não mínimo é um comportamento indesejado para o sistema, por esse motivo, o controlador
-de ambas as juntas foi alterado.
+%Com o primeiro controlador projetado para a base e para o cotovelo, ao fechar a malha, a resposta não apresentava
+%sobresinal como mostrado na \autoref{fig:base_mf_simul} e na \autoref{fig:forearm_mf_simul}. Apesar disso,
+%ao passar para o domínio discreto, o controlador passava a ter um zero não mínimo. E como foi citado 
+%anteriormente, o zero não mínimo é um comportamento indesejado para o sistema, por esse motivo, o controlador
+%de ambas as juntas foi alterado.
+
+Nota-se na \autoref{fig:malhaFechadaHil1} que as respostas obtidas em malha fechada possuem uma dinâmica mais lenta,
+isso se deve pela não necessecidade de uma resposta rápida, mas sim, pela necessidade de uma transição mais suave. Outro fator
+levado em consideração ao fechar a malha foi a obtenção do erro em estado estacionário igual a zero. Em malha aberta, a base 
+apresentava uma variação em torno do estado estacionário infindável, ao fechar a malha essa variação foi corrigida quando o
+sistema entra em estado estacionário.
 
 \section{Fase 2 da técnica HIL}
 \markright{\thesection ~~~ Fase 2 da técnica HIL}
 
-Como o sinal da resposta da planta sofre uma discretização ao comunicar com a placa de aquisição de dados do
-computador e da \textit{Raspberry}, torna-se necessária a discretização do controlador e da planta simulada. A 
-discretização foi feita através do comando \textit{c2d( )} do \textit{Matlab} através do método do segurador de 
-ordem zero e com um tempo de amostragem de $0,23s$. O resultado para cada uma das juntas
-segue abaixo respeitando a ordem de configuração do manipulador:
-
+Como o sinal da resposta da planta é amostrado periodicamente pela placa de aquisição de dados do
+computador e pela \textit{Raspberry}, torna-se necessária a discretização do controlador e da planta simulada. A 
+discretização foi feita através do comando \textit{c2d( )} do \textit{Matlab} utilizando um segurador de 
+ordem zero e com um tempo de amostragem de $0,23s$. O resultado da discretização para as juntas e os respectivos
+controladores segue a seguir.
+Para a base:
 \begin{equation}
   \begin{gathered}
-    G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \quad e \quad C(z) = \frac{0,152z + 0,032}{z - 1}
+    G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \quad \text{e} \quad C(z) = \frac{0,152z + 0,032}{z - 1}
   \end{gathered}
   \label{eq:base_discrete}
 \end{equation}
-
+para o ombro:
 \begin{equation}
   \begin{gathered}
-    G(z) = \frac{0,3876z - 0,198}{z^2 - 0,5515z + 0,1393} \quad e \quad C(z) = \frac{0,1572z + 0,06513}{z - 1}
+    G(z) = \frac{0,3876z - 0,198}{z^2 - 0,5515z + 0,1393} \quad \text{e} \quad C(z) = \frac{0,1572z + 0,06513}{z - 1}
   \end{gathered}
   \label{eq:shoulder_discrete}
 \end{equation}
-
+para o cotovelo:
 \begin{equation}
   \begin{gathered}
-   G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \quad e \quad C(z) = \frac{0,152z + 0,032}{z - 1}
+   G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \quad \text{e} \quad C(z) = \frac{0,152z + 0,032}{z - 1}
   \end{gathered}
   \label{eq:forearm_discrete}
 \end{equation}
 
-O próximo passo foi a obtenção da equação de diferenças para cada uma das plantas e
-controladores. Para isso, foi feito o que segue para a planta da base:
+O próximo passo foi a obtenção da equação a diferenças para cada uma das plantas e
+controladores. Para isso, foi feito o seguinte procedimento para o modelo da base e seu respectivo controlador:
 
 \begin{equation*}
   \begin{gathered}
@@ -293,7 +302,6 @@ controladores. Para isso, foi feito o que segue para a planta da base:
   \end{gathered}
   \label{eq:base_plant_diffEq}
 \end{equation}
-para o controlador da base:
 
 \begin{equation*}
   \begin{gathered}
@@ -379,8 +387,6 @@ para o controlador do cotovelo:
   \label{eq:forearm_ctrl_diffEq}
 \end{equation}
 
-\newpage
-
 Com as equações de diferença prontas, foi necessário realizar a montagem conforme a 
 \autoref{fig:solucaoModelo}, configurar a conexão UART entre o computador e a 
 \textit{Raspberry}, e escrever o código em \textit{python} para a planta simulada e
@@ -417,8 +423,6 @@ Foram aplicadas as mesmas referências em degrau da primeira fase da técnica HI
 cada uma das plantas simuladas. Assim sendo, as saídas obtidas ao longo do tempo para 
 a fase 2 da técnica HIL seguem nas Figuras \ref{fig:base_hilFase2}, 
 \ref{fig:shoulder_hilFase2} e \ref{fig:forearm_hilFase2}.
-
-\newpage
 
 \begin{figure}[h!]
   

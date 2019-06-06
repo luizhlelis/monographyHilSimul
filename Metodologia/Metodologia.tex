@@ -19,11 +19,11 @@ As etapas pormenorizadas do projeto seguem abaixo:
     \item Discretização da planta de estudo seguido da obtenção da sua equação de diferenças.
     \item Discretização do controlador seguido da obtenção da sua equação de diferenças.
     \item Configuração do ambiente de testes com a planta rodando no computador, e o 
-    controlador rodando no microcontrolador (comunicação \textit{UART}).
+    controlador rodando no microcontrolador (comunicação UART).
   \end{enumerate}
   \item Implementação em dispositivo real
   \begin{enumerate}
-    \item Configuração do ambiente com a planta real e o microcontrolador (comunicação \textit{UART}).
+    \item Configuração do ambiente com a planta real e o microcontrolador (comunicação UART).
     \item Implementação da estratégia de controle no microcontrolador.
     \item Testes de validação da estratégia de controle na planta física..
   \end{enumerate}
@@ -179,14 +179,14 @@ onde $J_v$ e $J_\omega$ são matrizes $3 \times n$. É possível ainda, reescrev
 \eqref{eq:jacob_velAngular} da seguinte forma:
 \begin{equation}
   \begin{gathered}
-    \xi = J\dot{q}
+    \zeta = J\dot{q}
   \end{gathered}
   \label{eq:jacob_ambos}
 \end{equation}
 
 \begin{equation}
   \begin{gathered}
-    \xi = \begin{bmatrix}
+    \zeta = \begin{bmatrix}
      v^0_n\\
      \omega^0_n\\
     \end{bmatrix}
@@ -198,7 +198,7 @@ onde $J_v$ e $J_\omega$ são matrizes $3 \times n$. É possível ainda, reescrev
   \end{gathered}
 \end{equation}
 
-O vetor $\xi$ também pode ser chamado de velocidade do corpo \cite{Spong} e é importante notar que
+O vetor $\zeta$ também pode ser chamado de velocidade do corpo \cite{Spong} e é importante notar que
 ele não é a derivada de uma variável de posição. A matriz $J$ é chamado de \textbf{Jacobiano} e trata-se
 de uma matriz $6 \times n$ .
 

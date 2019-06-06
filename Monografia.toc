@@ -4,48 +4,50 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{8}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o e Justificativa}{10}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objetivos do Projeto}{10}{section.1.2}
-\contentsline {section}{\numberline {1.3}Local de Realiza\IeC {\c c}\IeC {\~a}o}{10}{section.1.3}
-\contentsline {section}{\numberline {1.4}Estrutura da Monografia}{10}{section.1.4}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Manipuladores Rob\IeC {\'o}ticos}{12}{section.2.1}
-\contentsline {section}{\numberline {2.2}Sistemas de Controle}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}T\IeC {\'e}cnica \textit {Hardware in the Loop (HIL)}}{14}{section.2.3}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Desenvolvimento da solu\IeC {\c c}\IeC {\~a}o para o modelo da planta}{16}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg}}{17}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Cinem\IeC {\'a}tica Diferencial e o Jacobiano}{18}{subsubsection.3.1.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}{20}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Energia cin\IeC {\'e}tica para um manipulador de $n$ elos}{20}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Energia potencial para um manipulador de $n$ elos}{21}{subsubsection.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.2.3}Equa\IeC {\c c}\IeC {\~o}es de movimento}{22}{subsubsection.3.1.2.3}
-\contentsline {section}{\numberline {3.2}Ensaio em malha aberta para a obten\IeC {\c c}\IeC {\~a}o do modelo da planta}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}Projeto de sistemas de controle pelo m\IeC {\'e}todo do lugar das ra\IeC {\'\i }zes}{24}{section.3.3}
-\contentsline {section}{\numberline {3.4}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{24}{section.3.4}
-\contentsline {section}{\numberline {3.5}Resumo do Cap\IeC {\'\i }tulo}{24}{section.3.5}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados}}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Ensaio em malha aberta}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fase 1 da t\IeC {\'e}cnica HIL}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Fase 2 da t\IeC {\'e}cnica HIL}{30}{section.4.3}
-\contentsline {section}{\numberline {4.4}Fase 3 da t\IeC {\'e}cnica HIL}{36}{section.4.4}
-\contentsline {section}{\numberline {4.5}Resumo do Cap\IeC {\'\i }tulo}{38}{section.4.5}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{39}{chapter.5}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{40}{chapter.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{40}{section*.16}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o e Justificativa}{14}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos do Projeto}{14}{section.1.2}
+\contentsline {section}{\numberline {1.3}Local de Realiza\IeC {\c c}\IeC {\~a}o}{14}{section.1.3}
+\contentsline {section}{\numberline {1.4}Estrutura da Monografia}{14}{section.1.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}}{16}{chapter.2}
+\contentsline {section}{\numberline {2.1}Manipuladores Rob\IeC {\'o}ticos}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}Sistemas de Controle}{17}{section.2.2}
+\contentsline {section}{\numberline {2.3}T\IeC {\'e}cnica \textit {Hardware in the Loop (HIL)}}{18}{section.2.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Desenvolvimento da solu\IeC {\c c}\IeC {\~a}o para o modelo da planta}{20}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg}}{21}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Cinem\IeC {\'a}tica Diferencial e o Jacobiano}{22}{subsubsection.3.1.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}{24}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Energia cin\IeC {\'e}tica para um manipulador de $n$ elos}{24}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Energia potencial para um manipulador de $n$ elos}{25}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Equa\IeC {\c c}\IeC {\~o}es de movimento}{26}{subsubsection.3.1.2.3}
+\contentsline {section}{\numberline {3.2}Ensaio em malha aberta para a obten\IeC {\c c}\IeC {\~a}o do modelo da planta}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}Projeto de sistemas de controle pelo m\IeC {\'e}todo do lugar das ra\IeC {\'\i }zes}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Configura\IeC {\c c}\IeC {\~a}o do ambiente de simula\IeC {\c c}\IeC {\~a}o}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}Resumo do Cap\IeC {\'\i }tulo}{28}{section.3.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados}}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}Ensaio em malha aberta}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fase 1 da t\IeC {\'e}cnica HIL}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Fase 2 da t\IeC {\'e}cnica HIL}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}Fase 3 da t\IeC {\'e}cnica HIL}{38}{section.4.4}
+\contentsline {section}{\numberline {4.5}Resumo do Cap\IeC {\'\i }tulo}{40}{section.4.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{41}{chapter.5}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{43}{chapter.5}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{43}{section*.21}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{42}{section*.17}
+\contentsline {part}{\uppercase {Anexos}}{45}{section*.22}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Obten\IeC {\c c}\IeC {\~a}o do modelo atrav\IeC {\'e}s da conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg} e equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}}{43}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Obten\IeC {\c c}\IeC {\~a}o do modelo atrav\IeC {\'e}s da conven\IeC {\c c}\IeC {\~a}o de \textit {Denavit-Hartenberg} e equa\IeC {\c c}\IeC {\~o}es de \textit {Euler-Lagrange}}}{46}{appendix.anexochapback.1}
