@@ -6,7 +6,6 @@ Neste capítulo, os resultados para o projeto descritos no capítulo anterior se
 planta foi dada de duas formas diferentes: por meio da convenção de \textit{Denavit-Hartenberg} e equações de 
 \textit{Euler-Lagrange} e por meio do ensaio em malha aberta. Para o primeiro método, foram feitas algumas considerações,
 estas seguem abaixo:
-
 \begin{enumerate}
  \item O elo do cotovelo e o elo do ombro são barras de comprimento $L$ e massa $m$, e possuem o eixo de rotação no fim
  da barra;
@@ -17,32 +16,33 @@ estas seguem abaixo:
 
 O código em MATLAB referente ao modelo obtido por meio da convenção de \textit{Denavit-Hartenberg} e equações de
 \textit{Euler-Lagrange} é apresentado no \refanexo{anexo:denHatEulerLagr}. A \autoref{fig:dh_simulation} mostra 
-o resultado obtido para a simulação \textit{Denavit-Hartenberg}:
+o modelo encontrado por meio da matriz de homogeneidade resultante da convenção DH. Nota-se a coerência deste 
+modelo com o manipulador real por respeitar a proporção e distribuição dos elos e juntas.
 
 \begin{figure}[ht]
   \centering
   \caption{Gráfico da representação \textit{Denavit-Hartenberg} obtida}
-  \includegraphics[width = 0.78\columnwidth]{Imagens/dh_simulation}
+  \includegraphics[width = 0.7\columnwidth]{Imagens/dh_simulation}
   \fonte{Do autor}
   \label{fig:dh_simulation} 
 \end{figure}
 
 Os modelos da planta usados para projetar os controladores foram obtidos através de ensaios em malha aberta (MA) e seguem 
 na próxima seção. Três modelos foram levantados: um para a base, um para o ombro e outro para o cotovelo, e para 
-cada um deles foi projetado um controlador. Esse processo é conhecido na literatura como controle de juntas independentes.
+cada um deles foi projetado um controlador. Esse processo é conhecido na literatura como controle de juntas independentes.\\[0.9cm]
 
 \section{Ensaio em malha aberta}
 \markright{\thesection ~~~ Resultado ensaio em malha aberta}
 
 A comunicação com os servomotores foi feita inicialmente com um computador através da porta serial com o protocolo 
-\textit{UART}. A linguagem usada para a execução do ensaio em malha aberta foi o \textit{Python}, e seu código completo
+UART. A linguagem usada para a execução do ensaio em malha aberta foi o \textit{Python}, e seu código completo
 encontra-se disponível em \cite{lelis_model}.
 
 Para cada uma das juntas foi feita uma montagem semelhante a apresentada na \autoref{fig:diagEnsaioMA}. Foi aplicada na entrada de
 cada um dos servomotores uma referência em degrau para o ângulo $\theta$ (em graus). Inicialmente, o sistema tinha sido
 configurado para um tempo de amostragem de $0,01s$. De acordo com a resposta obtida, observou-se uma superamostragem dos dados,
 e, devido a isso, o tempo de amostragem foi reajustado empiricamente para $0,23s$. Os ângulos de resposta (em graus) obtidos
-ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ensaioMalhaAberta}.
+ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ensaioMalhaAberta}. \\[0.5cm]
 
 \begin{figure}[h!]
   
@@ -62,7 +62,12 @@ ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ens
     \fonte{Do autor}
     \label{fig:shoulder_ma}
   \end{subfigure}%
-  \\[5ex]
+  
+  \label{fig:ensaioMalhaAberta} 
+  
+\end{figure}
+
+\begin{figure}[h!]\ContinuedFloat
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
@@ -70,9 +75,6 @@ ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ens
     \fonte{Do autor}
     \label{fig:forearm_ma}
   \end{subfigure}%
-  
-  \label{fig:ensaioMalhaAberta} 
-
 \end{figure}
 
 A princípio, observando as respostas em malha aberta das juntas, a dinâmica de cada uma poderia ser aproximada por
@@ -112,7 +114,6 @@ Como foi exposto na seção anterior, as constantes foram encontradas por aproxi
 com o que foi observado no ensaio em malha aberta. A partir disso, as funções de transferência
 para a base, ombro e cotovelo foram obtidas através da Equação \eqref{eq:sistemaSegundaOrdem} e 
 seguem respectivamente em \eqref{eq:baseModel}, \eqref{eq:shoulderModel} e \eqref{eq:forearmModel}:
-
 \begin{equation}
   \begin{gathered}
     G(s) = \frac{13,3384}{s^2 + 7,3043s + 13,3384}
@@ -145,22 +146,22 @@ validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_si
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Base}
-    \includegraphics[width = .9\columnwidth]{Imagens/base_ma_simul}
+    \includegraphics[width = .8\columnwidth]{Imagens/base_ma_simul}
     \fonte{Do autor}
     \label{fig:base_ma_simul}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Ombro}
-    \includegraphics[width = .9\columnwidth]{Imagens/shoulder_ma_simul}
+    \includegraphics[width = .8\columnwidth]{Imagens/shoulder_ma_simul}
     \fonte{Do autor}
     \label{fig:shoulder_ma_simul}
   \end{subfigure}%
-  \\[5ex]
+  \\
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
-    \includegraphics[width = 0.5\columnwidth]{Imagens/forearm_ma_simul}
+    \includegraphics[width = 0.4\columnwidth]{Imagens/forearm_ma_simul}
     \fonte{Do autor}
     \label{fig:forearm_ma_simul}
   \end{subfigure}%
@@ -215,7 +216,7 @@ Ao fechar as malhas, os resultados obtidos para o modelo da planta e para a plan
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Base}
-    \includegraphics[width = .75\columnwidth]{Imagens/base_mf_simul}
+    \includegraphics[width = .78\columnwidth]{Imagens/base_mf_simul}
     \fonte{Do autor}
     \label{fig:base_mf_simul}
   \end{subfigure}%
@@ -249,7 +250,7 @@ Ao fechar as malhas, os resultados obtidos para o modelo da planta e para a plan
 %de ambas as juntas foi alterado.
 
 Nota-se na \autoref{fig:malhaFechadaHil1} que as respostas obtidas em malha fechada possuem uma dinâmica mais lenta,
-isso se deve pela não necessecidade de uma resposta rápida, mas sim, pela necessidade de uma transição mais suave. Outro fator
+isso se deve à não necessidade de uma resposta rápida, mas sim, à necessidade de uma transição mais suave. Outro fator
 levado em consideração ao fechar a malha foi a obtenção do erro em estado estacionário igual a zero. Em malha aberta, a base 
 apresentava uma variação em torno do estado estacionário infindável, ao fechar a malha essa variação foi corrigida quando o
 sistema entra em estado estacionário.
@@ -258,7 +259,7 @@ sistema entra em estado estacionário.
 \markright{\thesection ~~~ Fase 2 da técnica HIL}
 
 Como o sinal da resposta da planta é amostrado periodicamente pela placa de aquisição de dados do
-computador e pela \textit{Raspberry}, torna-se necessária a discretização do controlador e da planta simulada. A 
+computador e pela \textit{Raspberry Pi}, torna-se necessária a discretização do controlador e da planta simulada. A 
 discretização foi feita através do comando \textit{c2d( )} do \textit{Matlab} utilizando um segurador de 
 ordem zero e com um tempo de amostragem de $0,23s$. O resultado da discretização para as juntas e os respectivos
 controladores segue a seguir.
@@ -318,79 +319,107 @@ controladores. Para isso, foi feito o seguinte procedimento para o modelo da bas
   \end{gathered}
   \label{eq:base_ctrl_diffEq}
 \end{equation}
-para a planta do ombro:
 
-\begin{equation*}
-  \begin{gathered}
-    G(z) = \frac{0,3876 z + 0,198}{z^2 - 0,5515 z + 0,1393} \\[0.5cm]
-    \frac{Y(z)}{U(z)} = \frac{0,3876 z + 0,198}{z^2 - 0,5515 z + 0,1393}\\[0.5cm]
-    \frac{Y(z)}{U(z)} = \frac{0,3876/z + 0,198/z^2}{1 - 0,5515/z + 0,1393/z^2}\\[0.5cm]
-    Y(z) - \frac{0,5515}{z} \;Y(z) + \frac{0,1393}{z^2} \;Y(z) = \frac{0,3876}{z} \;U(z) + \frac{0,198}{z^2} \;U(z)
-  \end{gathered}
-  \label{eq:shouder_plant_diffEqIntro}
-\end{equation*}
+O procedimento elucidado acima é repetido para os modelos e controladores do ombro \eqref{eq:shouder_plant_diffEq} - \eqref{eq:shouder_ctrl_diffEq} 
+e do cotovelo \eqref{eq:forearm_plant_diffEq} - \eqref{eq:forearm_ctrl_diffEq}, resultando nos seguintes pares de equações a diferenças:
 \begin{equation}
   \begin{gathered}
-    y(k) = 0,3876 \;u(k-1) + 0,198 \;u(k-2) + 0,5515 \;y(k-1) - 0,1393 \;y(k-2)
+    y(k) = 0,3876 u(k-1) + 0,198 u(k-2) + 0,5515 y(k-1) - 0,1393 y(k-2)
   \end{gathered}
   \label{eq:shouder_plant_diffEq}
 \end{equation}
-para o controlador do ombro:
-
-\begin{equation*}
-  \begin{gathered}
-    C(z) = \frac{0,1572 z + 0,06513}{z - 1}\\[0.5cm]
-    \frac{U(z)}{E(z)} = \frac{0,1572 z + 0,06513}{z - 1}\\[0.5cm]
-    \frac{U(z)}{E(z)} = \frac{0,1572 + 0,06513/z}{1 - 1/z}\\[0.5cm]
-    U(z) - \frac{U(z)}{z} = 0,1572 \;E(z) + \frac{0,06513}{z}\;E(z)\\[0.5cm]
-  \end{gathered}
-  \label{eq:shouder_ctrl_diffEqIntro}
-\end{equation*}
 \begin{equation}
   \begin{gathered}
-    u(k) = u(k-1) + 0,1572 \; e(k) + 0,06513 \;e(k-1)
+    u(k) = u(k-1) + 0,1572  e(k) + 0,06513 e(k-1)
   \end{gathered}
   \label{eq:shouder_ctrl_diffEq}
 \end{equation}
-para a planta do cotovelo:
-
-\begin{equation*}
-  \begin{gathered}
-    G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \\[0.5cm]
-    \frac{Y(z)}{U(z)} = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245}\\[0.5cm]
-    \frac{Y(z)}{U(z)} = \frac{0,8273/z - 0,6543/z^2}{1 - 0,9515/z + 0,1245/z^2}\\[0.5cm]
-    Y(z) - \frac{0,9515}{z} \;Y(z) + \frac{0,1245}{z^2} \;Y(z) = \frac{0,8273}{z} \;U(z) - \frac{0,6543}{z^2} \;U(z)
-  \end{gathered}
-  \label{eq:forearm_plant_diffEqIntro}
-\end{equation*}
 \begin{equation}
   \begin{gathered}
-    y(k) = 0,8273 \;u(k-1) - 0,6543 \;u(k-2) + 0,9515 \;y(k-1) - 0,1245 \;y(k-2)
+    y(k) = 0,8273 u(k-1) - 0,6543 u(k-2) + 0,9515y(k-1) - 0,1245y(k-2)
   \end{gathered}
   \label{eq:forearm_plant_diffEq}
 \end{equation}
-para o controlador do cotovelo:
-
-\begin{equation*}
-  \begin{gathered}
-    C(z) = \frac{0,152z + 0,032}{z - 1}\\[0.5cm]
-    \frac{U(z)}{E(z)} = \frac{0,152z + 0,032}{z - 1}\\[0.5cm]
-    \frac{U(z)}{E(z)} = \frac{0,152 + 0,032/z}{1 - 1/z}\\[0.5cm]
-    U(z) - \frac{U(z)}{z} = 0,152\;E(z) + \frac{0,032}{z}\;E(z)\\[0.5cm]
-  \end{gathered}
-  \label{eq:forearm_ctrl_diffEqIntro}
-\end{equation*}
 \begin{equation}
   \begin{gathered}
-    u(k) = u(k-1) + 0,152\; e(k) + 0,032 \;e(k-1)
+    u(k) = u(k-1) + 0,152 e(k) + 0,032 e(k-1)
   \end{gathered}
   \label{eq:forearm_ctrl_diffEq}
 \end{equation}
 
-Com as equações de diferença prontas, foi necessário realizar a montagem conforme a 
-\autoref{fig:solucaoModelo}, configurar a conexão UART entre o computador e a 
-\textit{Raspberry}, e escrever o código em \textit{python} para a planta simulada e
-para o controlador que passou a rodar na \textit{Raspberry} \cite{lelis_hil2}. Com isso,
+% para a planta do ombro:
+% 
+% \begin{equation*}
+%   \begin{gathered}
+%     G(z) = \frac{0,3876 z + 0,198}{z^2 - 0,5515 z + 0,1393} \\[0.5cm]
+%     \frac{Y(z)}{U(z)} = \frac{0,3876 z + 0,198}{z^2 - 0,5515 z + 0,1393}\\[0.5cm]
+%     \frac{Y(z)}{U(z)} = \frac{0,3876/z + 0,198/z^2}{1 - 0,5515/z + 0,1393/z^2}\\[0.5cm]
+%     Y(z) - \frac{0,5515}{z} \;Y(z) + \frac{0,1393}{z^2} \;Y(z) = \frac{0,3876}{z} \;U(z) + \frac{0,198}{z^2} \;U(z)
+%   \end{gathered}
+%   \label{eq:shouder_plant_diffEqIntro}
+% \end{equation*}
+% \begin{equation}
+%   \begin{gathered}
+%     y(k) = 0,3876 \;u(k-1) + 0,198 \;u(k-2) + 0,5515 \;y(k-1) - 0,1393 \;y(k-2)
+%   \end{gathered}
+%   \label{eq:shouder_plant_diffEq}
+% \end{equation}
+% para o controlador do ombro:
+% 
+% \begin{equation*}
+%   \begin{gathered}
+%     C(z) = \frac{0,1572 z + 0,06513}{z - 1}\\[0.5cm]
+%     \frac{U(z)}{E(z)} = \frac{0,1572 z + 0,06513}{z - 1}\\[0.5cm]
+%     \frac{U(z)}{E(z)} = \frac{0,1572 + 0,06513/z}{1 - 1/z}\\[0.5cm]
+%     U(z) - \frac{U(z)}{z} = 0,1572 \;E(z) + \frac{0,06513}{z}\;E(z)\\[0.5cm]
+%   \end{gathered}
+%   \label{eq:shouder_ctrl_diffEqIntro}
+% \end{equation*}
+% \begin{equation}
+%   \begin{gathered}
+%     u(k) = u(k-1) + 0,1572 \; e(k) + 0,06513 \;e(k-1)
+%   \end{gathered}
+%   \label{eq:shouder_ctrl_diffEq}
+% \end{equation}
+% para a planta do cotovelo:
+% 
+% \begin{equation*}
+%   \begin{gathered}
+%     G(z) = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245} \\[0.5cm]
+%     \frac{Y(z)}{U(z)} = \frac{0,8273z - 0,6543}{z^2 - 0,9515z + 0,1245}\\[0.5cm]
+%     \frac{Y(z)}{U(z)} = \frac{0,8273/z - 0,6543/z^2}{1 - 0,9515/z + 0,1245/z^2}\\[0.5cm]
+%     Y(z) - \frac{0,9515}{z} \;Y(z) + \frac{0,1245}{z^2} \;Y(z) = \frac{0,8273}{z} \;U(z) - \frac{0,6543}{z^2} \;U(z)
+%   \end{gathered}
+%   \label{eq:forearm_plant_diffEqIntro}
+% \end{equation*}
+% \begin{equation}
+%   \begin{gathered}
+%     y(k) = 0,8273 \;u(k-1) - 0,6543 \;u(k-2) + 0,9515 \;y(k-1) - 0,1245 \;y(k-2)
+%   \end{gathered}
+%   \label{eq:forearm_plant_diffEq}
+% \end{equation}
+% para o controlador do cotovelo:
+% 
+% \begin{equation*}
+%   \begin{gathered}
+%     C(z) = \frac{0,152z + 0,032}{z - 1}\\[0.5cm]
+%     \frac{U(z)}{E(z)} = \frac{0,152z + 0,032}{z - 1}\\[0.5cm]
+%     \frac{U(z)}{E(z)} = \frac{0,152 + 0,032/z}{1 - 1/z}\\[0.5cm]
+%     U(z) - \frac{U(z)}{z} = 0,152\;E(z) + \frac{0,032}{z}\;E(z)\\[0.5cm]
+%   \end{gathered}
+%   \label{eq:forearm_ctrl_diffEqIntro}
+% \end{equation*}
+% \begin{equation}
+%   \begin{gathered}
+%     u(k) = u(k-1) + 0,152\; e(k) + 0,032 \;e(k-1)
+%   \end{gathered}
+%   \label{eq:forearm_ctrl_diffEq}
+% \end{equation}
+
+Determinadas as equações a diferenças, foi necessário realizar a montagem conforme a 
+\autoref{fig:solucaoModelo}, isto é, configurar a conexão UART entre o computador e a 
+\textit{Raspberry Pi}, e escrever o código em \textit{Python} para a planta simulada e
+para o controlador que passou a rodar na \textit{Raspberry Pi} \cite{lelis_hil2}. Com isso,
 a parte referente à simulação da planta ficou conforme o que segue: \\
 
 \begin{lstlisting}[language=Python]
@@ -406,7 +435,7 @@ a parte referente à simulação da planta ficou conforme o que segue: \\
 	y_k[2] = 0.8273*u_k_delay[2] - 0.6543*u_k_delay_2[2]
 	  + 0.9515*y_k_delay[2] - 0.1245*y_k_delay_2[2];
 \end{lstlisting}
-e do lado do controlador na \textit{Raspberry}: \\
+e do lado do controlador na \textit{Raspberry Pi}: \\
 
 \begin{lstlisting}[language=Python]
 	# BASE - Funcao de transferencia do controlador
@@ -420,9 +449,11 @@ e do lado do controlador na \textit{Raspberry}: \\
 \end{lstlisting}
 
 Foram aplicadas as mesmas referências em degrau da primeira fase da técnica HIL para 
-cada uma das plantas simuladas. Assim sendo, as saídas obtidas ao longo do tempo para 
-a fase 2 da técnica HIL seguem nas Figuras \ref{fig:base_hilFase2}, 
+cada uma das plantas simuladas. Assim, as saídas obtidas ao longo do tempo para 
+a fase 2 da técnica HIL são apresentadas nas Figuras \ref{fig:base_hilFase2}, 
 \ref{fig:shoulder_hilFase2} e \ref{fig:forearm_hilFase2}.
+
+\newpage
 
 \begin{figure}[h!]
   
@@ -458,31 +489,28 @@ a fase 2 da técnica HIL seguem nas Figuras \ref{fig:base_hilFase2},
 \section{Fase 3 da técnica HIL}
 \markright{\thesection ~~~ Fase 3 da técnica HIL}
 
-A última etapa da técnica HIL consiste em pegar o controlador que foi configurado
-na \textit{Raspberry} da etapa anterior e inseri-lo na malha de controle da planta do
+A última etapa da técnica HIL consiste em conectar o controlador implementado e validado 
+na \textit{Raspberry Pi} e conectá-lo à malha de controle da planta do
 manipulador, conforme a \autoref{fig:solucaoPlanta}. Além disso, foi necessário configurar
-um ambiente de comunicação serial UART com os servomotores do manipulador, para isso, uma
-biblioteca em \textit{python} foi utilizada. A malha foi fechada no próprio código do 
-controlador, a parte do código referente à malha fechada segue abaixo, e o código completo
-econtra-se em \cite{lelis_hil3}.
-
-Foram aplicadas referências em degrau, mas com leves diferenças para as amplitudes
-das etapas da técnica HIL anteriores. Assim sendo, as saídas obtidas ao longo do 
-tempo para a fase 3 da técnica HIL seguem nas Figuras \ref{fig:base_hilFase2}, 
-\ref{fig:shoulder_hilFase2} e \ref{fig:forearm_hilFase2}. \\
+um ambiente de comunicação serial UART com os servomotores do manipulador. Para isso, uma
+biblioteca em \textit{Python} foi utilizada. A parte do código referente à geração do sinal 
+de controle é apresentada abaixo, sendo que o código completo encontra-se disponível 
+em \cite{lelis_hil3}.\\[2cm]
 
 \begin{lstlisting}[language=Python]
 	def get_U_k(self, y_k):
-		
 		# Calcula lei de controle
 		r_k = self.reference
 		e_k = r_k - y_k
-
 		# Controle de posicao
 		u_k = self.u_k_delay + self.Kp*e_k + self.Ki*self.e_k_delay
-			
 		return u_k, e_k
 \end{lstlisting}
+
+Foram aplicadas referências em degrau, mas com leves diferenças para as amplitudes
+das etapas da técnica HIL anteriores. Desse modo, as saídas obtidas ao longo do 
+tempo para a fase 3 da técnica HIL são mostradas nas Figuras \ref{fig:base_hilFase2}, 
+\ref{fig:shoulder_hilFase2} e \ref{fig:forearm_hilFase2}.
 
 \begin{figure}[h!]
   
@@ -519,9 +547,9 @@ tempo para a fase 3 da técnica HIL seguem nas Figuras \ref{fig:base_hilFase2},
 \markright{\thesection ~~~ Resultados}
 
 Este capítulo apresentou os resultados alcançados no projeto, apresentando a memória de cálculo,
-explicitando como o sistema foi iplementado e expondo os resultados através dos gráficos. No próximo
-capítulo é apresentado o desfecho do projeto, como os resultados estão relacionados, são expostos 
-os problemas encontrados e são apresentadas algumas sugestões para uma futura evolução do projeto.
+explicitando como o sistema foi iplementado e expondo os resultados por meio dos gráficos. No próximo
+capítulo são apresentadas as conclusões do projeto, como os resultados estão relacionados, são expostos, também, 
+os problemas encontrados e são tecidas algumas sugestões para uma futura evolução do projeto.
 
 
 \clearpage

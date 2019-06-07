@@ -3,10 +3,11 @@
 %\label{revBib}
 
 O controle de trajetória de uma manipulador robótico visa configurar o comportamento das juntas de tal 
-forma que a ferramenta de trabalho siga uma trajeto de referência. Existem algumas formas de se modelar
-o comportamento dessas juntas como o modelo \textit{Denavit-Hartenberg} e as equações de \textit{Euler-Lagrange},
-além do ensaio em malha aberta para obtenção do modelo. No presente projeto, a modelagem foi tratada das duas formas
-e o projeto de controle foi realizado pelo método do lugar das raízes. A sintonia e validação da estratégia de controle
+forma que a ferramenta de trabalho siga uma trajeto de referência.
+As maneiras mais usuais de se modelar o comportamento de juntas robóticas são por meio da metodologia de
+\textit{Denavit-Hartenberg} e das equações de \textit{Euler-Lagrange}, além do modelo de juntas independentes.
+No presente projeto, a modelagem foi tratada das duas maneiras
+e o projeto do controlador foi realizado pelo método do lugar das raízes. A sintonia e validação da estratégia de controle
 foi realizada por meio do uso da técnica HIL.
 
 A técnica HIL, que consiste em inserir um dispositivo físico na malha de controle simulada, foi dividida

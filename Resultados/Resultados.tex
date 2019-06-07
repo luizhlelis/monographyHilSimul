@@ -6,7 +6,6 @@ Neste capítulo, os resultados para o projeto descritos no capítulo anterior se
 planta foi dada de duas formas diferentes: por meio da convenção de \textit{Denavit-Hartenberg} e equações de 
 \textit{Euler-Lagrange} e por meio do ensaio em malha aberta. Para o primeiro método, foram feitas algumas considerações,
 estas seguem abaixo:
-
 \begin{enumerate}
  \item O elo do cotovelo e o elo do ombro são barras de comprimento $L$ e massa $m$, e possuem o eixo de rotação no fim
  da barra;
@@ -17,15 +16,20 @@ estas seguem abaixo:
 
 O código em MATLAB referente ao modelo obtido por meio da convenção de \textit{Denavit-Hartenberg} e equações de
 \textit{Euler-Lagrange} é apresentado no \refanexo{anexo:denHatEulerLagr}. A \autoref{fig:dh_simulation} mostra 
-o resultado obtido para a simulação \textit{Denavit-Hartenberg}:
+o modelo encontrado por meio da matriz de homogeneidade resultante da convenção DH. Nota-se a coerência deste 
+modelo com o manipulador real por respeitar a proporção e distribuição dos elos e juntas.
 
 \begin{figure}[ht]
   \centering
   \caption{Gráfico da representação \textit{Denavit-Hartenberg} obtida}
-  \includegraphics[width = 0.78\columnwidth]{Imagens/dh_simulation}
+  \includegraphics[width = 0.7\columnwidth]{Imagens/dh_simulation}
   \fonte{Do autor}
   \label{fig:dh_simulation} 
 \end{figure}
+
+As considerações citadas no início deste capítulo, em conjunto com a complexidade na obtenção dos Símbolos de \textit{Christoffel}
+tornaram a modelagem EL inviável. A solução mais coerente encontrada foi a execução do ensaio em malha aberta para a obtenção do modelo 
+de cada junta do manipulador, seguido do controle de junta independente
 
 Os modelos da planta usados para projetar os controladores foram obtidos através de ensaios em malha aberta (MA) e seguem 
 na próxima seção. Três modelos foram levantados: um para a base, um para o ombro e outro para o cotovelo, e para 
@@ -62,7 +66,12 @@ ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ens
     \fonte{Do autor}
     \label{fig:shoulder_ma}
   \end{subfigure}%
-  \\[5ex]
+  
+  \label{fig:ensaioMalhaAberta} 
+  
+\end{figure}
+
+\begin{figure}[h!]\ContinuedFloat
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
@@ -70,9 +79,6 @@ ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ens
     \fonte{Do autor}
     \label{fig:forearm_ma}
   \end{subfigure}%
-  
-  \label{fig:ensaioMalhaAberta} 
-
 \end{figure}
 
 A princípio, observando as respostas em malha aberta das juntas, a dinâmica de cada uma poderia ser aproximada por
@@ -112,7 +118,6 @@ Como foi exposto na seção anterior, as constantes foram encontradas por aproxi
 com o que foi observado no ensaio em malha aberta. A partir disso, as funções de transferência
 para a base, ombro e cotovelo foram obtidas através da Equação \eqref{eq:sistemaSegundaOrdem} e 
 seguem respectivamente em \eqref{eq:baseModel}, \eqref{eq:shoulderModel} e \eqref{eq:forearmModel}:
-
 \begin{equation}
   \begin{gathered}
     G(s) = \frac{13,3384}{s^2 + 7,3043s + 13,3384}
@@ -145,22 +150,22 @@ validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_si
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Base}
-    \includegraphics[width = .9\columnwidth]{Imagens/base_ma_simul}
+    \includegraphics[width = .8\columnwidth]{Imagens/base_ma_simul}
     \fonte{Do autor}
     \label{fig:base_ma_simul}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Ombro}
-    \includegraphics[width = .9\columnwidth]{Imagens/shoulder_ma_simul}
+    \includegraphics[width = .8\columnwidth]{Imagens/shoulder_ma_simul}
     \fonte{Do autor}
     \label{fig:shoulder_ma_simul}
   \end{subfigure}%
-  \\[5ex]
+  \\
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
-    \includegraphics[width = 0.5\columnwidth]{Imagens/forearm_ma_simul}
+    \includegraphics[width = 0.4\columnwidth]{Imagens/forearm_ma_simul}
     \fonte{Do autor}
     \label{fig:forearm_ma_simul}
   \end{subfigure}%
@@ -215,7 +220,7 @@ Ao fechar as malhas, os resultados obtidos para o modelo da planta e para a plan
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Base}
-    \includegraphics[width = .75\columnwidth]{Imagens/base_mf_simul}
+    \includegraphics[width = .78\columnwidth]{Imagens/base_mf_simul}
     \fonte{Do autor}
     \label{fig:base_mf_simul}
   \end{subfigure}%
@@ -249,7 +254,7 @@ Ao fechar as malhas, os resultados obtidos para o modelo da planta e para a plan
 %de ambas as juntas foi alterado.
 
 Nota-se na \autoref{fig:malhaFechadaHil1} que as respostas obtidas em malha fechada possuem uma dinâmica mais lenta,
-isso se deve pela não necessecidade de uma resposta rápida, mas sim, pela necessidade de uma transição mais suave. Outro fator
+isso se deve à não necessidade de uma resposta rápida, mas sim, à necessidade de uma transição mais suave. Outro fator
 levado em consideração ao fechar a malha foi a obtenção do erro em estado estacionário igual a zero. Em malha aberta, a base 
 apresentava uma variação em torno do estado estacionário infindável, ao fechar a malha essa variação foi corrigida quando o
 sistema entra em estado estacionário.
@@ -321,30 +326,27 @@ controladores. Para isso, foi feito o seguinte procedimento para o modelo da bas
 
 O procedimento elucidado acima é repetido para os modelos e controladores do ombro \eqref{eq:shouder_plant_diffEq} - \eqref{eq:shouder_ctrl_diffEq} 
 e do cotovelo \eqref{eq:forearm_plant_diffEq} - \eqref{eq:forearm_ctrl_diffEq}, resultando nos seguintes pares de equações a diferenças:
-
 \begin{equation}
   \begin{gathered}
-    y(k) = 0,3876 \;u(k-1) + 0,198 \;u(k-2) + 0,5515 \;y(k-1) - 0,1393 \;y(k-2)
+    y(k) = 0,3876 u(k-1) + 0,198 u(k-2) + 0,5515 y(k-1) - 0,1393 y(k-2)
   \end{gathered}
   \label{eq:shouder_plant_diffEq}
 \end{equation}
 \begin{equation}
   \begin{gathered}
-    u(k) = u(k-1) + 0,1572 \; e(k) + 0,06513 \;e(k-1)
+    u(k) = u(k-1) + 0,1572  e(k) + 0,06513 e(k-1)
   \end{gathered}
   \label{eq:shouder_ctrl_diffEq}
 \end{equation}
-
 \begin{equation}
   \begin{gathered}
-    y(k) = 0,8273 \;u(k-1) - 0,6543 \;u(k-2) + 0,9515 \;y(k-1) - 0,1245 \;y(k-2)
+    y(k) = 0,8273 u(k-1) - 0,6543 u(k-2) + 0,9515y(k-1) - 0,1245y(k-2)
   \end{gathered}
   \label{eq:forearm_plant_diffEq}
 \end{equation}
-
 \begin{equation}
   \begin{gathered}
-    u(k) = u(k-1) + 0,152\; e(k) + 0,032 \;e(k-1)
+    u(k) = u(k-1) + 0,152 e(k) + 0,032 e(k-1)
   \end{gathered}
   \label{eq:forearm_ctrl_diffEq}
 \end{equation}
@@ -504,15 +506,17 @@ em \cite{lelis_hil3}.\\[2cm]
 		# Calcula lei de controle
 		r_k = self.reference
 		e_k = r_k - y_k
+		
 		# Controle de posicao
 		u_k = self.u_k_delay + self.Kp*e_k + self.Ki*self.e_k_delay
+		
 		return u_k, e_k
 \end{lstlisting}
 
 Foram aplicadas referências em degrau, mas com leves diferenças para as amplitudes
 das etapas da técnica HIL anteriores. Desse modo, as saídas obtidas ao longo do 
-tempo para a fase 3 da técnica HIL são mostradas nas Figuras \ref{fig:base_hilFase2}, 
-\ref{fig:shoulder_hilFase2} e \ref{fig:forearm_hilFase2}.
+tempo para a fase 3 da técnica HIL são mostradas nas Figuras \ref{fig:base_hilFase3}, 
+\ref{fig:shoulder_hilFase3} e \ref{fig:forearm_hilFase3}.
 
 \begin{figure}[h!]
   
@@ -523,22 +527,22 @@ tempo para a fase 3 da técnica HIL são mostradas nas Figuras \ref{fig:base_hil
     \caption{Base}
     \includegraphics[width = 1\columnwidth]{Imagens/base_hilFase3}
     \fonte{Do autor}
-    \label{fig:base_hilFase2}
+    \label{fig:base_hilFase3}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
     \caption{Ombro}
     \includegraphics[width = 1\columnwidth]{Imagens/shoulder_hilFase3}
     \fonte{Do autor}
-    \label{fig:shoulder_hilFase2}
+    \label{fig:shoulder_hilFase3}
   \end{subfigure}%
-  \\[5ex]
+  \\
   \begin{subfigure}{\textwidth}
     \centering
     \caption{Cotovelo}
     \includegraphics[width = 0.5\columnwidth]{Imagens/forearm_hilFase3}
     \fonte{Do autor}
-    \label{fig:forearm_hilFase2}
+    \label{fig:forearm_hilFase3}
   \end{subfigure}%
   
   \label{fig:hilFase3} 
