@@ -5,7 +5,7 @@
 Neste capítulo, os resultados para o projeto descritos no capítulo anterior serão apresentados. A obtenção do modelo da 
 planta foi dada de duas formas diferentes: por meio da convenção de \textit{Denavit-Hartenberg} e equações de 
 \textit{Euler-Lagrange} e por meio do ensaio em malha aberta. Para o primeiro método, foram feitas algumas considerações,
-estas seguem abaixo:
+dadas a seguir:
 \begin{enumerate}
  \item O elo do cotovelo e o elo do ombro são barras de comprimento $L$ e massa $m$, e possuem o eixo de rotação no fim
  da barra;
@@ -21,10 +21,10 @@ modelo com o manipulador real por respeitar a proporção e distribuição dos e
 
 \begin{figure}[ht]
   \centering
-  \caption{Gráfico da representação \textit{Denavit-Hartenberg} obtida}
   \includegraphics[width = 0.7\columnwidth]{Imagens/dh_simulation}
+  \caption{Gráfico da representação \textit{Denavit-Hartenberg} obtida}
   \fonte{Do autor}
-  \label{fig:dh_simulation} 
+  \label{fig:dh_simulation}
 \end{figure}
 
 As considerações citadas no início deste capítulo, em conjunto com a complexidade na obtenção dos Símbolos de \textit{Christoffel}
@@ -51,34 +51,34 @@ ao longo do tempo para cada uma das juntas são apresentados na \autoref{fig:ens
 \begin{figure}[h!]
   
   \centering
-  \caption{Gráficos da entrada e resposta para o ensaio em MA de cada uma das juntas}
   \begin{subfigure}{.5\textwidth}
     \centering
+    \includegraphics[width = 1.1\columnwidth]{Imagens/base_ma}
     \caption{Base}
-    \includegraphics[width = 1\columnwidth]{Imagens/base_ma}
     \fonte{Do autor}
     \label{fig:base_ma}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
+    \includegraphics[width = 1.1\columnwidth]{Imagens/shoulder_ma}
     \caption{Ombro}
-    \includegraphics[width = 1\columnwidth]{Imagens/shoulder_ma}
     \fonte{Do autor}
     \label{fig:shoulder_ma}
   \end{subfigure}%
-  
-  \label{fig:ensaioMalhaAberta} 
-  
 \end{figure}
+
+\newpage
 
 \begin{figure}[h!]\ContinuedFloat
   \begin{subfigure}{\textwidth}
     \centering
-    \caption{Cotovelo}
     \includegraphics[width = 0.55\columnwidth]{Imagens/forearm_ma}
+    \caption{Cotovelo}
     \fonte{Do autor}
     \label{fig:forearm_ma}
   \end{subfigure}%
+  \caption{Gráficos da entrada e resposta para o ensaio em MA de cada uma das juntas}
+  \label{fig:ensaioMalhaAberta}
 \end{figure}
 
 A princípio, observando as respostas em malha aberta das juntas, a dinâmica de cada uma poderia ser aproximada por
@@ -111,7 +111,7 @@ O valor das variáveis encontradas para cada uma das juntas segue na \autoref{ta
     \label{tab:ctesModeloMA}
 \end{center}
 
-\section{Fase 1 da técnica HIL}
+\section{Fase 1 da técnica HIL - Planta e controlador simulados}
 \markright{\thesection ~~~ Fase 1 da técnica HIL}
 
 Como foi exposto na seção anterior, as constantes foram encontradas por aproximações de acordo
@@ -146,30 +146,29 @@ validação dos modelos. Os resultados obtidos seguem na \autoref{fig:base_ma_si
 \begin{figure}[h!]
   
   \centering
-  \caption{Gráficos da entrada e resposta do modelo obtido para cada uma das juntas}
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Base}
     \includegraphics[width = .8\columnwidth]{Imagens/base_ma_simul}
+    \caption{Base}
     \fonte{Do autor}
     \label{fig:base_ma_simul}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Ombro}
     \includegraphics[width = .8\columnwidth]{Imagens/shoulder_ma_simul}
+    \caption{Ombro}
     \fonte{Do autor}
     \label{fig:shoulder_ma_simul}
   \end{subfigure}%
   \\
   \begin{subfigure}{\textwidth}
     \centering
-    \caption{Cotovelo}
     \includegraphics[width = 0.4\columnwidth]{Imagens/forearm_ma_simul}
+    \caption{Cotovelo}
     \fonte{Do autor}
     \label{fig:forearm_ma_simul}
   \end{subfigure}%
-  
+  \caption{Gráficos da entrada e resposta do modelo obtido para cada uma das juntas}
   \label{fig:ensaioMalhaAbertaSimul} 
 
 \end{figure}
@@ -180,7 +179,7 @@ conclui-se que os modelos obtidos são satisfatórios para representar as dinâm
 Obtidos os modelos que descrevem as dinâmicas das juntas, a próxima etapa da fase 1 da técnica HIL foi o projeto dos 
 controladores pelo método do lugar das raízes. Considerando que as especificações do projeto
 de controle seriam atendidas caso houvesse um baixo sobressinal na resposta, e o erro em estado
-estacionário igual a
+estacionário aproximadamente igual a
 zero. Dadas as características do modelo da planta, verificou-se experimentalmente que um controlador
 PI seria suficiente para atender as especificações de projeto. Esse controlador é obtido a partir
 de \eqref{eq:pid} escolhendo $T_d=0$.
@@ -216,35 +215,33 @@ Ao fechar as malhas, os resultados obtidos para o modelo da planta e para a plan
 \begin{figure}[h!]
   
   \centering
-  \caption{Gráficos das respostas ao degrau em malha fechada - HIL Fase 1}
   \begin{subfigure}{.5\textwidth}
     \centering
+    \includegraphics[width = .9\columnwidth]{Imagens/base_mf_simul}
     \caption{Base}
-    \includegraphics[width = .78\columnwidth]{Imagens/base_mf_simul}
     \fonte{Do autor}
     \label{fig:base_mf_simul}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
+    \includegraphics[width = .9\columnwidth]{Imagens/shoulder_mf_simul}
     \caption{Ombro}
-    \includegraphics[width = .75\columnwidth]{Imagens/shoulder_mf_simul}
     \fonte{Do autor}
     \label{fig:shoulder_mf_simul}
   \end{subfigure}%
-  
-  \label{fig:malhaFechadaHil1} 
   
 \end{figure}
 
 \begin{figure}[h!]\ContinuedFloat
   \begin{subfigure}{\textwidth}
     \centering
-    \caption{Cotovelo}
     \includegraphics[width = 0.55\columnwidth]{Imagens/forearm_mf_simul}
+    \caption{Cotovelo}
     \fonte{Do autor}
     \label{fig:forearm_mf_simul}
   \end{subfigure}%
-
+  \caption{Gráficos das respostas ao degrau em malha fechada - HIL Fase 1}
+  \label{fig:malhaFechadaHil1}
 \end{figure}
 
 %Com o primeiro controlador projetado para a base e para o cotovelo, ao fechar a malha, a resposta não apresentava
@@ -259,14 +256,14 @@ levado em consideração ao fechar a malha foi a obtenção do erro em estado es
 apresentava uma variação em torno do estado estacionário infindável, ao fechar a malha essa variação foi corrigida quando o
 sistema entra em estado estacionário.
 
-\section{Fase 2 da técnica HIL}
+\section{Fase 2 da técnica HIL - Planta simulada, controlador real}
 \markright{\thesection ~~~ Fase 2 da técnica HIL}
 
 Como o sinal da resposta da planta é amostrado periodicamente pela placa de aquisição de dados do
 computador e pela \textit{Raspberry Pi}, torna-se necessária a discretização do controlador e da planta simulada. A 
 discretização foi feita através do comando \textit{c2d( )} do \textit{Matlab} utilizando um segurador de 
 ordem zero e com um tempo de amostragem de $0,23s$. O resultado da discretização para as juntas e os respectivos
-controladores segue a seguir.
+controladores segue.
 Para a base:
 \begin{equation}
   \begin{gathered}
@@ -289,7 +286,7 @@ para o cotovelo:
   \label{eq:forearm_discrete}
 \end{equation}
 
-O próximo passo foi a obtenção da equação a diferenças para cada uma das plantas e
+O próximo passo foi a obtenção da equação de diferenças para cada uma das plantas e
 controladores. Para isso, foi feito o seguinte procedimento para o modelo da base e seu respectivo controlador:
 
 \begin{equation*}
@@ -324,7 +321,7 @@ controladores. Para isso, foi feito o seguinte procedimento para o modelo da bas
   \label{eq:base_ctrl_diffEq}
 \end{equation}
 
-O procedimento elucidado acima é repetido para os modelos e controladores do ombro \eqref{eq:shouder_plant_diffEq} - \eqref{eq:shouder_ctrl_diffEq} 
+O procedimento elucidado é repetido para os modelos e controladores do ombro \eqref{eq:shouder_plant_diffEq} - \eqref{eq:shouder_ctrl_diffEq} 
 e do cotovelo \eqref{eq:forearm_plant_diffEq} - \eqref{eq:forearm_ctrl_diffEq}, resultando nos seguintes pares de equações a diferenças:
 \begin{equation}
   \begin{gathered}
@@ -462,35 +459,34 @@ a fase 2 da técnica HIL são apresentadas nas Figuras \ref{fig:base_hilFase2},
 \begin{figure}[h!]
   
   \centering
-  \caption{Gráficos das respostas ao degrau em malha fechada - HIL Fase 2}
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Base}
     \includegraphics[width = 1\columnwidth]{Imagens/base_hilFase2}
+    \caption{Base}
     \fonte{Do autor}
     \label{fig:base_hilFase2}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Ombro}
     \includegraphics[width = 1\columnwidth]{Imagens/shoulder_hilFase2}
+    \caption{Ombro}
     \fonte{Do autor}
     \label{fig:shoulder_hilFase2}
   \end{subfigure}%
   \\[5ex]
   \begin{subfigure}{\textwidth}
     \centering
-    \caption{Cotovelo}
     \includegraphics[width = 0.55\columnwidth]{Imagens/forearm_hilFase2}
+    \caption{Cotovelo}
     \fonte{Do autor}
     \label{fig:forearm_hilFase2}
   \end{subfigure}%
-  
-  \label{fig:hilFase2} 
+  \caption{Gráficos das respostas ao degrau em malha fechada - HIL Fase 2}
+  \label{fig:hilFase2}
 
 \end{figure}
 
-\section{Fase 3 da técnica HIL}
+\section{Fase 3 da técnica HIL - Planta e controlador reais}
 \markright{\thesection ~~~ Fase 3 da técnica HIL}
 
 A última etapa da técnica HIL consiste em conectar o controlador implementado e validado 
@@ -521,30 +517,29 @@ tempo para a fase 3 da técnica HIL são mostradas nas Figuras \ref{fig:base_hil
 \begin{figure}[h!]
   
   \centering
-  \caption{Gráficos das respostas ao degrau em malha fechada - HIL Fase 3}
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Base}
     \includegraphics[width = 1\columnwidth]{Imagens/base_hilFase3}
+    \caption{Base}
     \fonte{Do autor}
     \label{fig:base_hilFase3}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Ombro}
     \includegraphics[width = 1\columnwidth]{Imagens/shoulder_hilFase3}
+    \caption{Ombro}
     \fonte{Do autor}
     \label{fig:shoulder_hilFase3}
   \end{subfigure}%
   \\
   \begin{subfigure}{\textwidth}
     \centering
-    \caption{Cotovelo}
     \includegraphics[width = 0.5\columnwidth]{Imagens/forearm_hilFase3}
+    \caption{Cotovelo}
     \fonte{Do autor}
     \label{fig:forearm_hilFase3}
   \end{subfigure}%
-  
+  \caption{Gráficos das respostas ao degrau em malha fechada - HIL Fase 3}
   \label{fig:hilFase3} 
 
 \end{figure}
@@ -554,8 +549,8 @@ tempo para a fase 3 da técnica HIL são mostradas nas Figuras \ref{fig:base_hil
 
 Este capítulo apresentou os resultados alcançados no projeto, apresentando a memória de cálculo,
 explicitando como o sistema foi iplementado e expondo os resultados por meio dos gráficos. No próximo
-capítulo são apresentadas as conclusões do projeto, como os resultados estão relacionados, são expostos, também, 
-os problemas encontrados e são tecidas algumas sugestões para uma futura evolução do projeto.
+capítulo são apresentadas as conclusões do projeto, como os resultados estão relacionados, são expostos e também 
+os problemas encontrados. Além disso, são tecidas algumas sugestões para uma futura evolução do projeto.
 
 
 \clearpage

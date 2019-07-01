@@ -33,9 +33,9 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados}}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Ensaio em malha aberta}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fase 1 da t\IeC {\'e}cnica HIL}{32}{section.4.2}
-\contentsline {section}{\numberline {4.3}Fase 2 da t\IeC {\'e}cnica HIL}{34}{section.4.3}
-\contentsline {section}{\numberline {4.4}Fase 3 da t\IeC {\'e}cnica HIL}{37}{section.4.4}
+\contentsline {section}{\numberline {4.2}Fase 1 da t\IeC {\'e}cnica HIL - Planta e controlador simulados}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Fase 2 da t\IeC {\'e}cnica HIL - Planta simulada, controlador real}{34}{section.4.3}
+\contentsline {section}{\numberline {4.4}Fase 3 da t\IeC {\'e}cnica HIL - Planta e controlador reais}{37}{section.4.4}
 \contentsline {section}{\numberline {4.5}Resumo do Cap\IeC {\'\i }tulo}{39}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{40}{chapter.5}

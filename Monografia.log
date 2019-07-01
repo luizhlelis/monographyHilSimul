@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  7 JUN 2019 00:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  1 JUL 2019 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,15 +1278,15 @@ Overfull \hbox (0.4737pt too wide) in paragraph at lines 53--53
 File: Imagens/blocosMF.png Graphic file (type png)
 
 <use Imagens/blocosMF.png>
-Package pdftex.def Info: Imagens/blocosMF.png used on input line 57.
+Package pdftex.def Info: Imagens/blocosMF.png used on input line 56.
 (pdftex.def)             Requested size: 273.00278pt x 77.25774pt.
 
-<Imagens/blocoHard.png, id=194, 790.955pt x 374.39874pt>
+<Imagens/blocoHard.png, id=194, 790.955pt x 384.43625pt>
 File: Imagens/blocoHard.png Graphic file (type png)
 
 <use Imagens/blocoHard.png>
-Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
-(pdftex.def)             Requested size: 318.49861pt x 150.7623pt.
+Package pdftex.def Info: Imagens/blocoHard.png used on input line 64.
+(pdftex.def)             Requested size: 318.49861pt x 154.80418pt.
  [12 <./Imagens/blocosMF.png> <./Imagens/blocoHard.png>] [13] [14])
 \openout2 = `RevisaoBib/Revisao.aux'.
 
@@ -1300,7 +1300,7 @@ Package pdftex.def Info: Imagens/blocoHard.png used on input line 65.
 File: Imagens/manipulador.png Graphic file (type png)
 
 <use Imagens/manipulador.png>
-Package pdftex.def Info: Imagens/manipulador.png used on input line 56.
+Package pdftex.def Info: Imagens/manipulador.png used on input line 55.
 (pdftex.def)             Requested size: 227.5pt x 151.02742pt.
  [16 <./Imagens/manipulador.png>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 99.
@@ -1346,32 +1346,31 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 File: Imagens/diagEnsaioMA.png Graphic file (type png)
 
 <use Imagens/diagEnsaioMA.png>
-Package pdftex.def Info: Imagens/diagEnsaioMA.png used on input line 442.
+Package pdftex.def Info: Imagens/diagEnsaioMA.png used on input line 441.
 (pdftex.def)             Requested size: 181.99722pt x 52.20638pt.
  [25] [26 <./Imagens/diagEnsaioMA.png>]
-Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 521.
-
 <Imagens/plantaSimulada.png, id=463, 1668.2325pt x 1397.22pt>
 File: Imagens/plantaSimulada.png Graphic file (type png)
 
 <use Imagens/plantaSimulada.png>
-Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 522.
+Package pdftex.def Info: Imagens/plantaSimulada.png used on input line 520.
 (pdftex.def)             Requested size: 136.50139pt x 114.31694pt.
 
 <Imagens/solucaoModelo.png, id=464, 231.86626pt x 247.92625pt>
 File: Imagens/solucaoModelo.png Graphic file (type png)
 
 <use Imagens/solucaoModelo.png>
-Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 529.
+Package pdftex.def Info: Imagens/solucaoModelo.png used on input line 527.
 (pdftex.def)             Requested size: 113.75pt x 121.62868pt.
 
 <Imagens/solucaoPlanta.png, id=465, 673.51625pt x 677.53125pt>
 File: Imagens/solucaoPlanta.png Graphic file (type png)
 
 <use Imagens/solucaoPlanta.png>
-Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 537.
+Package pdftex.def Info: Imagens/solucaoPlanta.png used on input line 535.
 (pdftex.def)             Requested size: 181.99722pt x 183.08061pt.
+Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
+put line 540.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1390,7 +1389,7 @@ Package epstopdf Info: Source file: <Imagens/dh_simulation.eps>
 (epstopdf)                    size: 38006 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/dh_simulation-eps-
 converted-to.pdf Imagens/dh_simulation.eps>
-(epstopdf)             \includegraphics on input line 25.
+(epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1401,7 +1400,7 @@ File: Imagens/dh_simulation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/dh_simulation-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/dh_simulation-eps-converted-to.pdf used on inp
-ut line 25.
+ut line 24.
 (pdftex.def)             Requested size: 318.49861pt x 238.877pt.
  [29
 
@@ -1410,14 +1409,14 @@ ut line 25.
 
  <./Imagens/dh_simulation-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Imagens/base_ma.eps>
-(epstopdf)                    date: 2019-06-03 23:41:24
-(epstopdf)                    size: 19551 bytes
+(epstopdf)                    date: 2019-07-01 09:38:37
+(epstopdf)                    size: 19846 bytes
 (epstopdf)             Output file: <Imagens/base_ma-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-03 23:46:36
-(epstopdf)                    size: 6234 bytes
+(epstopdf)                    date: 2019-07-01 10:21:02
+(epstopdf)                    size: 7211 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/base_ma-eps-conver
 ted-to.pdf Imagens/base_ma.eps>
-(epstopdf)             \includegraphics on input line 58.
+(epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1428,17 +1427,22 @@ File: Imagens/base_ma-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_ma-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/base_ma-eps-converted-to.pdf used on input lin
-e 58.
-(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+e 56.
+(pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
+
+Overfull \hbox (22.75139pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
 Package epstopdf Info: Source file: <Imagens/shoulder_ma.eps>
-(epstopdf)                    date: 2019-05-28 01:13:11
-(epstopdf)                    size: 20461 bytes
+(epstopdf)                    date: 2019-07-01 09:47:25
+(epstopdf)                    size: 20754 bytes
 (epstopdf)             Output file: <Imagens/shoulder_ma-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-05-28 01:26:37
-(epstopdf)                    size: 6347 bytes
+(epstopdf)                    date: 2019-07-01 10:21:02
+(epstopdf)                    size: 7322 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_ma-eps-co
 nverted-to.pdf Imagens/shoulder_ma.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1449,35 +1453,37 @@ File: Imagens/shoulder_ma-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/shoulder_ma-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/shoulder_ma-eps-converted-to.pdf used on input
- line 65.
-(pdftex.def)             Requested size: 227.5pt x 170.62918pt.
+ line 63.
+(pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
+
+Overfull \hbox (22.75139pt too wide) in paragraph at lines 63--64
+ [][] 
+ []
+
+[30 <./Imagens/base_ma-eps-converted-to.pdf> <./Imagens/shoulder_ma-eps-convert
+ed-to.pdf>]
 Package epstopdf Info: Source file: <Imagens/forearm_ma.eps>
-(epstopdf)                    date: 2019-05-28 01:19:17
-(epstopdf)                    size: 20534 bytes
+(epstopdf)                    date: 2019-07-01 09:43:27
+(epstopdf)                    size: 20539 bytes
 (epstopdf)             Output file: <Imagens/forearm_ma-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-05-28 01:26:38
-(epstopdf)                    size: 6487 bytes
+(epstopdf)                    date: 2019-07-01 10:21:03
+(epstopdf)                    size: 7401 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_ma-eps-con
 verted-to.pdf Imagens/forearm_ma.eps>
-(epstopdf)             \includegraphics on input line 78.
+(epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Imagens/forearm_ma-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Imagens/forearm_ma-eps-converted-to.pdf, id=500, 421.575pt x 316.18124pt>
+<Imagens/forearm_ma-eps-converted-to.pdf, id=517, 415.5525pt x 315.1775pt>
 File: Imagens/forearm_ma-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/forearm_ma-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/forearm_ma-eps-converted-to.pdf used on input 
-line 78.
-(pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
+line 75.
+(pdftex.def)             Requested size: 250.25139pt x 189.80528pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[30 <./Imagens/base_ma-eps-converted-to.pdf> <./Imagens/shoulder_ma-eps-convert
-ed-to.pdf>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 104.
@@ -1485,15 +1491,15 @@ See the caption package documentation for explanation.
 
 [31 <./Imagens/forearm_ma-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Imagens/base_ma_simul.eps>
-(epstopdf)                    date: 2019-06-03 23:39:14
-(epstopdf)                    size: 21796 bytes
+(epstopdf)                    date: 2019-07-01 09:36:47
+(epstopdf)                    size: 22094 bytes
 (epstopdf)             Output file: <Imagens/base_ma_simul-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2019-06-03 23:46:36
-(epstopdf)                    size: 6738 bytes
+(epstopdf)                    date: 2019-07-01 10:21:03
+(epstopdf)                    size: 7445 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/base_ma_simul-eps-
 converted-to.pdf Imagens/base_ma_simul.eps>
-(epstopdf)             \includegraphics on input line 153.
+(epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1504,18 +1510,18 @@ File: Imagens/base_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_ma_simul-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/base_ma_simul-eps-converted-to.pdf used on inp
-ut line 153.
+ut line 151.
 (pdftex.def)             Requested size: 182.00069pt x 136.50044pt.
 Package epstopdf Info: Source file: <Imagens/shoulder_ma_simul.eps>
-(epstopdf)                    date: 2019-05-28 01:12:11
-(epstopdf)                    size: 22649 bytes
+(epstopdf)                    date: 2019-07-01 09:46:01
+(epstopdf)                    size: 22944 bytes
 (epstopdf)             Output file: <Imagens/shoulder_ma_simul-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2019-05-28 01:26:38
-(epstopdf)                    size: 6951 bytes
+(epstopdf)                    date: 2019-07-01 10:21:03
+(epstopdf)                    size: 7661 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_ma_simul-
 eps-converted-to.pdf Imagens/shoulder_ma_simul.eps>
-(epstopdf)             \includegraphics on input line 160.
+(epstopdf)             \includegraphics on input line 158.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1527,18 +1533,18 @@ t>
 File: Imagens/shoulder_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/shoulder_ma_simul-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/shoulder_ma_simul-eps-converted-to.pdf used on
- input line 160.
+ input line 158.
 (pdftex.def)             Requested size: 182.00069pt x 136.50044pt.
 Package epstopdf Info: Source file: <Imagens/forearm_ma_simul.eps>
-(epstopdf)                    date: 2019-05-28 01:18:26
-(epstopdf)                    size: 22785 bytes
+(epstopdf)                    date: 2019-07-01 09:42:01
+(epstopdf)                    size: 23077 bytes
 (epstopdf)             Output file: <Imagens/forearm_ma_simul-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2019-05-28 01:26:39
-(epstopdf)                    size: 6989 bytes
+(epstopdf)                    date: 2019-07-01 10:21:04
+(epstopdf)                    size: 7694 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_ma_simul-e
 ps-converted-to.pdf Imagens/forearm_ma_simul.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1550,20 +1556,20 @@ pdfTeX warning: pdflatex (file ./Imagens/forearm_ma_simul-eps-converted-to.pdf)
 File: Imagens/forearm_ma_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/forearm_ma_simul-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/forearm_ma_simul-eps-converted-to.pdf used on 
-input line 168.
+input line 166.
 (pdftex.def)             Requested size: 181.99722pt x 136.50044pt.
  [32 <./Imagens/base_ma_simul-eps-converted-to.pdf> <./Imagens/shoulder_ma_simu
 l-eps-converted-to.pdf> <./Imagens/forearm_ma_simul-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Imagens/base_mf_simul.eps>
-(epstopdf)                    date: 2019-06-03 23:39:27
-(epstopdf)                    size: 21791 bytes
+(epstopdf)                    date: 2019-07-01 09:37:00
+(epstopdf)                    size: 22079 bytes
 (epstopdf)             Output file: <Imagens/base_mf_simul-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2019-06-03 23:46:37
-(epstopdf)                    size: 6844 bytes
+(epstopdf)                    date: 2019-07-01 10:21:04
+(epstopdf)                    size: 7545 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/base_mf_simul-eps-
 converted-to.pdf Imagens/base_mf_simul.eps>
-(epstopdf)             \includegraphics on input line 223.
+(epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1574,18 +1580,18 @@ File: Imagens/base_mf_simul-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_mf_simul-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/base_mf_simul-eps-converted-to.pdf used on inp
-ut line 223.
-(pdftex.def)             Requested size: 177.44972pt x 133.08951pt.
+ut line 220.
+(pdftex.def)             Requested size: 204.74861pt x 153.56482pt.
 Package epstopdf Info: Source file: <Imagens/shoulder_mf_simul.eps>
-(epstopdf)                    date: 2019-05-28 01:11:04
-(epstopdf)                    size: 22579 bytes
+(epstopdf)                    date: 2019-07-01 09:46:21
+(epstopdf)                    size: 22877 bytes
 (epstopdf)             Output file: <Imagens/shoulder_mf_simul-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2019-05-28 01:26:39
-(epstopdf)                    size: 6891 bytes
+(epstopdf)                    date: 2019-07-01 10:21:04
+(epstopdf)                    size: 7601 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_mf_simul-
 eps-converted-to.pdf Imagens/shoulder_mf_simul.eps>
-(epstopdf)             \includegraphics on input line 230.
+(epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1597,18 +1603,18 @@ t>
 File: Imagens/shoulder_mf_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/shoulder_mf_simul-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/shoulder_mf_simul-eps-converted-to.pdf used on
- input line 230.
-(pdftex.def)             Requested size: 170.625pt x 127.97067pt.
+ input line 227.
+(pdftex.def)             Requested size: 204.74861pt x 153.56482pt.
 Package epstopdf Info: Source file: <Imagens/forearm_mf_simul.eps>
-(epstopdf)                    date: 2019-05-28 01:16:30
-(epstopdf)                    size: 22790 bytes
+(epstopdf)                    date: 2019-07-01 09:42:13
+(epstopdf)                    size: 23067 bytes
 (epstopdf)             Output file: <Imagens/forearm_mf_simul-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2019-05-28 01:26:39
-(epstopdf)                    size: 7095 bytes
+(epstopdf)                    date: 2019-07-01 10:21:05
+(epstopdf)                    size: 7803 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_mf_simul-e
 ps-converted-to.pdf Imagens/forearm_mf_simul.eps>
-(epstopdf)             \includegraphics on input line 243.
+(epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1620,7 +1626,7 @@ pdfTeX warning: pdflatex (file ./Imagens/forearm_mf_simul-eps-converted-to.pdf)
 File: Imagens/forearm_mf_simul-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/forearm_mf_simul-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/forearm_mf_simul-eps-converted-to.pdf used on 
-input line 243.
+input line 238.
 (pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
 
 
@@ -1628,14 +1634,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33 <./Imagens/base_mf_simul-eps-converted-to.pdf> <./Imagens/shoulder_mf_simul
 -eps-converted-to.pdf>] [34 <./Imagens/forearm_mf_simul-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 423--428
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 420--425
 
  []
 
-[35] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 429.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 426.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1646,23 +1653,23 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 430.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 427.
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
 [36]
 Package epstopdf Info: Source file: <Imagens/base_hilFase2.eps>
-(epstopdf)                    date: 2019-06-03 23:44:27
-(epstopdf)                    size: 19561 bytes
+(epstopdf)                    date: 2019-07-01 10:15:16
+(epstopdf)                    size: 19838 bytes
 (epstopdf)             Output file: <Imagens/base_hilFase2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2019-06-03 23:46:37
-(epstopdf)                    size: 6480 bytes
+(epstopdf)                    date: 2019-07-01 10:21:05
+(epstopdf)                    size: 7216 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/base_hilFase2-eps-
 converted-to.pdf Imagens/base_hilFase2.eps>
-(epstopdf)             \includegraphics on input line 469.
+(epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1673,18 +1680,18 @@ File: Imagens/base_hilFase2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_hilFase2-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/base_hilFase2-eps-converted-to.pdf used on inp
-ut line 469.
+ut line 464.
 (pdftex.def)             Requested size: 227.5pt x 170.62918pt.
 Package epstopdf Info: Source file: <Imagens/shoulder_hilFase2.eps>
-(epstopdf)                    date: 2019-05-29 01:07:08
-(epstopdf)                    size: 20463 bytes
+(epstopdf)                    date: 2019-07-01 10:15:42
+(epstopdf)                    size: 20748 bytes
 (epstopdf)             Output file: <Imagens/shoulder_hilFase2-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2019-05-29 01:09:18
-(epstopdf)                    size: 6705 bytes
+(epstopdf)                    date: 2019-07-01 10:21:05
+(epstopdf)                    size: 7443 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_hilFase2-
 eps-converted-to.pdf Imagens/shoulder_hilFase2.eps>
-(epstopdf)             \includegraphics on input line 476.
+(epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1696,18 +1703,18 @@ t>
 File: Imagens/shoulder_hilFase2-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/shoulder_hilFase2-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/shoulder_hilFase2-eps-converted-to.pdf used on
- input line 476.
+ input line 471.
 (pdftex.def)             Requested size: 227.5pt x 170.62918pt.
 Package epstopdf Info: Source file: <Imagens/forearm_hilFase2.eps>
-(epstopdf)                    date: 2019-05-29 01:07:40
-(epstopdf)                    size: 20565 bytes
+(epstopdf)                    date: 2019-07-01 10:16:03
+(epstopdf)                    size: 20850 bytes
 (epstopdf)             Output file: <Imagens/forearm_hilFase2-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2019-05-29 01:09:19
-(epstopdf)                    size: 6792 bytes
+(epstopdf)                    date: 2019-07-01 10:21:05
+(epstopdf)                    size: 7529 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_hilFase2-e
 ps-converted-to.pdf Imagens/forearm_hilFase2.eps>
-(epstopdf)             \includegraphics on input line 484.
+(epstopdf)             \includegraphics on input line 479.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1719,29 +1726,29 @@ pdfTeX warning: pdflatex (file ./Imagens/forearm_hilFase2-eps-converted-to.pdf)
 File: Imagens/forearm_hilFase2-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/forearm_hilFase2-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/forearm_hilFase2-eps-converted-to.pdf used on 
-input line 484.
+input line 479.
 (pdftex.def)             Requested size: 250.25139pt x 187.69354pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--503
+Underfull \hbox (badness 10000) in paragraph at lines 492--499
 
  []
 
 [37 <./Imagens/base_hilFase2-eps-converted-to.pdf> <./Imagens/shoulder_hilFase2
 -eps-converted-to.pdf> <./Imagens/forearm_hilFase2-eps-converted-to.pdf>]
-Overfull \hbox (7.20349pt too wide) in paragraph at lines 511--513
+Overfull \hbox (7.20349pt too wide) in paragraph at lines 507--509
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 Package epstopdf Info: Source file: <Imagens/base_hilFase3.eps>
-(epstopdf)                    date: 2019-06-03 23:46:01
-(epstopdf)                    size: 20265 bytes
+(epstopdf)                    date: 2019-07-01 10:18:20
+(epstopdf)                    size: 20541 bytes
 (epstopdf)             Output file: <Imagens/base_hilFase3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2019-06-03 23:46:38
-(epstopdf)                    size: 6557 bytes
+(epstopdf)                    date: 2019-07-01 10:21:06
+(epstopdf)                    size: 7272 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/base_hilFase3-eps-
 converted-to.pdf Imagens/base_hilFase3.eps>
-(epstopdf)             \includegraphics on input line 528.
+(epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1752,18 +1759,18 @@ File: Imagens/base_hilFase3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Imagens/base_hilFase3-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/base_hilFase3-eps-converted-to.pdf used on inp
-ut line 528.
+ut line 522.
 (pdftex.def)             Requested size: 227.5pt x 170.62918pt.
 Package epstopdf Info: Source file: <Imagens/shoulder_hilFase3.eps>
-(epstopdf)                    date: 2019-05-29 02:59:14
-(epstopdf)                    size: 19597 bytes
+(epstopdf)                    date: 2019-07-01 10:18:37
+(epstopdf)                    size: 19867 bytes
 (epstopdf)             Output file: <Imagens/shoulder_hilFase3-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2019-05-29 03:01:30
-(epstopdf)                    size: 6581 bytes
+(epstopdf)                    date: 2019-07-01 10:21:06
+(epstopdf)                    size: 7287 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/shoulder_hilFase3-
 eps-converted-to.pdf Imagens/shoulder_hilFase3.eps>
-(epstopdf)             \includegraphics on input line 535.
+(epstopdf)             \includegraphics on input line 529.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1775,18 +1782,18 @@ t>
 File: Imagens/shoulder_hilFase3-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/shoulder_hilFase3-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/shoulder_hilFase3-eps-converted-to.pdf used on
- input line 535.
+ input line 529.
 (pdftex.def)             Requested size: 227.5pt x 170.62918pt.
 Package epstopdf Info: Source file: <Imagens/forearm_hilFase3.eps>
-(epstopdf)                    date: 2019-05-29 02:59:47
-(epstopdf)                    size: 20454 bytes
+(epstopdf)                    date: 2019-07-01 10:18:54
+(epstopdf)                    size: 20724 bytes
 (epstopdf)             Output file: <Imagens/forearm_hilFase3-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2019-05-29 03:01:30
-(epstopdf)                    size: 6791 bytes
+(epstopdf)                    date: 2019-07-01 10:21:06
+(epstopdf)                    size: 7503 bytes
 (epstopdf)             Command: <repstopdf --outfile=Imagens/forearm_hilFase3-e
 ps-converted-to.pdf Imagens/forearm_hilFase3.eps>
-(epstopdf)             \includegraphics on input line 543.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1798,7 +1805,7 @@ pdfTeX warning: pdflatex (file ./Imagens/forearm_hilFase3-eps-converted-to.pdf)
 File: Imagens/forearm_hilFase3-eps-converted-to.pdf Graphic file (type pdf)
  <use Imagens/forearm_hilFase3-eps-converted-to.pdf>
 Package pdftex.def Info: Imagens/forearm_hilFase3-eps-converted-to.pdf used on 
-input line 543.
+input line 537.
 (pdftex.def)             Requested size: 227.5pt x 170.62918pt.
  [38 <./Imagens/base_hilFase3-eps-converted-to.pdf> <./Imagens/shoulder_hilFase
 3-eps-converted-to.pdf> <./Imagens/forearm_hilFase3-eps-converted-to.pdf>] [39]
@@ -2062,11 +2069,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
  ) 
 Here is how much of TeX's memory you used:
- 18868 strings out of 493304
- 277099 string characters out of 6139871
- 507272 words of memory out of 5000000
+ 18864 strings out of 493304
+ 277057 string characters out of 6139871
+ 507866 words of memory out of 5000000
  21062 multiletter control sequences out of 15000+600000
- 118437 words of font info for 179 fonts, out of 8000000 for 9000
+ 118263 words of font info for 177 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  45i,17n,41p,494b,2612s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2087,7 +2094,7 @@ so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb>
-Output written on Monografia.pdf (56 pages, 765140 bytes).
+Output written on Monografia.pdf (56 pages, 768839 bytes).
 PDF statistics:
  1650 PDF objects out of 1728 (max. 8388607)
  1505 compressed objects within 16 object streams

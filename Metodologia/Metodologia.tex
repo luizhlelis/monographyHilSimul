@@ -4,28 +4,28 @@ Neste capítulo, serão apresentadas as técnicas utilizadas para solução do p
 foi realizado em um ano e sua concepção foi dividida em três frentes, nomeadamente: desenvolvimento 
 da solução para o modelo da planta com controlador simulado, controle da planta simulada com o 
 controlador implementado em dispositivo físico (microcontrolador) e a implementação final em dispositivo real. 
-As etapas pormenorizadas do projeto seguem abaixo:
+As etapas pormenorizadas do projeto são as seguintes:
 
 \begin{enumerate}
  \item Desenvolvimento da solução para o modelo da planta com controlador simulado
   \begin{enumerate}
-    \item Definição e modelagem da planta de estudo.
-    \item Construção do ambiente de simulação.
-    \item Validação do modelo.
+    \item Definição e modelagem da planta de estudo;
+    \item Construção do ambiente de simulação;
+    \item Validação do modelo;
     \item Implementação e validação da estratégia de controle.
   \end{enumerate}
  \item Controle da planta simulada com o controlador em dispositivo físico
   \begin{enumerate}
-    \item Discretização da planta de estudo seguido da obtenção da sua equação de diferenças.
-    \item Discretização do controlador seguido da obtenção da sua equação de diferenças.
+    \item Discretização da planta de estudo seguido da obtenção da sua equação de diferenças;
+    \item Discretização do controlador seguido da obtenção da sua equação de diferenças;
     \item Configuração do ambiente de testes com a planta rodando no computador, e o 
     controlador rodando no microcontrolador (comunicação UART).
   \end{enumerate}
   \item Implementação em dispositivo real
   \begin{enumerate}
-    \item Configuração do ambiente com a planta real e o microcontrolador (comunicação UART).
-    \item Implementação da estratégia de controle no microcontrolador.
-    \item Testes de validação da estratégia de controle na planta física..
+    \item Configuração do ambiente com a planta real e o microcontrolador (comunicação UART);
+    \item Implementação da estratégia de controle no microcontrolador;
+    \item Testes de validação da estratégia de controle na planta física.
   \end{enumerate}
 \end{enumerate}
 
@@ -35,7 +35,7 @@ As etapas pormenorizadas do projeto seguem abaixo:
 
 A modelagem dos manipuladores robóticos visa descrever como os elos e juntas estão 
 configurados fisicamente para tornar possível a configuração de sua orientação e sua posição 
-deles \cite{paul1981robot}. Com isso, ao passar uma trajetória de referência que a 
+\cite{paul1981robot}. Com isso, ao passar uma trajetória de referência que a 
 ferramenta de trabalho deve descrever, as demais juntas se reajustam de modo a garantir 
 que a ferramenta sempre esteja corretamente posicionada. A estratégia de controle deve, 
 então, estar adequadamente sintonizada para garantir o seguimento acurado da trajetória.
@@ -49,7 +49,7 @@ entre força e movimento \cite{Spong}.
 A principal ferramenta utilizada para se obter o modelo cinemático direto de um 
 manipulador robótico é a convenção de \textit{Denavit-Hartenberg} (DH) \cite{paul1981robot}
 . A modelagem dinâmica, por sua vez, pode ser realizada por meio das equações de 
-Euler-Lagrange, que correspondem a um método baseado na energia do sistema 
+textit{Euler-Lagrange}, que correspondem a um método baseado na energia do sistema 
 \cite{Park}.
 
 \subsection{Convenção de \textit{Denavit-Hartenberg}}
@@ -289,7 +289,7 @@ externas e torques não deriváveis de uma função potencial:
   \label{eq:EL}
 \end{equation}
 
-Conforme apresentado acima, as equações de \textit{Euler-Lagrange} podem ser 
+Conforme apresentado, as equações de \textit{Euler-Lagrange} podem ser 
 usadas para derivar as equações dinâmicas de maneira direta. É possível computar 
 esses termos para um manipulador robótico de $n$ elos por meio das fórmulas da 
 energia cinética e da energia potencial usando as variáveis de articulação obtidas a partir da modelagem 
@@ -394,7 +394,7 @@ a matriz da energia potencial é dada por:
 
 \subsubsection{Equações de movimento}
 
-Aplicando o que foi exposto acima, as equações de \textit{Euler-Lagrange} 
+Aplicando o que foi exposto anteriormente, as equações de \textit{Euler-Lagrange} 
 \eqref{eq:EL} podem ser expressas segundo:
 
 \begin{equation}
@@ -434,12 +434,12 @@ real e são válidos para excitações dentro de certos limites de amplitude e f
 Uma das formas de se obter o modelo de um determinado sistema $G(s)$, dentro de certos limites de amplitude e frequência,
 é através dos seus dados de entrada $U(s)$ e saída $Y(s)$, vide \autoref{fig:diagEnsaioMA}. Ao aplicar na entrada uma 
 referência conveniente (degrau, impulso, senoide), ignorando os fenômenos internos, obtém-se uma determinada saída que ao 
-ser avaliada ao longo do tempo, ficam aparentes os parâmetros da equação diferencial procurada \cite{Castrucci}.
+ser avaliada ao longo do tempo, ficam aparentes os parâmetros das equações diferenciais procuradas \cite{Castrucci}.
 
 \begin{figure}[ht]
   \centering
-  \caption{Diagrama do ensaio em malha aberta}
   \includegraphics[width = 0.4\columnwidth]{Imagens/diagEnsaioMA.png}
+  \caption{Diagrama do ensaio em malha aberta}
   \fonte{Do autor}
   \label{fig:diagEnsaioMA} 
 \end{figure}
@@ -474,7 +474,7 @@ onde:
 A constante de tempo do sistema de primeira ordem é definida como o instante em que a resposta 
 do sistema atingiu 63,2\% de sua variação final \cite{Castrucci}. Por outro lado, para os sistemas de
 segunda ordem, o que define o $\xi$ é o sobressinal máximo do sistema, e o $\omega_n$ pode ser definido
-através das constantes de tempo do sistema de segunda ordem, como por exemplo o tempo de 
+pelas constantes de tempo do sistema de segunda ordem, como por exemplo o tempo de 
 acomodação. O tempo de acomodação para uma faixa de $\pm$ 2\% em torno do valor final é dado 
 por \eqref{eq:tempoAcomodacao}:
 
@@ -515,29 +515,29 @@ por meio de simulação utilizando a técnica HIL.
 \begin{figure}[h!]
   
   \centering
-  \caption{Diagramas das etapas da técnica \textit{Hardware-in-the-loop}}
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Planta e controlador simulados}
     \includegraphics[width = 0.6\columnwidth]{Imagens/plantaSimulada.png}
+    \caption{Planta e controlador simulados}
     \fonte{Do autor}
     \label{fig:plantaSimulada}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
-    \caption{Solução para o modelo simulado da planta}
     \includegraphics[width = 0.5\columnwidth]{Imagens/solucaoModelo.png}
+    \caption{Solução para o modelo simulado da planta}
     \fonte{Do autor}
     \label{fig:solucaoModelo}
   \end{subfigure}%
   \\[5ex]
   \begin{subfigure}{\textwidth}
     \centering
-    \caption{Solução para a planta física}
     \includegraphics[width = 0.4\columnwidth]{Imagens/solucaoPlanta.png}
+    \caption{Solução para a planta física}
     \fonte{Do autor}
     \label{fig:solucaoPlanta}
   \end{subfigure}%
+  \caption{Diagramas das etapas da técnica \textit{Hardware-in-the-loop}}
   
   \label{fig:simulacoes} 
 
@@ -547,10 +547,10 @@ por meio de simulação utilizando a técnica HIL.
 \markright{\thesection ~~~ Metodologia}
 \label{metodo1b}
 
-Este capítulo apresentou de forma sucinta a metodologia de projeto a ser seguida para 
+Este capítulo apresentou de forma sucinta a metodologia de projeto seguida para 
 alcançar os objetivos propostos neste trabalho. No próximo capítulo são realizadas 
 as modelagens cinemática e dinâmica do manipulador, a partir das quais o ambiente de 
-simulação será construído.
+simulação foi construído.
 
 
 \clearpage
