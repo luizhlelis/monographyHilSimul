@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  1 JUL 2019 10:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.11.2)  1 JUL 2019 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2094,7 +2094,7 @@ so12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb>
-Output written on Monografia.pdf (56 pages, 768839 bytes).
+Output written on Monografia.pdf (56 pages, 768846 bytes).
 PDF statistics:
  1650 PDF objects out of 1728 (max. 8388607)
  1505 compressed objects within 16 object streams
